@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
+    <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
+    <title>RODEO BROS | Yahoo店</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body>
+    <!--include jade/javascript/_javascript.jade-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./js/some-function.js"></script>
+    <!--ヘッダーここ-->
+    <div id="header" class="pc-header-box mb-ll">
+      <!--iframe(src='http://shopping.geocities.jp/rodeobros/header_fin/yahoo-head.html', width='100%', height='75', scrolling='no', frameborder='0', style='position:fixed; top:0; left:0;z-index:9998;')-->
+      <iframe src="http://shopping.geocities.jp/rodeobros/header_fin/yahoo-head.html" width="100%" height="490" scrolling="no" frameborder="1" style="border:none; display:block;position:relative; z-index:9999"> </iframe>
+    </div>
+    <!--外枠ここ-->
+    <div id="wrapper">
+      <!--レフトナビここ-->
+      <div id="left-nav" class="left-box">
+        <iframe src="http://shopping.geocities.jp/rodeobros/leftnabi.html" width="185px" height="5000px" scrolling="no" frameborder="0" style="border:none;"></iframe>
+      </div>
+      <!--メインコンテンツここ-->
+      <div id="main" class="main-box text-center">
+        <div class="top-image-box"><img src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/slide/souvenir_topic_0112.jpg" class="mb-ll"></div>
+        <div id="Vue">
+          <div v-for="element in Souvenir" class="items col-sm-6"><a href="{{ element.number }}">
+              <div class="items__header"><img src="{{ element.image }}" class="mb-sm"></div>
+              <div class="items__body">
+                <p class="brand">{{ element.brand }}</p>
+                <p class="name mb-ll">{{ element.name }}</p>
+              </div></a></div>
+        </div>
+        <div class="price-menu-box">
+          <ul class="prce-menu">
+            <li class="col-sm-2 mb-ml">
+              <p>価格から探す  </p>
+            </li>
+            <li class="col-sm-2 mb-ml"><a href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&amp;pt=30000&amp;p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3">
+                <p>~ ¥30,000</p></a></li>
+            <li class="col-sm-2 mb-ml"><a href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&amp;pt=40000&amp;p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3">
+                <p>~ ¥40,000</p></a></li>
+            <li class="col-sm-2 mb-ml"><a href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&amp;pt=50000&amp;p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3">
+                <p>~ ¥50,000</p></a></li>
+            <li class="col-sm-2 mb-ml"><a herf="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&amp;pt=60000&amp;p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3">
+                <p>~ ¥60,000</p></a></li>
+            <li class="col-sm-2 mb-ml"><a href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=60000&amp;pt=&amp;p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3">
+                <p>¥60,000 ~</p></a></li>
+          </ul>
+        </div>
+        <div class="allItemsButton-box mb-ll"><a href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3"> 
+            <p class="myButtonWhiteBlack">Souvenir Jacket スカジャン 一覧へ</p></a></div>
+      </div>
+    </div>
+    <!--フッターここ-->
+    <footer>
+      <iframe src="http://shopping.geocities.jp/rodeobros/TopPageAssets/footer.html" width="100%" height="400" scrolling="no" frameborder="1" style="border:none; display:block;"></iframe>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script>
+      
+      jQuery(function($) {
+      	var nav = $('#fixedBox');
+      	offset = nav.offset();
+      
+      	$(window).scroll(function () {
+      		if($(window).scrollTop() > offset.top) {
+      		
+      		$("#fixedBox").css({
+      			position: "fixed",
+      			top: "100px",
+      			width:"100%"
+      			});
+      
+      		} else {
+      			$("#fixedBox").css({
+      				position: "",
+      				top: ""
+      			});
+      			
+      		}
+      	});
+      
+      	});
+    </script>
+    <script>
+      new Vue({
+      	el: '#Vue',
+      	//template: '#VueTopsTemplate',
+      
+      	data: {
+      		Souvenir: []
+      	},
+      	
+      	created: function() {
+      		
+      		var _this = this;
+      		//get json file
+      		$.ajax({
+      			url: './json/souvenirjacket.json',
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+      				temp.push(el);
+      			});
+      			_this.Souvenir = temp;
+      			 console.log(_this.items); 
+      		});
+      
+      	}
+      });
+      
+      
+      
+    </script><link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+  </body>
+</html>

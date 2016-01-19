@@ -1,0 +1,35 @@
+#mine {
+	position: absolute!important;
+    top: 194px!important;
+    left: 0!important;
+	z-index:1;
+}
+
+#shopName {
+margin-bottom: 325px!important;
+}
+
+#shopCommonText img #btm {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+}
+
+/#shopInfoSliderLarge > .flickSlider {
+	max-width:100%!important;
+}
+
+#shopInfoSliderLarge > .sliderFrame {
+	max-width:100%!important;		
+}
+
+#shopInfoSliderLarge {
+	margin:0!important;
+	padding:0!important;
+	position:fixed!important;
+	bottom:0!important;
+	background:#fff!important;
+	z-index: 899999 !important;
+}

@@ -1,0 +1,55 @@
+@import 'vendor/normalize';
+@import 'base';
+@import 'utility';
+
+.top-image-box {
+	
+}
+
+.items {
+
+	p{
+		margin-top: 0;
+	}
+
+}
+
+.price-menu-box {
+	clear: both;
+	display: block;
+}
+
+.price-menu {
+
+	p {
+		padding:0.4em 0;
+	}
+
+}
+
+.allItemsButton-box {
+
+	clear: both;
+
+	a:hover {
+		text-decoration: none;
+	}
+	
+	p {
+		width: 40%;
+		margin:0 auto;
+		padding:0.8em 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+.allItemsButton-box {
+	
+	p {
+		width: 80%;
+	}
+
+}
+}

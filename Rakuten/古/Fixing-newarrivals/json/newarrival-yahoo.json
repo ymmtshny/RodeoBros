@@ -1,0 +1,820 @@
+//
+// ここでは以下の(1)-(4)のデータを必要とします。
+// (1)number : 品番
+//            Rakuten: http://item.rakuten.co.jp/auc-rodeo/[number]/
+//            Offical：http://www.aun-wa.com/SHOP/[number].html
+//            Yahoo  ：http://store.shopping.yahoo.co.jp/rodeobros/[number].html
+// (2)image :[brand/品番]または[amazon2/品番](http://image.rakuten.co.jp/auc-rodeo/cabinet/[image]-0.jpg)
+// (3)brand :ブランド名：これが表示されます。
+// (4)name　:商品名：これが表示されます。
+
+newarrival([
+
+// #11
+{ 
+  "number" : "sc41501h",
+  "image"  : "amazon2/sc41501h",
+  "brand"  : "SUGAR CANE",
+  "name"   : "14oz Lone Star Jeans Slim Fit"
+},
+
+// #5
+{ 
+  "number" : "43692",
+  "image"  : "amazon2/43692",
+  "brand"  : "ETERNAL",
+  "name"   : "Sailcloth Work Hat"
+},
+
+// #8
+{ 
+  "number" : "43694",
+  "image"  : "amazon2/43694",
+  "brand"  : "ETERNAL",
+  "name"   : "Sailcloth Work Cap"
+},
+
+
+// #6
+{ 
+  "number" : "52104",
+  "image"  : "amazon2/52104",
+  "brand"  : "ETERNAL",
+  "name"   : "Real Used Denim Jacket"
+},
+
+
+// #-10
+{ 
+  "number" : "52103",
+  "image"  : "amazon2/52103",
+  "brand"  : "ETERNAL",
+  "name"   : "Real Used Denim Jacket"
+},
+
+// #-9
+{ 
+  "number" : "52095",
+  "image"  : "amazon2/52095",
+  "brand"  : "ETERNAL",
+  "name"   : "Stretch Tapered Used Jeans"
+},
+
+// #-8
+{ 
+ "number" : "52094",
+  "image"  : "eternal/52094",
+  "brand"  : "ETERNAL",
+  "name"   : "Low-Rise Wide Used Jeans"
+},
+
+// #9
+{ 
+  "number" : "52093",
+  "image"  : "amazon2/52093",
+  "brand"  : "ETERNAL",
+  "name"   : "Low-Rise Used Jeans"
+},
+
+// #-6
+{ 
+  "number" : "fxv-608",
+  "image"  : "vanson/fxv-608",
+  "brand"  : "FELIX × VANSON",
+  "name"   : "Felix Embroidered Twill Mesh Cap"
+},
+
+// #-6
+{ 
+  "number" : "fxv-607",
+  "image"  : "vanson/fxv-607",
+  "brand"  : "FELIX × VANSON",
+  "name"   : "Felix Embroidered Twill Mesh Cap"
+},
+
+// #2
+{ 
+  "number" : "nvsz-601",
+  "image"  : "vanson/nvsz-601",
+  "brand"  : "VANSON",
+  "name"   : "Skull Embroidered Hoodie "
+},
+
+// #3
+{ 
+  "number" : "nvlt-606",
+  "image"  : "vanson/nvlt-606",
+  "brand"  : "VANSON",
+  "name"   : "Logo & Emblem Long sleeve T-Shirt "
+},
+
+// #4
+{ 
+  "number" : "crv-601",
+  "image"  : "crows-worst/crv-601",
+  "brand"  : "VANSON×CROWS",
+  "name"   : "KKK Death Rabbit Fake T-shirt "
+},
+
+// #-6
+{ 
+  "number" : "crv-604",
+  "image"  : "crows-worst/crv-604",
+  "brand"  : "VANSON×CROWS",
+  "name"   : "KKK Death Rabbit Jacket"
+},
+
+// #-6
+{ 
+  "number" : "crv-603",
+  "image"  : "crows-worst/crv-603",
+  "brand"  : "VANSON×CROWS",
+  "name"   : "KKK Death Rabbit T-shirt"
+},
+
+// #-5
+{ 
+  "number" : "nvsz-216a",
+  "image"  : "amazon2/nvsz-216a",
+  "brand"  : "VANSON",
+  "name"   : "Bone Parka with Neck Warmer"
+},
+
+
+// #-4
+{ 
+  "number" : "pi-2860",
+  "image"  : "soltandsugar/pi-2860",
+  "brand"  : "SALT&SUGAR",
+  "name"   : "Indian Leather Short Wallet"
+},
+
+// #-3
+{ 
+  "number" : "pi-2859",
+  "image"  : "soltandsugar/pi-2859",
+  "brand"  : "SALT&SUGAR",
+  "name"   : "Indian Leather Wallet & Pass Caset"
+},
+
+
+// #-2
+{ 
+  "number" : "pi-2855",
+  "image"  : "soltandsugar/pi-2855",
+  "brand"  : "SALT&SUGAR",
+  "name"   : "Flat Washable Long Wallet"
+},
+
+// #11
+{ 
+  "number" : "pi-2853",
+  "image"  : "soltandsugar/pi-2853",
+  "brand"  : "SALT&SUGAR",
+  "name"   : "Italian Leather Long Wallet"
+},
+
+
+]);
+
+history ([
+
+// #11
+{ 
+  "number" : "rkf-01",
+  "image"  : "flathead/rkf-01",
+  "brand"  : "THE FLAT HEAD",
+  "name"   : "WALLET STUDS HOOK ROPE"
+},
+
+// #2
+{ 
+  "number" : "595401",
+  "image"  : "disney/595401",
+  "brand"  : "STAR WARS",
+  "name"   : "Boba Fett Zip Hooded Sweatshirt "
+},
+
+// #3
+{ 
+  "number" : "595400",
+  "image"  : "disney/595400",
+  "brand"  : "STAR WARS",
+  "name"   : "Storm Trooper Stadium jumper"
+},
+
+// #4
+{ 
+  "number" : "br13243",
+  "image"  : "amazon2/br13243",
+  "brand"  : "BUZZ RICKSON'S",
+  "name"   : "L-2B Flying Jacket"
+},
+
+// #7
+{ 
+  "number" : "sc41470",
+  "image"  : "amazon2/sc41470",
+  "brand"  : "SUGAR CANE",
+  "name"   : "13oz BLACK DENIM TYPE-III"
+},
+
+// #5
+{ 
+  "number" : "br12032",
+  "image"  : "amazon2/br12032",
+  "brand"  : "BUZZ RICKSON'S",
+  "name"   : "DEMOTEX-ED N-1 Deck Jacket"
+},
+
+// #8
+{ 
+  "number" : "52092",
+  "image"  : "amazon2/52092",
+  "brand"  : "ETERNAL",
+  "name"   : "Low-Rise Tapered Used Jeans"
+},
+
+
+// #6
+{ 
+  "number" : "nvkn-504",
+  "image"  : "amazon2/nvkn-504",
+  "brand"  : "VANSON",
+  "name"   : "Flying Wheel Knit Jacket"
+},
+
+
+// #-10
+{ 
+  "number" : "imkn-502",
+  "image"  : "amazon2/imkn-502",
+  "brand"  : "INDIAN MOTOCYCLE",
+  "name"   : "Knit Shawl Cardigan"
+},
+
+// #-9
+{ 
+  "number" : "oni-546olzr",
+  "image"  : "oni/oni-546olzr",
+  "brand"  : "ONI DENIM",
+  "name"   : "20oz. Tight Fit Straight OLIVE Denim"
+},
+
+// #-8
+{ 
+ "number" : "70040",
+  "image"  : "amazon2/70040",
+  "brand"  : "ALPHA",
+  "name"   : "Work Boots"
+},
+
+// #9
+{ 
+  "number" : "tdsz-141",
+  "image"  : "ted1/tdsz-141",
+  "brand"  : "TEDMAN",
+  "name"   : "Motor cycle Zip Sweat Trainer"
+},
+
+// #-6
+{ 
+  "number" : "tdsp-140",
+  "image"  : "ted1/tdsp-140",
+  "brand"  : "TEDMAN",
+  "name"   : "Skull Zip Hoodie Sweatshirt Parka"
+},
+
+// #-6
+{ 
+  "number" : "cr-120",
+  "image"  : "amazon2/cr-120",
+  "brand"  : "CROWS×WORST",
+  "name"   : "T.F.O.A Kei Himekawa Track Jacket"
+},
+
+// #-6
+{ 
+  "number" : "oni-02517hox",
+  "image"  : "oni/oni-02517hox",
+  "brand"  : "oni denim",
+  "name"   : "Yarn-dyed Raw Denim Jacket"
+},
+// #-5
+{ 
+  "number" : "oni-512xxbe",
+  "image"  : "oni/oni-512",
+  "brand"  : "oni denim",
+  "name"   : "Relax Skinny Denim"
+},
+
+
+// #-4
+{ 
+  "number" : "ihj-38",
+  "image"  : "amazon2/ihj-38",
+  "brand"  : "IRON HEART",
+  "name"   : "Primaloft Quilting Jacket"
+},
+
+// #-3
+{ 
+  "number" : "nvao-301",
+  "image"  : "vanson/nvao-301",
+  "brand"  : "VANSON",
+  "name"   : "Wings Star Coverall"
+},
+
+
+// #-2
+{ 
+  "number" : "srmjk-100",
+  "image"  : "suikyo/srmjk-100",
+  "brand"  : "suikyo",
+  "name"   : "ZERO FIGHTER nylon Jacket"
+},
+
+// #11
+{ 
+  "number" : "tdsz-142",
+  "image"  : "ted1/tdsz-142",
+  "brand"  : "TEDMAN",
+  "name"   : "Military Zip Sweat Trainer"
+},
+
+// #11
+{ 
+  "number" : "tdsp-140",
+  "image"  : "ted1/tdsp-140",
+  "brand"  : "TEDMAN",
+  "name"   : "Skull Zip Hoodie Sweatshirt Parka"
+},
+
+// #2
+{ 
+  "number" : "tdsp-139",
+  "image"  : "ted1/tdsp-139",
+  "brand"  : "TEDMAN",
+  "name"   : "Zip Hoodie Sweatshirt Parka"
+},
+
+// #4
+{ 
+  "number" : "nvbl-404",
+  "image"  : "amazon2/nvbl-404",
+  "brand"  : "VANSON",
+  "name"   : "Border Duck Pants"
+},
+
+
+// #7
+{ 
+  "number" : "9sbb1",
+  "image"  : "amazon2/9sbb",
+  "brand"  : "VANSON",
+  "name"   : "Quilting Leather Funny Pack"
+},
+
+
+// #8
+{ 
+  "number" : "nvcp-310",
+  "image"  : "amazon2/nvcp-310",
+  "brand"  : "VANSON",
+  "name"   : "EAGLE Mesh Cap"
+},
+
+
+// #6
+{ 
+  "number" : "lb-12-710",
+  "image"  : "amazon2/lb-12-710",
+  "brand"  : "VANSON",
+  "name"   : "Work Cap"
+},
+
+
+// #-10
+{ 
+  "number" : "lb-12-159",
+  "image"  : "amazon2/lb-12-159",
+  "brand"  : "VANSON",
+  "name"   : "Work Cap"
+},
+
+// #-9
+{ 
+  "number" : "lb-13-796",
+  "image"  : "amazon2/lb-13-796",
+  "brand"  : "VANSON",
+  "name"   : "Work Cap"
+},
+
+// #-8
+{ 
+ "number" : "lbv-10-003",
+  "image"  : "amazon2/lbv-10-003",
+  "brand"  : "VANSON",
+  "name"   : "Mesh Cap"
+},
+
+// #-7
+{ 
+  "number" : "9666z",
+  "image"  : "amazon2/9666z",
+  "brand"  : "IRON HEART",
+  "name"   : "Real BLACK Denim Slim Straight"
+},
+
+// #9
+{ 
+  "number" : "fxv-510w",
+  "image"  : "amazon2/fxv-510w",
+  "brand"  : "VANSON×FELIX",
+  "name"   : "14oz Felix Print Denim Jeans"
+},
+
+// #-6
+{ 
+  "number" : "354863",
+  "image"  : "amazon2/354863",
+  "brand"  : "Hub＆Spoke",
+  "name"   : "Shaggy Border Zip Parka"
+},
+// #-5
+{ 
+  "number" : "jtj-006",
+  "image"  : "junkysparadise/jtj-006",
+  "brand"  : "Junky's Paradise",
+  "name"   : "German Skull Souvenir jacket"
+},
+
+
+// #-4
+{ 
+  "number" : "kmfj-100",
+  "image"  : "amazon2/kmfj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Pepsi gamma nylon jacket"
+},
+
+// #-3
+{ 
+  "number" : "sfk-502",
+  "image"  : "script/sfk-502",
+  "brand"  : "HANATABI GAKUDAN",
+  "name"   : "Phoenix Knit"
+},
+
+
+// #-2
+{ 
+  "number" : "sfk-501",
+  "image"  : "script/sfk-501",
+  "brand"  : "HANATABI GAKUDAN",
+  "name"   : "Cherry blossom Knit"
+},
+
+// #11
+{ 
+  "number" : "131509",
+  "image"  : "skullworks/131509",
+  "brand"  : "【予約受付開始】<br>SKULL WORKS",
+  "name"   : "N-1 Deck Jacket"
+},
+
+
+
+// #11
+{ 
+  "number" : "ulsj-001",
+  "image"  : "amazon2/ulsj-001",
+  "brand"  : "【Rearrival】<br>Ultraman",
+  "name"   : "Ultraman and Alien Baltan"
+},
+
+// #2
+{ 
+  "number" : "tf-rj10",
+  "image"  : "amazon2/tf-rj10",
+  "brand"  : "CROWS×WORST",
+  "name"   : "T.F.O.A 5th Ver.2 Rider's"
+},
+
+// #3
+{ 
+  "number" : "tf-rj09",
+  "image"  : "amazon2/tf-rj09",
+  "brand"  : "CROWS×WORST",
+  "name"   : "T.F.O.A 5th Rider's"
+},
+
+// #4
+{ 
+  "number" : "tf-rj08",
+  "image"  : "amazon2/tf-rj08",
+  "brand"  : "CROWS×WORST",
+  "name"   : "T.F.O.A 4th Rider's"
+},
+
+
+// #7
+{ 
+  "number" : "imkn-501",
+  "image"  : "amazon2/imkn-501",
+  "brand"  : "INDIAN MOTOCYCLE",
+  "name"   : "Cowichan Sweater"
+},
+
+// #8
+{ 
+  "number" : "sc41501r",
+  "image"  : "amazon2/sc41501r",
+  "brand"  : "SUGAR CANE",
+  "name"   : "10Year Aged Lone Star"
+},
+
+// #5
+{ 
+  "number" : "ulsj-005",
+  "image"  : "amazon2/ulsj-005",
+  "brand"  : "Ultraman",
+  "name"   : "Mother of Ultra Souvenir jacket"
+},
+
+// #6
+{ 
+  "number" : "ulsj-004",
+  "image"  : "amazon2/ulsj-004",
+  "brand"  : "Ultraman",
+  "name"   : "King Joe Souvenir jacket"
+},
+
+
+// #-10
+{ 
+  "number" : "kjs-700",
+  "image"  : "ted1/kjs-700",
+  "brand"  : "KAMINARI",
+  "name"   : "Led Zeppelin Track jacket"
+},
+
+// #-9
+{ 
+  "number" : "kjs-600",
+  "image"  : "ted1/kjs-600",
+  "brand"  : "KAMINARI",
+  "name"   : "Trueno Track jacket"
+},
+
+// #-8
+{ 
+  "number" : "tmal-410",
+  "image"  : "amazon2/tmal-410",
+  "brand"  : "TEDMAN",
+  "name"   : "MA-1 Flight jacket"
+},
+
+// #-7
+{ 
+  "number" : "tdj-16000",
+  "image"  : "amazon2/tdj-16000",
+  "brand"  : "TEDMAN",
+  "name"   : "Tedman Stadium Jacket"
+},
+
+// #9
+{ 
+  "number" : "131517",
+  "image"  : "amazon2/131517",
+  "brand"  : "CROWS×WORST",
+  "name"   : "T.F.O.A Riders Jacket"
+},
+
+// #-6
+{ 
+  "number" : "nvjk-502",
+  "image"  : "amazon2/nvjk-502",
+  "brand"  : "VANSON",
+  "name"   : "MA-1 Flight Jacket"
+},
+
+// #10
+{ 
+  "number" : "9sbb1",
+  "image"  : "vanson/9sbb",
+  "brand"  : "【Rearrivals】VANSON",
+  "name"   : "Leather Bum Bag Funny Pack"
+},
+
+// #-6
+{ 
+  "number" : "nvjk-502",
+  "image"  : "amazon2/nvjk-502",
+  "brand"  : "VANSON",
+  "name"   : "MA-1 Flight Jacket"
+},
+
+// #-5
+{ 
+  "number" : "tt13430",
+  "image"  : "amazon2/tt13430",
+  "brand"  : "TAILOR TOYO",
+  "name"   : "Lady Luck CxTxM Souvenir Jacket"
+},
+
+// #-4
+{ 
+  "number" : "nvbl-404",
+  "image"  : "amazon2/nvbl-404",
+  "brand"  : "【予約受付中】 VANSON",
+  "name"   : "Border Duck PantsBorder "
+},
+
+// #-3
+{ 
+  "number" : "nvsl-511",
+  "image"  : "vanson/nvsl-511",
+  "brand"  : "【予約受付中】 VANSON",
+  "name"   : "Border Long sleeves Work Shirt"
+},
+
+// #-2
+{ 
+  "number" : "nvao-301",
+  "image"  : "amazon2/nvao-301",
+  "brand"  : "【予約受付中】 VANSON",
+  "name"   : "Wings Star Coverall"
+},
+
+// #-1
+{ 
+  "number" : "tjs-1900",
+  "image"  : "ted1/tjs-1900",
+  "brand"  : "【新色入荷】 TEDMAN",
+  "name"   : "Track jacket"
+},
+
+// #1
+{ 
+  "number" : "tt13430",
+  "image"  : "amazon2/tt13430",
+  "brand"  : "TAILOR TOYO",
+  "name"   : "Lady Luck CxTxM Skull Special Edition"
+},
+
+// #2
+{ 
+  "number" : "595247",
+  "image"  : "amazon2/595247",
+  "brand"  : "EVANGELION",
+  "name"   : "Evangelion Unit 1 and Lilith"
+},
+
+// #3
+{ 
+  "number" : "pov-516",
+  "image"  : "amazon2/pdv-516",
+  "brand"  : "VANSON",
+  "name"   : "Popeye Zip Hooded Sweatshirt"
+},
+
+// #4
+{ 
+  "number" : "kmsj-100",
+  "image"  : "kaminari/kmsj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Kenmeri Japan Nylon Jacket"
+},
+
+// #5
+{ 
+  "number" : "3005",
+  "image"  : "amazon2/3005",
+  "brand"  : "THE FLAT HEAD",
+  "name"   : "Selvedge Denim Jeans"
+},
+
+// #6
+{ 
+  "number" : "d109fxr-Itd",
+  "image"  : "amazon2/d109fxr-ltd",
+  "brand"  : "THE FLAT HEAD",
+  "name"   : "Taperd Straight Jeans"
+},
+
+
+// #7
+{ 
+  "number" : "thla-01w",
+  "image"  : "flathead/thla-01w",
+  "brand"  : "THE FLAT HEAD",
+  "name"   : "EARLY WORKS L/S T-Shirt"
+},
+
+// #8
+{ 
+  "number" : "653171",
+  "image"  : "amazon2/653171",
+  "brand"  : "USW",
+  "name"   : "Quilting Zip Cardigan"
+},
+
+// #9
+{ 
+  "number" : "mjk-509",
+  "image"  : "melton/mjk-509",
+  "brand"  : "MELTON COMPANY",
+  "name"   : "Sheep skin Single Riders Jacket"
+},
+
+// #10
+{ 
+  "number" : "mjk-507",
+  "image"  : "melton/mjk-507",
+  "brand"  : "MELTON COMPANY",
+  "name"   : "Sheep skin A-2 Flight Jacket"
+},
+
+// #11
+{ 
+  "number" : "mjk-506",
+  "image"  : "melton/mjk-506",
+  "brand"  : "MELTON COMPANY",
+  "name"   : "Sheep skin Double Riders Jacket"
+},
+
+// #12
+{ 
+  "number" : "nvbl-505",
+  "image"  : "amazon2/nvbl-505",
+  "brand"  : "VANSON",
+  "name"   : "Red Selvedge Denim Pants"
+},
+
+// #13
+{ 
+  "number" : "nvbl-504",
+  "image"  : "amazon2/nvbl-504",
+  "brand"  : "VANSON",
+  "name"   : "Red Selvedge Denim Pants"
+},
+
+// #14
+{ 
+  "number" : "crv-528",
+  "image"  : "amazon2/crv-528",
+  "brand"  : "クローズ×VANSON",
+  "name"   : "Bone Parka"
+},
+
+// #15
+{ 
+  "number" : "crv-527",
+  "image"  : "amazon2/crv-527",
+  "brand"  : "クローズ×VANSON",
+  "name"   : "T.F.O.A Riders Jacket"
+},
+
+// #16
+{ 
+  "number" : "nvjk-508",
+  "image"  : "amazon2/nvjk-508",
+  "brand"  : "VANSON",
+  "name"   : "Camouflage Mountain Parka"
+},
+
+// #17
+{ 
+  "number" : "kmsj-100",
+  "image"  : "kaminari/kmsj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Kenmeri Japan Nylon Jacket"
+},
+
+// #18
+{ 
+  "number" : "kmsj-100",
+  "image"  : "kaminari/kmsj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Kenmeri Japan Nylon Jacket"
+},
+
+// #19
+{ 
+  "number" : "kmsj-100",
+  "image"  : "kaminari/kmsj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Kenmeri Japan Nylon Jacket"
+},
+
+// #20
+{ 
+  "number" : "kmsj-100",
+  "image"  : "kaminari/kmsj-100",
+  "brand"  : "KAMINARI",
+  "name"   : "Kenmeri Japan Nylon Jacket"
+},
+
+
+]);

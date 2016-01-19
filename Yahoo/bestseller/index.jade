@@ -1,0 +1,136 @@
+doctype html
+include jade/_bestseller__data.jade
+html
+	include jade/_bestseller__head.jade
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+	script(src="js/navigation.js")
+	body
+		//へっだーここから
+		include jade/_bestseller__header.jade
+		//ラッパーここから
+		div.wrapper
+			//レフトナビここから
+			include jade/_bestseller__navigation.jade
+			//メインコンテツここから
+			include jade/_bestseller__main-contents.jade
+		//ラッパーここまで
+		//フッターここから
+		include jade/_bestseller__footer.jade
+		//BODY ENDS HERE
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+		script.
+			
+			jQuery(function($) {
+				var nav = $('#fixedBox');
+				offset = nav.offset();
+
+				$(window).scroll(function () {
+					if($(window).scrollTop() > offset.top) {
+					
+					$("#fixedBox").css({
+						position: "fixed",
+						top: "100px",
+						width:"100%"
+						});
+
+					} else {
+						$("#fixedBox").css({
+							position: "",
+							top: ""
+						});
+						
+					}
+				});
+
+				});
+		script.
+			new Vue({
+				el: '#Vue',
+				//template: '#VueTopsTemplate',
+
+				data: {
+					Tops: [],
+					Outers: [],
+					Bottoms: [],
+					Accesories: [],
+					foo: "foooo!",
+					items: [
+						{ msg: 'foo!' },
+						{ msg: 'bar!' }
+					]
+				},
+				
+				created: function() {
+					
+					var _this = this;
+					//get json file
+					$.ajax({
+						url: './json/tops.json',
+						dataType: 'json'
+					}).done(function(data) {
+						var temp = [];
+						
+						data.forEach(function (el) {
+							el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+							el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+							temp.push(el);
+						});
+						_this.Tops = temp;
+						 console.log(_this.items); 
+					});
+
+					$.ajax({
+						url: './json/outers.json',
+						dataType: 'json'
+					}).done(function(data) {
+						var temp = [];
+						
+						data.forEach(function (el) {
+							el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+							el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+							temp.push(el);
+						});
+						_this.Outers = temp;
+						 console.log(_this.items); 
+					});
+
+					$.ajax({
+						url: './json/buttoms.json',
+						dataType: 'json'
+					}).done(function(data) {
+						var temp = [];
+						
+						data.forEach(function (el) {
+							el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+							el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+							temp.push(el);
+						});
+						_this.Bottoms = temp;
+						 console.log(_this.items); 
+					});
+
+					$.ajax({
+						url: './json/accesorries.json',
+						dataType: 'json'
+					}).done(function(data) {
+						var temp = [];
+						
+						data.forEach(function (el) {
+							el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+							el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+							temp.push(el);
+						});
+						_this.Accesories = temp;
+						 console.log(_this.items); 
+					});
+
+				}
+
+
+
+			});
+
+
+		<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+		include js/bestseller.js

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
+    <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
+    <title>RODEO BROS</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/navigation.js"></script>
+  <body>
+    <!--へっだーここから-->
+    <header>
+      <div class="l-header header-box u-mb-mid hidden-xs">
+        <!--固定へっだー-->
+        <!--iframe(src='http://www.rakuten.ne.jp/gold/auc-rodeo/Header/head000.html', width='100%', height='75', scrolling='no', frameborder='0', style='position:fixed; top:0; left:0;z-index:9998;')-->
+        <!--メインへっだー-->
+        <iframe src="http://shopping.geocities.jp/rodeobros/header_fin/yahoo-head.html" width="100%" height="490" scrolling="no" frameborder="1" style="border:none; display:block;position:relative; z-index:9999; background:#fff;"></iframe>
+      </div>
+      <!--スマフォ用へっだー-->
+      <div class="l-sp-header header-sp-box visible-xs">
+        <ul>
+          <li class="header-sp--menu"><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/cart_header_black.png"></a></li>
+          <li class="header-sp--logo"><a href="http://shopping.geocities.jp/rodeobros/"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/rodeo_header_logo.png"></a></li>
+          <li class="header-sp--cart"><a href="hhttps://odhistory.shopping.yahoo.co.jp/cgi-bin/cart-list?sc_i=shp_pc_store_MHD_cart"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/cart_header_white.png"></a></li>
+        </ul>
+      </div>
+    </header>
+    <!--ラッパーここから-->
+    <div class="wrapper">
+      <!--レフトナビここから-->
+      <!--レフトナビここから-->
+      <aside id="fixedBox" class="beforeFixed">
+        <div class="l-nav">
+          <div class="nav__category u-mb-mid">
+            <h1 class="nav__title">ベストセラー</h1>
+            <ul>
+              <li class="nav__menu"><a href="#itemsOuters">
+                  <p id="nav__outers" class="active-black">アウター </p></a></li>
+              <li class="nav__menu"><a href="#itemsTops">
+                  <p id="nav__tops">トップス</p></a></li>
+              <li class="nav__menu"><a href="#itemsBottoms">
+                  <p id="nav__bottoms">ボトムス</p></a></li>
+              <li class="nav__menu"><a href="#itemsAccesories">
+                  <p id="nav__accesories">アクセサリー</p></a></li>
+              <!--li.nav__menup#nav__others > OTHERS
+              -->
+            </ul>
+          </div>
+          <div class="nav__image-sizing hidden-xs">
+            <h2 class="nav__title">画像サイズ</h2>
+            <ul>
+              <li>
+                <p id="large-images-sizing" class="active-black-for-size">大</p>
+              </li>
+              <li>
+                <p id="mid-images-sizing">中</p>
+              </li>
+              <li>
+                <p id="small-images-sizing">小</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <!--レフトナビここまで-->
+      <!--メインコンテツここから-->
+      <article>
+        <!--商品一覧ここから-->
+        <div class="l-main main-box">
+          <div id="Vue">
+            <!--アウター一覧ここから-->
+            <h1 id="spTitleOuter" class="main__category-title-sp visible-xs u-mb-small u-clear">アウター</h1>
+            <div class="main__items outers visible-xs">
+              <div v-for="element in Outers" class="items-box two-columns text-center u-mb-small"><a href="{{ element.number }}">
+                  <div class="items__header"><img src="{{ element.image }}"></div>
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p></a></div>
+            </div>
+            <!--トップス一覧ここから-->
+            <h1 id="spTitleTops" class="main__category-title-sp visible-xs u-mb-small">トップス</h1>
+            <div class="main__items tops visible-xs u-mb-large">
+              <div v-for="element in Tops" class="items-box two-columns text-center u-mb-small"><a href="{{ element.number }}">
+                  <div class="items__header"><img src="{{ element.image }}"></div>
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p></a></div>
+            </div>
+            <!--ボトムス一覧ここから-->
+            <h1 id="spTitleBottom" class="main__category-title-sp visible-xs u-mb-small u-clear">ボトムス</h1>
+            <div class="main__items bottoms visible-xs u-mb-large">
+              <div v-for="element in Bottoms" class="items-box two-columns text-center u-mb-small"><a href="{{ element.number }}">
+                  <div class="items__header"><img src="{{ element.image }}"></div>
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p></a></div>
+            </div>
+            <!--アクセサリー一覧ここから-->
+            <h1 id="spTitleAccesories" class="main__category-title-sp visible-xs u-mb-small u-clear">アクセサリー</h1>
+            <div class="main__items visible-xs accesories u-mb-large">
+              <div v-for="element in Accesories" class="items-box two-columns text-center u-mb-small"><a href="{{ element.number }}">
+                  <div class="items__header"><img src="{{ element.image }}"></div>
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p></a></div>
+            </div>
+          </div>
+        </div>
+        <!--メインコンテツここまで-->
+      </article>
+    </div>
+    <!--ラッパーここまで-->
+    <!--フッターここから-->
+    <footer class="hidden-xs">
+      <div class="l-footer footer-box">
+        <iframe src="http://shopping.geocities.jp/rodeobros/TopPageAssets/footer.html"></iframe>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy RODEO BROS All Right Reserved</p>
+      </div>
+    </footer>
+    <!--BODY ENDS HERE-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script>
+      
+      jQuery(function($) {
+      	var nav = $('#fixedBox');
+      	offset = nav.offset();
+      
+      	$(window).scroll(function () {
+      		if($(window).scrollTop() > offset.top) {
+      		
+      		$("#fixedBox").css({
+      			position: "fixed",
+      			top: "100px",
+      			width:"100%"
+      			});
+      
+      		} else {
+      			$("#fixedBox").css({
+      				position: "",
+      				top: ""
+      			});
+      			
+      		}
+      	});
+      
+      	});
+    </script>
+    <script>
+      new Vue({
+      	el: '#Vue',
+      	//template: '#VueTopsTemplate',
+      
+      	data: {
+      		Tops: [],
+      		Outers: [],
+      		Bottoms: [],
+      		Accesories: [],
+      		foo: "foooo!",
+      		items: [
+      			{ msg: 'foo!' },
+      			{ msg: 'bar!' }
+      		]
+      	},
+      	
+      	created: function() {
+      		
+      		var _this = this;
+      		//get json file
+      		$.ajax({
+      			url: './json/tops.json',
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+      				temp.push(el);
+      			});
+      			_this.Tops = temp;
+      			 console.log(_this.items); 
+      		});
+      
+      		$.ajax({
+      			url: './json/outers.json',
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+      				temp.push(el);
+      			});
+      			_this.Outers = temp;
+      			 console.log(_this.items); 
+      		});
+      
+      		$.ajax({
+      			url: './json/buttoms.json',
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+      				temp.push(el);
+      			});
+      			_this.Bottoms = temp;
+      			 console.log(_this.items); 
+      		});
+      
+      		$.ajax({
+      			url: './json/accesorries.json',
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+      				temp.push(el);
+      			});
+      			_this.Accesories = temp;
+      			 console.log(_this.items); 
+      		});
+      
+      	}
+      
+      
+      
+      });
+      
+      
+    </script><link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+
+  </body>
+</html>
