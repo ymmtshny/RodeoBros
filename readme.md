@@ -1,4 +1,4 @@
-<h1>About thie repository</h1>
+<h1>About this repository</h1>
 <hr>
 <p>
 - common<br>
