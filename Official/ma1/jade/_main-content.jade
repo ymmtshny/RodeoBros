@@ -1,0 +1,17 @@
+div.top-image-box
+	img.mb-ll(src="http://www.rakuten.ne.jp/gold/auc-rodeo/feature/img/feature-ma-1.jpg")
+	h1 MA-1 FLIGHT JACKET
+
+div#Vue
+	div(v-for = "element in MA1" ).items.col-sm-6
+		a(href="{{ element.number }}" title="{{ element.brand }}")
+			div.items__header
+				img(v-bind:src="element.image" alt="element.name").mb-sm
+			div.items__body
+				p.brand {{ element.brand }}
+				p.name.mb-ll {{ element.name }}
+
+
+div.allItemsButton-box.mb-ll
+	a(href="http://search.rakuten.co.jp/search/inshop-mall?f=1&v=3&sid=235529&uwd=1&s=1&p=1&sitem=ma1&st=A&nitem=%E3%83%96%E3%83%BC%E3%83%84%E3%80%80%E3%83%87%E3%83%8B%E3%83%A0&min=&max=") 
+		p.myButtonWhiteBlack MA-1 フライトジャケット 一覧へ

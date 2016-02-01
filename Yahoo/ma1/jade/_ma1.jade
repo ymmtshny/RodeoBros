@@ -1,0 +1,33 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+
+script.
+	new Vue({
+		el: '#Vue',
+		//template: '#VueTopsTemplate',
+
+		data: {
+			MA1: []
+		},
+		
+		created: function() {
+			
+			var _this = this;
+			//get json file
+			$.ajax({
+				url: './json/ma1.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				
+				data.forEach(function (el) {
+					el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.MA1 = temp;
+				 console.log(_this.items); 
+			});
+
+		}
+	});
