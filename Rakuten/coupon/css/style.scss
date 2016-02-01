@@ -1,0 +1,63 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+.top-image-box {
+	
+}
+
+.pickup-items {
+	h1 {
+		clear: both;
+		background-color: #f7f8f8;
+		padding: 0.3em 0;
+	}
+}
+
+.items {
+
+	p{
+		margin-top: 0;
+	}
+
+	.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+}
+
+
+.allItemsButton-box {
+
+	clear: both;
+
+	a:hover {
+		text-decoration: none;
+	}
+	
+	p {
+		width: 40%;
+		margin:0 auto;
+		padding:0.8em 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+.allItemsButton-box {
+	
+	p {
+		width: 80%;
+	}
+
+}
+}
+
+@media (min-width:769px){
+	.items__header img {
+		//height: 240px;
+	}
+}
