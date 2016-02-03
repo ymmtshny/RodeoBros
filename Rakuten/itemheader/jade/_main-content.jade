@@ -1,4 +1,7 @@
 div#Vue.fixed-width
+	div.page-title.text-center
+		a(target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/") NEW ARRIVAL
+
 	div(v-for = "element in NewArrival" ).items.col-sm-2
 		div.items-inner-box.mb-mm-overload
 			a(target="_top" href="{{ element.number }}")
