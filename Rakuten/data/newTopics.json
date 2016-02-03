@@ -1,0 +1,92 @@
+[
+  {
+    "title": "PICK UP SOUVENIR JACKET",
+    "comment": "バラエティーに富むスカジャン特集",
+    "url": "souvenirjacket",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-10.jpg",
+    "imageBig": "",
+    "index": "10",
+    "alt": ""
+  },
+  {
+    "title": "BEST SELLER",
+    "comment": "2015年ベストセラー商品",
+    "url": "bestseller",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-09.jpg",
+    "imageBig": "",
+    "index": "9",
+    "alt": ""
+  },
+  {
+    "title": "TOTAL COORDINATE",
+    "comment": "冬のトータルコーデ一覧",
+    "url": "totalcoorde-all",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-08.jpg",
+    "imageBig": "",
+    "index": "8",
+    "alt": ""
+  },
+  {
+    "title": "RODEO BROS INFORMATION",
+    "comment": "皆様のお越しをお待ちしております。",
+    "url": "rodeomap.html",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-07.jpg",
+    "imageBig": "",
+    "index": "7",
+    "alt": ""
+  },
+  {
+    "title": "USER REVIEW",
+    "comment": "お客様の声・口コミのご紹介",
+    "url": "http://review.rakuten.co.jp/shop/4/235529_235529/1.1/",
+    "image": "http://images/new-topics/review_topic.jpg",
+    "imageBig": "",
+    "index": "6",
+    "alt": ""
+  },
+  {
+    "title": "DEMIN COLLECTION",
+    "comment": "自分にぴったりのデニムを探そう",
+    "url": "denim.html",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-05.jpg",
+    "imageBig": "",
+    "index": "5",
+    "alt": ""
+  },
+  {
+    "title": "HEAVY OZ DENIM",
+    "comment": "バイカーや世界中のデニム愛好家が所有",
+    "url": "http://search.rakuten.co.jp/search/inshop-mall/%E3%83%98%E3%83%93%E3%83%BC%E3%82%AA%E3%83%B3%E3%82%B9/-/f.1-p.1-s.1-sf.0-sid.235529-st.A-v.2",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-04.jpg",
+    "imageBig": "",
+    "index": "4",
+    "alt": ""
+  },
+  {
+    "title": "CATALOG PRESENT",
+    "comment": "先着でカタログプレゼント中！",
+    "url": "catalog.html",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-03.jpg",
+    "imageBig": "",
+    "index": "3",
+    "alt": ""
+  },
+  {
+    "title": "TOTAL COORDINATE",
+    "comment": "スタッフオススメ新着コーディネート",
+    "url": "totalcoorde.html",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-02.jpg",
+    "imageBig": "",
+    "index": "2",
+    "alt": ""
+  },
+  {
+    "title": "LEATHER ITEMS",
+    "comment": "時を重ねるほど味わいが増す皮革製品",
+    "url": "lw150321/lw150321_wallet1.html",
+    "image": "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-01.jpg",
+    "imageBig": "",
+    "index": "1",
+    "alt": ""
+  }
+]

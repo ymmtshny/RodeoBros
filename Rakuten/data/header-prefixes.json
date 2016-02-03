@@ -1,0 +1,26 @@
+{
+  "localhost:3000": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg",
+    "url_before": "http://www.aun-wa.com/SHOP/",
+    "url_after": ".html"
+  },
+  "www.rakuten.ne.jp": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg",
+    "url_before": "http://item.rakuten.co.jp/auc-rodeo/",
+    "url_after": ""
+  },
+  "www.aun-wa.com": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg",
+    "url_before": "http://item.rakuten.co.jp/auc-rodeo/",
+    "url_after": ".html"
+   },
+  "shopping.geocities.jp": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg",
+    "url_before": "http://store.shopping.yahoo.co.jp/rodeobros/",
+    "url_after": ""
+  }
+}

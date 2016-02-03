@@ -1,0 +1,95 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+.col-sm-2 {
+	padding-right: 7.5px;
+	padding-left: 7.5px;
+}
+
+.top-image-box {
+	
+}
+
+.fixed-width{
+	max-width: 1100px;
+}
+
+.items {
+
+	p{
+		margin-top: 0;
+	}
+
+}
+
+.items-inner-box {
+	border:1px solid #ddd;
+}
+
+.items__header img {
+	border-bottom: 1px solid #ddd;
+}
+
+.mb-mm-overload {
+	margin-bottom: 1.3em;
+}
+
+.mb-ss-overload {
+	margin-bottom: 0.5em;
+}
+
+.brand {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin: 0;
+		margin-left: 0.6em;
+}
+
+.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin: 0;
+		margin-bottom: 0.3em;
+		margin-left: 0.6em;
+}
+
+.price-menu-box {
+	clear: both;
+	display: block;
+}
+
+
+.allItemsButton-box {
+
+	clear: both;
+
+	a:hover {
+		text-decoration: none;
+	}
+	
+	p {
+		width: 32%;
+		margin:0 auto;
+		padding:0.8em 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+.allItemsButton-box {
+	
+	p {
+		width: 80%;
+	}
+
+}
+
+.col-sm-2 {
+	width: 16.66%;
+	float: left;
+}
+}
