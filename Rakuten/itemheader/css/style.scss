@@ -23,7 +23,7 @@
 	letter-spacing: 1px;
 	a {
 		color: #000;
-		text-decoration: none;	
+		text-decoration: none;
 
 		&:hover {
 			color: #0044CC;
@@ -39,6 +39,10 @@
 		margin-top: 0;
 	}
 
+	a:hover {
+		text-decoration: none;
+	}
+
 }
 
 .items-inner-box {
@@ -47,6 +51,11 @@
 
 .items__header img {
 	border-bottom: 1px solid #ddd;
+
+	&:hover {
+		opacity: 0.7;
+		transition:all 0.5s;
+	}
 }
 
 .mb-mm-overload {
