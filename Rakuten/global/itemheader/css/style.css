@@ -534,8 +534,7 @@ a:hover {
 }
 
 .fixed-width {
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 955px;
 }
 
 .page-title {
