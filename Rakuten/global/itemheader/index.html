@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="ja">
+    <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
+    <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
+    <title>RODEO BROS | 楽天店</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body>
+    <!--include jade/javascript/_javascript.jade-->
+    <!--必要があればvendor内のスクリプトも追加-->
+    <!--script(src="./js/some-function.js")-->
+    <!--Goolge Tag から-->
+    <!--Google Tag Manager-->
+    <div>
+      <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZJ4JV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZJ4JV');
+      </script>
+    </div>
+    <!--ヘッダーここから-->
+    <!--include ../../common/jade/header/_header-r.jade-->
+    <!--外枠ここから-->
+    <div id="wrapper">
+      <!--レフトナビここから
+      include ../../common/jade/leftnav/_leftnav-r.jade
+      
+      -->
+      <!--メインコンテンツここから-->
+      <div id="main-without-leftnav" class="main-box text-center">
+        <div id="Vue" class="fixed-width">
+          <div class="page-title text-center">
+            <p>PICK UP ITEMS</p>
+          </div>
+          <div v-for="element in NewArrival" class="items col-sm-2">
+            <div class="items-inner-box mb-mm-overload"><a target="_top" href="{{ element.number }}">
+                <div class="items__header"><img src="{{ element.image }}" class="mb-ss-overload"></div>
+                <div class="items__body">
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--フッターここから-->
+    <!--include ../../../common/jade/footer/_footer-r.jade-->
+    <!--スクリプトここから-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script>
+      new Vue({
+      	el: '#Vue',
+      	//template: '#VueTopsTemplate',
+      
+      	data: {
+      		NewArrival: []
+      	},
+      	
+      	created: function() {
+      		
+      		var _this = this;
+      		//get json file
+      		$.ajax({
+      			url: './json/global.json', //index.jadeに対してのURL
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				//http://global.rakuten.com/en/store/auc-rodeo/item/ihsh-129/
+      				el.number = "http://global.rakuten.com/en/store/auc-rodeo/item/" + el.number + "/"
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=200x200";
+      				temp.push(el);
+      			});
+      			_this.NewArrival = temp.slice(0, 12);
+      			 console.log(_this.items); 
+      		});
+      
+      	}
+      });
+    </script>
+  </body>
+</html>

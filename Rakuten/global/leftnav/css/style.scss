@@ -1,0 +1,112 @@
+@import 'vendor/normalize';
+
+a {
+	color: blue;
+}
+
+body {
+	font-weight: 300;
+	font-size: 12px;
+}
+
+ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 16px;
+	background-color: #f7f8f7;
+	padding: 5px 0;
+	text-align: center;
+	margin-bottom: 3px;
+}
+
+
+p {
+	
+}
+
+.leftnav-wrapper {
+
+	width: 190px;
+
+	ul {
+		margin-bottom: 30px;
+	}
+
+
+
+	img {
+		width: 100%;
+
+		&:hover {
+			opacity: 0.8;
+		}
+
+	}
+}
+
+.defalut {
+	li {
+			margin-bottom: 15px;
+			text-align: center;
+		}
+}
+
+.feature {
+	li {
+			margin-bottom: 15px;
+			text-align: center;
+		}
+}
+
+.guide {
+	li {
+			margin-bottom: 15px;
+			text-align: center;
+		}
+}
+
+.brand {
+
+	li {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+}
+
+.morebrands {
+		display: block;
+		text-decoration: none;
+		margin: 0 auto;
+		width: 70%;
+		height: 30px;
+		line-height: 30px;
+		background: #fff;
+		border: 1px solid #494949;
+		text-align: center;
+		font-size: 12px;
+		letter-spacing: 1px;
+		color: #494949;
+		-webkit-transition: all 1s ease;
+		margin-top: 30px;
+
+	&:hover {
+		background-color: #000;
+		color:#fff;
+	}
+}
+
+.category {
+
+	li {
+		margin-bottom: 10px;
+		width: 49%;
+		float: left;
+		text-align: center;
+	}
+
+}

@@ -1,0 +1,12 @@
+
+<div id="Vue" class="fixed-width">
+  <div class="page-title text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/">NEW ARRIVAL</a></div>
+  <div v-for="element in NewArrival" class="items col-sm-2">
+    <div class="items-inner-box mb-mm-overload"><a target="_top" href="{{ element.number }}">
+        <div class="items__header"><img src="{{ element.image }}" class="mb-ss-overload"/></div>
+        <div class="items__body">
+          <p class="brand">{{ element.brand }}</p>
+          <p class="name">{{ element.name }}</p>
+        </div></a></div>
+  </div>
+</div>

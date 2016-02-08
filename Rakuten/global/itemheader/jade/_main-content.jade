@@ -1,0 +1,16 @@
+div#Vue.fixed-width
+	div.page-title.text-center
+		p PICK UP ITEMS
+
+	div(v-for = "element in NewArrival" ).items.col-sm-2
+		div.items-inner-box.mb-mm-overload
+			a(target="_top" href="{{ element.number }}")
+				div.items__header
+					img(src="{{ element.image }}").mb-ss-overload
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name {{ element.name }}
+
+	//- div.allItemsButton-box.mb-ll
+	//- 	a(target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/") 
+	//- 		p.myButtonWhiteBlack 新着商品一覧へ

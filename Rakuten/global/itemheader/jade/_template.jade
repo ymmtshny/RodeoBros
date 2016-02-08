@@ -1,0 +1,34 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+
+script.
+	new Vue({
+		el: '#Vue',
+		//template: '#VueTopsTemplate',
+
+		data: {
+			NewArrival: []
+		},
+		
+		created: function() {
+			
+			var _this = this;
+			//get json file
+			$.ajax({
+				url: './json/global.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				
+				data.forEach(function (el) {
+					//http://global.rakuten.com/en/store/auc-rodeo/item/ihsh-129/
+					el.number = "http://global.rakuten.com/en/store/auc-rodeo/item/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=200x200";
+					temp.push(el);
+				});
+				_this.NewArrival = temp.slice(0, 12);
+				 console.log(_this.items); 
+			});
+
+		}
+	});
