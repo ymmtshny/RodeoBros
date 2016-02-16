@@ -1,0 +1,15 @@
+//- div.text-center.top-image-box.col-sm-12
+//- 	img.mb-ll(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/slide/off-topbn-0201.jpg")
+//- 	p.mb-mm.campain-text テッドマン ブーツ RDBシリーズで使える1,000￥OFFクーポンです。 2月4日10時までご利用可能。
+//- 	p ※こちらの商品は一部倉庫からの取り寄せ商品となります。発送には通常2～5日かかる場合がございますので 
+//- 	p.mb-ml 日時のご指定を頂いてもご希望に添えないことがございますがご理解、ご了承の上ご注文くださいませ。
+
+h1 Mail Magazine Archive
+div#Vue
+	div(v-for = "element in Souvenir" ).items.col-sm-10.archive
+		a(href="{{ element.file }}")
+			ul
+				li.col-sm-3.archive__date
+					p {{ element.date }}
+				li.col-sm-9.archive__title
+					p {{ element.title }}
