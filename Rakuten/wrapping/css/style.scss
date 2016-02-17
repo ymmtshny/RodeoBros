@@ -1,0 +1,215 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+.top-image-box {
+	
+}
+
+.pickup-items {
+	h1 {
+		clear: both;
+		background-color: #f7f8f8;
+		padding: 0.3em 0;
+	}
+}
+
+.items {
+
+	p{
+		margin-top: 0;
+	}
+
+	.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+}
+
+
+.allItemsButton-box {
+
+	clear: both;
+
+	a:hover {
+		text-decoration: none;
+	}
+	
+	p {
+		width: 40%;
+		margin:0 auto;
+		padding:0.8em 0;
+	}
+
+}
+
+//NAV MENU STARTS HERE
+.l-nav {
+	float: left;
+	width: 18%;
+	margin-right:2%;
+	overflow: hidden;
+}
+
+.leftnav {
+	border: none;
+	height: 3660px;
+	overflow: hidden;
+}
+
+//MAIN CONTENTS STARTS HERE
+.l-main {
+	width:100%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.main-box {
+	
+	img {
+		width:100%;
+	}
+
+	.sub-images {
+	width: 50%;
+	}
+}
+
+.main__texts {
+	h1 {
+		font-weight: 200;
+		font-size: 20px;
+		text-align: center;
+	}
+
+	p{
+		text-align: center;
+	}
+}
+
+
+
+//Utility Class here
+.u-mb-large {
+	margin-bottom: 100px;
+}
+
+.u-mb-mid {
+	margin-bottom: 50px;
+}
+
+.u-mb-small {
+	margin-bottom: 15px;
+}
+
+.u-clear {
+	clear: both;
+	display: block;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+
+// Each wrapping strats here
+.main__allwraps {
+	width:100%;
+}
+
+.wrappings {
+	//width:30.3333%;
+	//float: left;
+	//margin-right: 4.5%;
+
+	&:nth-of-type(3n) {
+		margin-right: 0;
+	}
+}
+
+.price {
+	text-align: center;
+}
+
+.more {
+	display: inline-block;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #494949;
+	color: #494949;
+	width: 35%;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+
+	&:hover{
+		background:#000;
+		color:#fff;
+	}
+
+	p{
+		margin: 0;
+	}
+}
+
+
+// Q&A strats here
+.questions {
+	padding-bottom: 2px;
+	font-size: 16px;
+	font-weight: 300;
+	border-bottom: 1px solid #ddd;
+}
+
+.answers {
+
+}
+
+//recommend
+.wrappings-recommend-wrapper {
+	
+	.wrappings-recommend-wrapper__items {
+		//height: 300px;
+
+		
+	}
+
+	.items-head {
+
+		img {
+			width: 100%;
+		}
+
+	}
+
+	.items-body {
+		p {
+
+			margin: 0;
+
+		}
+		text-align: center;
+	}
+
+
+}
+
+// @media (max-width: 768px) {
+
+// .allItemsButton-box {
+	
+// 	p {
+// 		width: 80%;
+// 	}
+
+// }
+// }
+
+// @media (min-width:769px){
+// 	.items__header img {
+// 		height: 240px;
+// 	}
+// }

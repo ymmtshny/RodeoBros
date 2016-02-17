@@ -1,0 +1,29 @@
+doctype html
+html
+	include ../../common/jade/head/_head-r.jade
+	body
+		//include jade/javascript/_javascript.jade
+		//必要があればvendor内のスクリプトも追加
+		//script(src="./js/some-function.js")
+		
+		//Goolge Tag から
+		include ../../common/jade/_google.jade
+		//ヘッダーここから
+		include ../../common/jade/header/_header-r.jade
+
+		//外枠ここから
+		div#wrapper
+			//レフトナビここから
+			//include ../../common/jade/leftnav/_leftnav-r.jade
+
+			//メインコンテンツここから
+			div#main-without-leftnav.main-box
+				include jade/_main-content.jade
+						
+
+		//フッターここから
+		include ../../common/jade/footer/_footer-r.jade
+		
+		//スクリプトここから
+		include jade/_wrapping.jade
+		

@@ -1,0 +1,55 @@
+- var items = [{"imageURL": "http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/evn-bm-0.jpg", "alt": "ラッピング", "texts": "袋型。ラッピングサイズは、小、中、大となります。小物やTシャツ、デニムといった様々な商品に適しています。", "price": "税込 216 円", "link": "http://item.rakuten.co.jp/auc-rodeo/gift-001/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/top/itempage/evb-blm-0.jpg", "alt": "ラッピング", "texts": "袋型。ラッピングサイズは、小、中、大となります。小物やTシャツ、デニムといった様々な商品に適しています。", "price": "税込 216 円", "link": "http://item.rakuten.co.jp/auc-rodeo/gift-001/"}, {"imageURL": "http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/fr-pb-0.jpg", "alt": "ラッピング", "texts": "枕型。ラッピングサイズは、中または大となります。デニムやワークパンツなどの商品のプレゼントに最適です。", "price": "税込 216 円", "link": "http://item.rakuten.co.jp/auc-rodeo/gift-002/"}, {"imageURL": "http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/hbk-m-0.jpg", "alt": "ラッピング", "texts": "封筒型。ラッピングサイズは、中、大となります。こちらは型崩れしにくいので、ジャケットなどのラッピングにオススメです。", "price": "税込 216 円", "link": "http://item.rakuten.co.jp/auc-rodeo/gift-003/"}]
+
+div.l-main.main-box
+	//トップ画像ここから
+	div.main__image.u-mb-mid 
+		img(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/gift_topic00.jpg")
+		img.sub-images(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/gift_topic_02.jpg")
+		img.sub-images(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/gift_topic_01.jpg")
+		div.main__texts
+			h1 選べるギフトラッピング
+			p 日頃からお世話になっている方々への感謝の気持ちを伝えるお手伝いをロデオブロスはさせていただきます。<br>ささやかではありますが、あなたの心遣いにご協力させてください。<br>様々なシーンに溶け込む落ち着いたラッピングやカジュアルなラッピングをご用意させていただきました。<br>以前の仕様とは違った、ラッピングでお届けさせていただきます。ぜひご利用ください。
+
+	//ラッピング一覧ここから
+	div.main__allwraps.u-mb-large 
+		each element, index in items
+			div.wrappings.u-mb-mid.col-sm-4
+				a(href=element.link)
+				img(src=element.imageURL)
+				p=element.texts
+				p.price.u-mb-small=element.price
+				div.text-center
+					a.more(href=element.link)
+						p 詳しく見る
+			- if((index + 1) % 3 == 0) {
+					span.u-clear
+			- }
+	//ラッピング説明ここから
+	div.main__explanation.u-clear
+		div.questions-box.u-mb-mid
+			h2.questions 個別にラッピングして欲しい時は？
+			p.answers.
+				必要個数分のラッピングをカートに入れてご購入ください。
+				備考欄にラピングしたい商品名をご記入頂きますようお願いいたします。
+		div.questions-box.u-mb-mid
+			h2.questions ご指定・個数の注文が無い場合は？
+			p.answers.
+				ご注文頂きました商品が
+				全てラッピングされてしまう場合もございますのでご注意下さいませ。
+		div.questions-box.u-mb-mid
+			h2.questions すべての商品がラッピング可能ですか？
+			p.answers.
+				商品の大きさによってはラッピングをお受けできないものもございます。詳しくは、お問い合わせくださいませ。
+		div.questions-box.u-mb-mid
+			h2.questions 値札は取り外してもらえますか？
+			p.answers.
+				ラッピング希望のお客様へは値札をはずしております。
+				値札が必要な方は、購入時に備考欄にその旨をご記入ください。
+		div.questions-box.u-mb-mid
+			h2.questions クリスマスラッピングはありますか？
+			p.answers.u-mb-large.
+				クリスマスのためのデコレーションも用意しています。<br>
+				※シーズン時期はラッピングも大変込み合う事が予想されますので、お早めのご注文をご検討下さいますようお願いいたします。
+		div.questions-box
+			h2.questions.u-mb-mid Recommended Items - おすすめ商品
+			include ./_wrapping__recommend.jade

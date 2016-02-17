@@ -1,0 +1,63 @@
+- var recommenditems = [{"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2859-0.jpg?_ex=430x430", "alt": "SALT & SUGAR", "brand":"SALT & SUGAR", "name": "Vegetable Tanned Indian Leather Wallet & Pass Caset", "link": "http://item.rakuten.co.jp/auc-rodeo/pi-2859/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2855-0.jpg?_ex=430x430", "alt": "SALT & SUGAR", "brand":"SALT & SUGAR", "name": "Flat Washable Long Wallet", "link": "http://item.rakuten.co.jp/auc-rodeo/pi-2855/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2853-0.jpg?_ex=430x430", "alt": "SALT & SUGAR", "brand":"SALT & SUGAR", "name": "Italian Leather Long Wallet", "link": "http://item.rakuten.co.jp/auc-rodeo/pi-2853/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipch-02-0.jpg?_ex=430x430", "alt": "INCEPTION", "brand":"INCEPTION", "name": "Leather Short wallet", "link": "http://item.rakuten.co.jp/auc-rodeo/ipch-02/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipch-01-0.jpg?_ex=430x430", "alt": "INCEPTION", "brand":"INCEPTION", "name": "Leather Long wallet", "link": "http://item.rakuten.co.jp/auc-rodeo/ipch-01/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipck-01-0.jpg?_ex=430x430", "alt": "INCEPTION", "brand":"INCEPTION", "name": "Leather Key Case", "link": "http://item.rakuten.co.jp/auc-rodeo/ipck-01/"}, {"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/amazon2/br02153-0.jpg?_ex=430x430", "alt": "BUZZ RICKSON'S", "brand":"BUZZ RICKSON'S", "name": "Black A-10 Leather Glove", "link": "http://item.rakuten.co.jp/auc-rodeo/br02153/"} ]
+each element, index in recommenditems
+	div.wrappings-recommend-wrapper.raw
+		div.wrappings-recommend-wrapper__items.u-mb-mid.col-sm-4
+			a(href=element.link)
+				div.items-head
+					img(src=element.imageURL)
+				div.items-body
+					p.brand=element.brand
+					p.name=element.name
+//- 
+		var recommenditems =
+		[
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2859-0.jpg?_ex=430x430",
+				"alt": "SALT & SUGAR",
+				"brand":"SALT & SUGAR",
+				"name": "Vegetable Tanned Indian Leather Wallet & Pass Caset",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/pi-2859/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2855-0.jpg?_ex=430x430",
+				"alt": "SALT & SUGAR",
+				"brand":"SALT & SUGAR",
+				"name": "Flat Washable Long Wallet",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/pi-2855/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/soltandsugar/pi-2853-0.jpg?_ex=430x430",
+				"alt": "SALT & SUGAR",
+				"brand":"SALT & SUGAR",
+				"name": "Italian Leather Long Wallet",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/pi-2853/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipch-02-0.jpg?_ex=430x430",
+				"alt": "INCEPTION",
+				"brand":"INCEPTION",
+				"name": "Leather Short wallet",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/ipch-02/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipch-01-0.jpg?_ex=430x430",
+				"alt": "INCEPTION",
+				"brand":"INCEPTION",
+				"name": "Leather Long wallet",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/ipch-01/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/inception/ipck-01-0.jpg?_ex=430x430",
+				"alt": "INCEPTION",
+				"brand":"INCEPTION",
+				"name": "Leather Key Case",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/ipck-01/"
+			},
+			{
+				"imageURL": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/amazon2/br02153-0.jpg?_ex=430x430",
+				"alt": "BUZZ RICKSON'S",
+				"brand":"BUZZ RICKSON'S",
+				"name": "Black A-10 Leather Glove",
+				"link": "http://item.rakuten.co.jp/auc-rodeo/br02153/"
+			}
+		]
