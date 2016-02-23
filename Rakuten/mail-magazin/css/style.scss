@@ -2,66 +2,32 @@
 @import '../../../common/scss/utility';
 @import '../../../common/scss/base';
 
-.top-image-box {
-	
+#header {
+	margin: 0 auto;
 }
 
-.campain-text {
-	font-size: 1.4em;
+#wrapper {
+	margin: 0 auto;
 }
 
-.pickup-items {
-	h1 {
-		clear: both;
-		background-color: #f7f8f8;
-		padding: 0.3em 0;
+.archive {
+
+	border-bottom: 1px solid #ddd;
+
+	&:last-child {
+		border:none;
+	}
+
+	&:hover {
+		background: #f7f8f7;
 	}
 }
 
-.items {
-
-	p{
-		margin-top: 0;
-	}
-
-	.name {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
-
+.archive__date {
+	color:#5b5b5b;
+	line-height: 2;
 }
 
-
-.allItemsButton-box {
-
-	clear: both;
-
-	a:hover {
-		text-decoration: none;
-	}
-	
-	p {
-		width: 40%;
-		margin:0 auto;
-		padding:0.8em 0;
-	}
-
-}
-
-@media (max-width: 768px) {
-
-.allItemsButton-box {
-	
-	p {
-		width: 80%;
-	}
-
-}
-}
-
-@media (min-width:769px){
-	.items__header img {
-		//height: 240px;
-	}
+.archive__title {
+	font-size: 18px;
 }
