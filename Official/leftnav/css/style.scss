@@ -1,0 +1,255 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+h1 {
+	font-size: 2.5em;
+	border-bottom: 1px solid #ddd;
+}
+
+h2 {
+	font-size: 2em;
+	// border-left:0.25em solid #ddd;
+	// text-indent: 0.25em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.actual-leftnav{
+	width: 185px;
+}
+
+/****************************************************
+* レフトナビのスタイルシートここから
+* 
+*****************************************************/
+//mb-ssオーバーロード
+a {
+	text-decoration: underline;
+}
+
+.mb-ss {
+	margin-bottom: 1em;
+}
+
+.section0{
+	
+}
+
+/****************************************************
+* レフトナビの大きな画像ここから
+*****************************************************/
+.section1{
+	
+}
+
+/****************************************************
+* レフトナビのデフォルトメニューここから
+*****************************************************/
+.section2{
+
+	img:hover {
+		opacity: 0.7;
+	}
+	
+}
+
+/****************************************************
+* レフトナビのカテゴリーここから
+*****************************************************/
+
+.section3-1{
+
+	margin-top: 1em;
+
+	.category{
+		border: 1px solid #414040;
+	}
+
+	p{
+		margin: 0;
+		padding: 0.5em 0;
+		padding-left:1em;
+		color: #fff;
+		background-color: #414040;
+		border-bottom: 1px dotted #ddd;
+
+		&::after{
+			text-align: right;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		color:#000;
+		display: block;
+		padding: 0.5em;
+		
+		&:hover{
+			color: #ddd;
+		}
+	}
+
+	ul{
+		margin-bottom: 0;
+	}
+
+	li{
+		
+		//padding: 0.5em;選択範囲を広げるためaタグをdisplay:blockにしてこのpaddingを追加する。
+		padding-left:1em;
+		border: 1px dotted #ddd;
+		border-bottom: none;
+
+		&:last-child{
+			border-bottom: 1px dotted #ddd;
+		}
+
+		background: url('http://www.rakuten.ne.jp/gold/auc-rodeo/items/assets_20151105/img/item_right.png');
+		background-repeat: no-repeat;
+		background-position: 0.4em center;
+		background-size: 0.40em;
+
+		&::before{
+			//content: ">　";
+			//font-size: 0.7em;
+			
+		}
+	}
+}
+
+.section3-2 {
+	
+	margin-top: 2em;
+	
+	a {
+		text-decoration: none;
+		color:#000;
+
+		&:hover{
+			color: #ddd;
+		}
+	}
+
+	.brandList__index {
+		font-size: 12px;
+		margin:0;
+		padding: 0.8em 0;
+		padding-left:1em;
+		color: #fff;
+		background-color: #414040;
+		border-bottom: 1px dotted #ddd;
+	}
+
+	.brand {
+		width: 100%;
+		display: table;
+		font-size: 0.9em;
+		padding: 0.5em 0;
+		padding-left:0.5em;
+		border: 1px dotted #ddd;
+		border-bottom: none;
+		&:last-child{
+			border-bottom: 1px dotted #ddd;
+		}
+
+	}
+
+	.brandList-wrap {
+		width: 100%;
+	}
+
+	.brand__header {
+		width: 30%;
+		float: left;
+		display: table-cell;
+		
+		img{
+			width: 90%;
+			padding-right:10%;
+		}
+	
+	}
+	
+	.brand-body {
+		width:70%;
+		float:left;
+		display: table-cell;
+
+	}
+
+	.brand__nameEng {
+		padding-top:0.6em;
+		text-indent: 0.3em;
+		box-sizing:inner-box;
+		margin-bottom: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.brand__nameJa {
+		margin-bottom: 0;
+		text-indent: 0.3em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+}
+
+.round-corner{
+	border-top-right-radius: 0.5em;
+	border-top-left-radius: 0.5em;
+	background: #000!important;
+}
+/****************************************************
+* レフトナビの特集ここから
+*****************************************************/
+.section4{
+
+	margin-top: 2em;
+
+	img:hover {
+		opacity: 0.7;
+	}
+	
+	p{
+		background: url('http://www.rakuten.ne.jp/gold/auc-rodeo/images/topic_arrow.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		margin:0.325em 0 1.625em 0;
+		padding-left: 1.5em;
+	}
+
+	a {
+		//text-decoration: none;
+		//color:#000;
+	}
+
+	.gray-border {
+		border: 1px solid #ddd;
+	}
+
+}
+
+.section5{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+}
