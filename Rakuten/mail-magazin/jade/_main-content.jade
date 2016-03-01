@@ -1,16 +1,14 @@
-//- div.text-center.top-image-box.col-sm-12
-//- 	img.mb-ll(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/slide/off-topbn-0201.jpg")
-//- 	p.mb-mm.campain-text テッドマン ブーツ RDBシリーズで使える1,000￥OFFクーポンです。 2月4日10時までご利用可能。
-//- 	p ※こちらの商品は一部倉庫からの取り寄せ商品となります。発送には通常2～5日かかる場合がございますので 
-//- 	p.mb-ml 日時のご指定を頂いてもご希望に添えないことがございますがご理解、ご了承の上ご注文くださいませ。
-
-h1 Mail Magazines
+h1.text-center.mb-ll MAIL MAGAZINES
+h5.text-center.mb-ll RODEO BROSは、メールマガジンを購読くださったお客様にだけ「新商品の入荷」や「お買い得な情報」をリアルタイムでお知らせしています。東洋エンタープライズやエフ商会などのアメカジ商品から絡繰魂、クロップドヘッズ、禅などの和柄アイテムまでバラエティに富んだ幅広いラインナップでお届けします。割引クーポン情報やポイントアップキャンペーンなどの情報もお届けします。
+	br
+	br
+	a.registor(href="http://www.rakuten.co.jp/auc-rodeo/news.html") メルマガ購読はこちらから
 div#Vue
-	div(v-for = "element in Souvenir" ).items.col-sm-10.archive
+	div(v-for = "element in Souvenir" ).text-center.col-sm-4
 		a(href="{{ element.file }}")
-			ul
-				li.col-sm-3.archive__date
-					p {{ element.date }}
-				li.col-sm-9.archive__title
-					p {{ element.title }}
-				iframe(src="{{ element.file }}"  height="455" )
+			p.date {{ element.date }}
+			div.outerbox
+				img(src="{{ element.image }}")
+			p.title.mb-ll {{ element.title }}
+				
+				

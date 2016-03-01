@@ -536,23 +536,47 @@ a:hover {
   margin: 0 auto;
 }
 
-.archive {
-  border-bottom: 1px solid #ddd;
+h1 {
+  margin-top: 50px;
 }
 
-.archive:last-child {
-  border: none;
+h5 {
+  padding: 10px;
 }
 
-.archive:hover {
-  background: #f7f8f7;
+.registor {
+  color: blue;
+  text-decoration: underline;
 }
 
-.archive__date {
-  color: #5b5b5b;
-  line-height: 2;
+.outerbox {
+  background-image: url("../img/figure_bg.png");
+  background-position: bottom;
+  padding-bottom: 26px;
+  background-repeat: no-repeat;
+  font-size: 11px;
+  text-align: center;
+  opacity: 1;
 }
 
-.archive__title {
-  font-size: 18px;
+.outerbox:hover {
+  opacity: 0.85;
+}
+
+.title {
+  margin-top: -20px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
 }

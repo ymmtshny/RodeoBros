@@ -28,25 +28,25 @@
       </script>
     </div>
     <!--ヘッダーここから-->
-    <!--include ../../common/jade/header/_header-r.jade-->
-    <iframe frameborder="1" height="455" scrolling="no" src="http://www.rakuten.ne.jp/gold/auc-rodeo/global/itemheader/" style="border:none; display:block; margin-left:-10px;" width="100%"></iframe>
+    <header>
+      <div class="l-header header-box mb-ss hidden-xs">
+        <!--メインへっだー-->
+        <iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/itemheader.html" width="100%" height="180" scrolling="no" frameborder="1" style="border:none; display:block;position:relative; z-index:9999; background:#fff;"></iframe>
+      </div>
+    </header>
     <!--外枠ここから-->
     <div id="wrapper">
       <!--レフトナビここから-->
       <!--include ../../common/jade/leftnav/_leftnav-r.jade-->
       <!--メインコンテンツここから-->
       <div id="main-without-leftnav" class="main-box">
-        <h1>Mail Magazine Archive</h1>
+        <h1 class="text-center mb-ll">MAIL MAGAZINES</h1>
+        <h5 class="text-center mb-ll">RODEO BROSは、メールマガジンを購読くださったお客様にだけ「新商品の入荷」や「お買い得な情報」をリアルタイムでお知らせしています。東洋エンタープライズやエフ商会などのアメカジ商品から絡繰魂、クロップドヘッズ、禅などの和柄アイテムまでバラエティに富んだ幅広いラインナップでお届けします。割引クーポン情報やポイントアップキャンペーンなどの情報もお届けします。<br><br><a href="http://www.rakuten.co.jp/auc-rodeo/news.html" class="registor">メルマガ購読はこちらから</a></h5>
         <div id="Vue">
-          <div v-for="element in Souvenir" class="items col-sm-10 archive"><a href="{{ element.file }}">
-              <ul>
-                <li class="col-sm-3 archive__date">
-                  <p>{{ element.date }}</p>
-                </li>
-                <li class="col-sm-9 archive__title">
-                  <p>{{ element.title }}</p>
-                </li>
-              </ul></a></div>
+          <div v-for="element in Souvenir" class="text-center col-sm-4"><a href="{{ element.file }}">
+              <p class="date">{{ element.date }}</p>
+              <div class="outerbox"><img src="{{ element.image }}"></div>
+              <p class="title mb-ll">{{ element.title }}</p></a></div>
         </div>
       </div>
     </div>
@@ -55,7 +55,6 @@
     <!--スクリプトここから-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
-    <script></script>
     <script>
       new Vue({
       	el: '#Vue',
@@ -74,10 +73,8 @@
       			dataType: 'json'
       		}).done(function(data) {
       			var temp = [];
-      			
       			data.forEach(function (el) {
-      				el.file =  el.file + ".eng.html"
-      				//el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+      				el.image = "./img/" + el.image;
       				temp.push(el);
       			});
       			_this.Souvenir = temp;

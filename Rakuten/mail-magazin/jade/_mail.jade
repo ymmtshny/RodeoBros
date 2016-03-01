@@ -1,6 +1,5 @@
 script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
-script.
 	
 script.
 	new Vue({
@@ -20,10 +19,8 @@ script.
 				dataType: 'json'
 			}).done(function(data) {
 				var temp = [];
-				
 				data.forEach(function (el) {
-					el.file =  el.file + ".eng.html"
-					//el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					el.image = "./img/" + el.image;
 					temp.push(el);
 				});
 				_this.Souvenir = temp;
