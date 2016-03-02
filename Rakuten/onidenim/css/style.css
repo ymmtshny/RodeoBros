@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -5,7 +6,6 @@
  *    user zoom.
  */
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -397,6 +397,42 @@ th {
   padding: 0;
 }
 
+.mb-ss {
+  margin-bottom: 5px;
+}
+
+.mb-ms {
+  margin-bottom: 10px;
+}
+
+.mb-ss {
+  margin-bottom: 15px;
+}
+
+.mb-sm {
+  margin-bottom: 20px;
+}
+
+.mb-mm {
+  margin-bottom: 25px;
+}
+
+.mb-ml {
+  margin-bottom: 30px;
+}
+
+.mb-sl {
+  margin-bottom: 35px;
+}
+
+.mb-ml {
+  margin-bottom: 45px;
+}
+
+.mb-ll {
+  margin-bottom: 50px;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -407,7 +443,7 @@ body {
   padding: 0;
   font-size: 12px;
   letter-spacing: 0px;
-  font-family: "Noto Sans Japanese", Arial, Helvetica, sans-serif !important;
+  font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 
 img {
@@ -437,6 +473,11 @@ ul {
 #main {
   width: 70%;
   float: left;
+}
+
+#main-without-leftnav {
+  width: 100%;
+  max-width: 1100px;
 }
 
 a {
@@ -487,58 +528,20 @@ a:hover {
   }
 }
 
-.mb-ss {
-  margin-bottom: 5px;
-}
-
-.mb-ms {
-  margin-bottom: 10px;
-}
-
-.mb-ss {
-  margin-bottom: 15px;
-}
-
-.mb-sm {
-  margin-bottom: 20px;
-}
-
-.mb-mm {
-  margin-bottom: 25px;
-}
-
-.mb-ml {
-  margin-bottom: 30px;
-}
-
-.mb-sl {
-  margin-bottom: 35px;
-}
-
-.mb-ml {
-  margin-bottom: 45px;
-}
-
-.mb-ll {
-  margin-bottom: 50px;
-}
-
-.text-top {
-  font-size: 1.4em;
-  font-weight: 300;
+.pickup-items h1 {
+  clear: both;
+  background-color: #f7f8f8;
+  padding: 0.3em 0;
 }
 
 .items p {
   margin-top: 0;
 }
 
-.price-menu-box {
-  clear: both;
-  display: block;
-}
-
-.price-menu p {
-  padding: 0.4em 0;
+.items .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .allItemsButton-box {
@@ -558,5 +561,11 @@ a:hover {
 @media (max-width: 768px) {
   .allItemsButton-box p {
     width: 80%;
+  }
+}
+
+@media (min-width: 769px) {
+  .items__header img {
+    height: 240px;
   }
 }
