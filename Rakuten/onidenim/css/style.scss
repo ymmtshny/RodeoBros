@@ -1,63 +1,113 @@
 @import '../../../common/scss/normalize';
 @import '../../../common/scss/utility';
 @import '../../../common/scss/base';
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-.top-image-box {
+body {
+  font-family: 'Noto Sans Japanese';
+}
+
+//overload 
+#wrapper {
+	width: 100%!important;
+}
+
+#main-without-leftnav {
+	width: 100%!important;
+	margin: 0 auto;
+
+}
+
+.top-menu {
+
+	background: rgba(255, 255, 255, 0.90);
+	box-shadow: 1px 2px rgba(0,0,0,0.1);
+	width: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 999;
+	ul {
+		display: block;
+		margin: 0 auto;
+		max-width: 1040px;
+	}
+
+
+	li {
+		display: inline-block;
+		height: 3em;
+		line-height: 2.9;
+	}
+
+	a {
+		color:rgba(0, 122, 255, 1);
+	}
+
+}
+
+
+.textbox {
+	font-size: 1.5em;
+	font-weight: 200;
+	line-height: 2;
+	margin: 0 auto;
+
+	span {
+		font-size: 2em;
+		font-weight: 100;
+	}
+
+	a {
+		color:rgba(0, 122, 255, 1);
+	}
+
+}
+
+.imagebox {
+
+	// opacity: 0;
+
+	a {
+		display: block;
+		position: relative;
+		top: -2em;
+		right: 1em;
+		color:rgba(0, 122, 255, 1);
+	}
 	
-}
-
-.pickup-items {
-	h1 {
-		clear: both;
-		background-color: #f7f8f8;
-		padding: 0.3em 0;
-	}
-}
-
-.items {
-
-	p{
-		margin-top: 0;
-	}
-
-	.name {
-		overflow: hidden;
-		text-overflow: ellipsis;
-		white-space: nowrap;
-	}
 
 }
 
+.itemsouter {
 
-.allItemsButton-box {
-
-	clear: both;
-
-	a:hover {
-		text-decoration: none;
+	a {
+		color:rgba(0, 122, 255, 1);
 	}
-	
+
+	padding-top: 5em;
+
 	p {
-		width: 40%;
-		margin:0 auto;
-		padding:0.8em 0;
-	}
-
+		font-size: 1.8em;
+		// background: #f7f8f7;
+		font-weight:200;
+		clear: both;
+		margin-bottom: 10px;
+		}
 }
 
+#goToTop {
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
 @media (max-width: 768px) {
 
-.allItemsButton-box {
-	
-	p {
-		width: 80%;
-	}
-
-}
 }
 
 @media (min-width:769px){
-	.items__header img {
-		height: 240px;
-	}
+	
+
 }

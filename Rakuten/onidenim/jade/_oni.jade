@@ -1,6 +1,33 @@
 script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
 script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
 script.
+	$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 800);
+				return false;
+			}
+		}
+	});
+
+	$('#goToTop').click(function(){
+			window.scrollTo(0, 0);
+	});
+
+	
+	$( ".imagebox" ).fadeIn( 2000, function() {
+		// Animation complete
+		//$( ".imagebox" ).css("opacity", "1");
+
+	});
+
+
+	});
 	
 script.
 	new Vue({
