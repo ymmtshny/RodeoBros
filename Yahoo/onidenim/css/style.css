@@ -543,8 +543,8 @@ body {
 }
 
 .top-menu {
-  background: rgba(0, 0, 0, 0.85);
-  box-shadow: 1px 3px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.1);
   width: 100%;
   position: fixed;
   top: 0;
@@ -565,11 +565,11 @@ body {
 }
 
 .top-menu a {
-  color: white;
+  color: #007aff;
 }
 
 .textbox {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 200;
   line-height: 2;
   margin: 0 auto;
@@ -577,7 +577,7 @@ body {
 
 .textbox span {
   font-size: 1.7em;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 .textbox a {
@@ -589,8 +589,7 @@ body {
   position: relative;
   top: -2em;
   right: 1em;
-  text-decoration: underline;
-  color: black;
+  color: #007aff;
 }
 
 .itemsouter {
@@ -598,19 +597,14 @@ body {
 }
 
 .itemsouter a {
-  color: black;
-  text-decoration: underline;
-}
-
-.itemsouter a:hover {
-  color: rgba(0, 0, 0, 0.3);
+  color: #007aff;
 }
 
 .itemsouter p {
-  font-size: 1.5em;
-  font-weight: 400;
+  font-size: 1.8em;
+  font-weight: 200;
   clear: both;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 #goToTop {
