@@ -1,0 +1,151 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+<script src="./js/jquery.lazyload.min.js"></script>
+<script>
+  
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  		var target = $(this.hash);
+  		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  		if (target.length) {
+  			$('html, body').animate({
+  				scrollTop: target.offset().top - 33
+  			}, 1000);
+  			return false;
+  		}
+  	}
+  });
+  
+  $('#goToTop').click(function(){
+  		window.scrollTo(0, 0);
+  });
+  
+  		new Vue({
+  			el: '#Vue',
+  			//template: '#VueTopsTemplate',
+  
+  			data: {
+  				Souvenir: [],
+  				Tora: [],
+  				Skull: [],
+  				Ryu: [],
+  				Ultraman: [],
+  				Pink: []
+  			},
+  			
+  			created: function() {
+  				
+  				var _this = this;
+  				//get json file
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/souvenirjacket.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Souvenir = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/tora.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Tora = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/skull.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Skull = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/ryu.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Ryu = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/ultraman.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Ultraman = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  				$.ajax({
+  					async:false,//同期処理にする。
+  					url: './json/pink.json',
+  					dataType: 'json'
+  				}).done(function(data) {
+  					var temp = [];
+  					
+  					data.forEach(function (el) {
+  						el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
+  						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+  						temp.push(el);
+  					});
+  					_this.Pink = temp;
+  					 console.log(_this.items); 
+  				});
+  
+  			}
+  
+  		});
+  
+  		//ajaxを同期処理しているので以下は、vue.jsの処理後に発動する。
+  			// Lazy Loadを起動する
+  			$(function(){
+  				$("img.lazy").lazyload({
+  					"threshold":250,
+  					"effect":"fadeIn",
+  					"effect_speed":800,
+  					"failure_limit":1} );
+  				console.log("Lazy Loadを起動する");
+  			});
+</script>

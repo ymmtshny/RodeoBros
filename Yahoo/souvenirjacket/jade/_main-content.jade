@@ -1,3 +1,18 @@
+div.top-menu
+	ul.text-center
+		li.col-sm-2
+			a(href="#01") 龍
+		li.col-sm-2
+			a(href="#02") 虎
+		li.col-sm-2
+			a(href="#03") スカル
+		li.col-sm-2
+			a(href="#04") ウルトラマン
+		li.col-sm-2
+			a(href="#05") ピンク
+		li.col-sm-2
+			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid") スカジャン一覧へ
+
 div.top-image-box
 	img.mb-ll(src="http://image.rakuten.co.jp/auc-rodeo/cabinet/top/slide/souvenir_topic_0112.jpg")
 	p.text-top.mb-ll
@@ -8,36 +23,88 @@ div.top-image-box
 		| 多くの外国人たちが、日本のお土産としてスカジャンを買い求めています。
 		br 
 		| 「スーベニアジャケット」とも呼ばれるようになり、海外でもスカジャンの流行の波が来ています。
-
+	
 div#Vue
 	div(v-for = "element in Souvenir" ).items.col-sm-6
 		a(href="{{ element.number }}")
 			div.items__header
-				img(src="{{ element.image }}").mb-sm
+				img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
 			div.items__body
 				p.brand {{ element.brand }}
 				p.name.mb-ll {{ element.name }}
+
+	div 
+		p#01.category-title 龍
+		div(v-for = "element in Ryu" ).items.col-sm-6
+			a(href="{{ element.number }}")
+				div.items__header
+					img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name.mb-ll {{ element.name }}
+
+	div 
+		p#02.category-title 虎
+		div(v-for = "element in Tora" ).items.col-sm-6
+			a(href="{{ element.number }}")
+				div.items__header
+					img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name.mb-ll {{ element.name }}
+
+	div 
+		p#03.category-title スカル
+		div(v-for = "element in Skull" ).items.col-sm-6
+			a(href="{{ element.number }}")
+				div.items__header
+					img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name.mb-ll {{ element.name }}
+	
+	div 
+		p#04.category-title ウルトラマン
+		div(v-for = "element in Ultraman" ).items.col-sm-6
+			a(href="{{ element.number }}")
+				div.items__header
+					img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name.mb-ll {{ element.name }}
+	
+	div 
+		p#05.category-title ピンク
+		div(v-for = "element in Pink" ).items.col-sm-6
+			a(href="{{ element.number }}")
+				div.items__header
+					img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+				div.items__body
+					p.brand {{ element.brand }}
+					p.name.mb-ll {{ element.name }}
 
 div.price-menu-box
 	ul.prce-menu
 		li.col-sm-2.mb-ml
 			p 価格から探す  
 		li.col-sm-2.mb-ml
-			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&pt=30000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3")
+			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pt=30000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid") 
 				p ~ ¥30,000
 		li.col-sm-2.mb-ml
-			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&pt=40000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3")
+			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pt=40000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid") 
 				p ~ ¥40,000
 		li.col-sm-2.mb-ml
-			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&pt=50000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3")
+			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pt=50000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid") 
 				p ~ ¥50,000
 		li.col-sm-2.mb-ml
-			a(herf="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=20000&pt=60000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3")
+			a(herf="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pt=60000&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid") 
 				p ~ ¥60,000
 		li.col-sm-2.mb-ml
-			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=60000&pt=&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3")
+			a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?pf=60000&pt=&p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3") 
 				p ¥60,000 ~
 
 div.allItemsButton-box.mb-ll
-	a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3") 
+	a(href="http://store.shopping.yahoo.co.jp/rodeobros/search.html?p=%A5%B9%A5%AB%A5%B8%A5%E3%A5%F3&view=grid")
 		p.myButtonWhiteBlack Souvenir Jacket スカジャン 一覧へ
+div#goToTop
+	img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/top2.png")

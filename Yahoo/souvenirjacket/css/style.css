@@ -523,6 +523,49 @@ a:hover {
   margin-bottom: 50px;
 }
 
+.category-title {
+  clear: both;
+  background: #e1e0d3;
+  font-size: 2em;
+  width: 100%;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+#goToTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.top-menu {
+  background: rgba(0, 0, 0, 0.82);
+  box-shadow: 1px 2px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.top-menu ul {
+  display: block;
+  margin: 0 auto;
+  max-width: 1040px;
+}
+
+.top-menu li {
+  display: inline-block;
+  height: 3em;
+  line-height: 2.9;
+}
+
+.top-menu a {
+  color: #e1e0d3;
+}
+
 .text-top {
   font-size: 1.4em;
   font-weight: 300;
@@ -558,5 +601,17 @@ a:hover {
 @media (max-width: 768px) {
   .allItemsButton-box p {
     width: 80%;
+  }
+  .top-menu {
+    height: 3em;
+    overflow: hidden;
+  }
+  .text-top {
+    font-size: 1.1em;
+    padding: 0 0.5em;
+    text-align: left;
+  }
+  body {
+    padding-top: 3em;
   }
 }
