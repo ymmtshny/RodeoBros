@@ -1,0 +1,128 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-family: 'Noto Sans Japanese';
+
+}
+
+#wrapper{
+	width: 100%;
+}
+
+#main-without-leftnav {
+	max-width: 100%;
+}
+.headerImageBox {
+	
+	margin-top: 0px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.titleOfPage {
+	font-weight: 200;
+	font-size: 2.3em;
+	margin-bottom: 0;
+
+}
+
+.subTitle {
+	font-weight: 200;
+	font-size: 1.4em;
+	margin-top: 0.5em;
+}
+
+.moreItems {
+	display: block;
+	width: 200px;
+	border: 1px solid #ddd;
+	margin: 0 auto;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em!important;
+
+}
+
+.shops {
+
+	text-align: center;
+
+	a {
+		margin-right: 20px;
+		display: inline-block;
+		text-decoration: underline;
+
+		&:first-child {
+			margin-left: 20px;
+		}
+	}
+}
+
+.textBox {
+	
+	p{
+		padding-bottom: 0em;
+		margin-bottom: 0.5em;
+		font-size: 1.2em;
+		font-weight: 200;
+	}
+
+}
+
+.color-black {
+	color:#000;
+	display: block;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.shopLink {
+	color:#000;
+		text-decoration: none!important;
+}
+
+@media(max-width: 770px) {
+	
+	#wrapper {
+		padding: 0 2em;
+	}
+
+	.headerImageBox {
+	
+		background-image: url('http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-22.jpg');
+		background-position: center center;
+		background-size: 140%;
+
+		img {
+			width: 100%;
+			opacity: 0;
+		}
+
+	}
+
+	p {
+		text-align: left;
+	}
+
+	.shops {
+		margin: 2em 0;
+	}
+	.shopLink {
+		width: 100%!important;
+		display: block!important;
+		text-align: center;
+		margin:15px 0!important;
+
+	}
+
+	.moreItems {
+		text-align: center;
+	}
+
+}

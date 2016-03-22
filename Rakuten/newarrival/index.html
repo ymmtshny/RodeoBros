@@ -29,36 +29,61 @@
       </script>
     </div>
     <!--ヘッダーここから-->
-    <!--include ../../common/jade/header/_header-r.jade-->
+    <header>
+      <div class="l-header header-box mb-ss hidden-xs">
+        <!--メインへっだー-->
+        <iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/itemheader.html" width="100%" height="180" scrolling="no" frameborder="1" style="border:none; display:block;position:relative; z-index:9999; background:#fff;"></iframe>
+      </div>
+    </header>
     <!--外枠ここから-->
     <div id="wrapper">
-      <!--レフトナビここから
-      include ../../common/jade/leftnav/_leftnav-r.jade
-      
-      -->
+      <!--レフトナビここから-->
+      <!--include ../../common/jade/leftnav/_leftnav-r.jade-->
       <!--メインコンテンツここから-->
       <div id="main-without-leftnav" class="main-box text-center">
         <div id="Vue" class="fixed-width">
-          <!-- <div class="page-title text-center">
-            <p>PICK UP ITEMS</p>
-          </div> -->
-          <div v-for="element in NewArrival" class="items col-sm-2">
+          <div class="page-title text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/">NEW ARRIVAL</a></div>
+          <div v-for="element in NewArrival" class="items col-sm-4">
             <div class="items-inner-box mb-mm-overload"><a target="_top" href="{{ element.number }}">
-                <div class="items__header"><img src="{{ element.image }}" class="mb-ss-overload"></div>
+                <div class="items__header"><img data-original="{{ element.image }}" src="./load.gif" class="lazy mb-ss-overload"></div>
                 <div class="items__body">
                   <p class="brand">{{ element.brand }}</p>
                   <p class="name">{{ element.name }}</p>
                 </div></a></div>
           </div>
+          <div class="allItemsButton-box mb-ll"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/"> 
+              <p class="myButtonWhiteBlack">新着商品一覧へ</p></a></div>
         </div>
       </div>
     </div>
     <!--フッターここから-->
-    <!--include ../../../common/jade/footer/_footer-r.jade-->
+    <footer>
+      <iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/footer.html" width="100%" height="400" scrolling="no" frameborder="1" style="border:none; display:block;"></iframe>
+    </footer>
     <!--スクリプトここから-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script src="./js/jquery.lazyload.min.js"></script>
     <script>
+      
+      $('a[href*="#"]:not([href="#"])').click(function() {
+      	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      		var target = $(this.hash);
+      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      		if (target.length) {
+      			$('html, body').animate({
+      				scrollTop: target.offset().top - 33
+      			}, 1000);
+      			return false;
+      		}
+      	}
+      });
+      
+      $('#goToTop').click(function(){
+      		window.scrollTo(0, 0);
+      });
+      
+      
       new Vue({
       	el: '#Vue',
       	//template: '#VueTopsTemplate',
@@ -68,27 +93,38 @@
       	},
       	
       	created: function() {
-      		
       		var _this = this;
       		//get json file
       		$.ajax({
-      			url: './json/global.json', //index.jadeに対してのURL
+      			async:false,//同期処理にする。
+      			url: '../data/new-arrival.json', //index.jadeに対してのURL
       			dataType: 'json'
       		}).done(function(data) {
       			var temp = [];
       			
       			data.forEach(function (el) {
-      				//http://global.rakuten.com/en/store/auc-rodeo/item/ihsh-129/
-      				el.number = "http://global.rakuten.com/en/store/auc-rodeo/item/" + el.number + "/"
-      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=200x200";
+      				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
       				temp.push(el);
       			});
-      			_this.NewArrival = temp.slice(0, 12);
+      			_this.NewArrival = temp.slice(0,　99);
       			 console.log(_this.items); 
       		});
       
       	}
       });
+      
+      
+      		//ajaxを同期処理しているので以下は、vue.jsの処理後に発動する。
+      			// Lazy Loadを起動する
+      			$(function(){
+      				$("img.lazy").lazyload({
+      					"threshold":250,
+      					"effect":"fadeIn",
+      					"effect_speed":800,
+      					"failure_limit":1} );
+      				console.log("Lazy Loadを起動する");
+      			});
     </script>
   </body>
 </html>
