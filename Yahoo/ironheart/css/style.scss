@@ -1,0 +1,139 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+body {
+  font-family: 'Noto Sans Japanese';
+}
+
+//overload 
+#wrapper {
+	width: 100%!important;
+}
+
+#main-without-leftnav {
+	width: 100%!important;
+	margin: 0 auto;
+
+}
+
+.top-menu {
+
+	background: rgba(0, 0, 0, 0.85);
+	box-shadow: 1px 3px rgba(0,0, 0,0.1);
+	width: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 999;
+	ul {
+		display: block;
+		margin: 0 auto;
+		max-width: 1040px;
+	}
+
+
+	li {
+		display: inline-block;
+		height: 3em;
+		line-height: 2.9;
+	}
+
+	a {
+		color:rgba(255, 255, 255, 1);
+	}
+
+}
+
+
+.textbox {
+	font-size: 1.2em;
+	font-weight: 200;
+	line-height: 2;
+	margin: 0 auto;
+
+	span {
+		font-size: 1.7em;
+		font-weight: 400;
+	}
+
+	a {
+		color:rgba(0, 122, 255, 1);
+	}
+
+}
+
+.imagebox {
+
+	// opacity: 0;
+
+	a {
+		display: block;
+		position: relative;
+		top: -2em;
+		right: 1em;
+		text-decoration: underline;
+		color:rgba(0, 0, 0, 1);
+	}
+	
+
+}
+
+.itemsouter {
+
+	a {
+		color:rgba(0, 0, 0, 1);
+		text-decoration: underline;
+
+		&:hover {
+			color:rgba(0, 0, 0, 0.3);
+		}
+	}
+
+
+	padding-top: 5em;
+
+	p {
+		font-size: 1.5em;
+		// background: #f7f8f7;
+		font-weight:400;
+		clear: both;
+		margin-bottom: 15px;
+		}
+}
+
+#goToTop {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+@media (max-width: 768px) {
+		body {
+			padding-top: 100px;
+		}
+
+		.textbox {
+	font-size: 0.9em;
+
+	span {
+		font-size: 1.7em;
+	}
+
+}
+
+.top-menu {
+
+	height: 3em;
+	overflow: hidden;
+
+}
+
+}
+
+@media (min-width:769px){
+	
+
+}
