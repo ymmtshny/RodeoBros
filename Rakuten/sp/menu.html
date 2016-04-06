@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=0">
+    <title>Untitled Document</title>
+    <style>
+	body {
+	font-size:11px;	
+	font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+	font-weight:300;
+	margin:0;
+	background:#fff;
+	
+}
+
+
+.mobileMenu {
+	height:100vh;
+	-webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+.mobileMenu__inner {
+	padding-bottom:150px;	
+}
+
+form {
+	margin-bottom:0.6em;
+	padding-left:5%;
+	font-size: 16px;
+}
+
+input {
+	margin:0;
+	padding:0;
+	width:75%;
+	height:2.65em;
+	float:left;
+}
+
+button {
+	margin:0;
+	padding:0;
+	width:19%;
+	background: #bf0000;
+	color:#fff;
+	height:2.80em;
+	border:none;
+	
+}
+
+.mobileMenu h1 {
+	font-size:1.5em;
+	font-weight:bold;
+	margin:0;
+	padding:0.17em 0;
+	font-weight:100;
+	margin-bottom:0.70em;
+	background:#000;
+	color:#fff;
+	text-align:left;
+	text-indent:5%;
+}
+
+.mobileMenu h2 {
+	font-size:1.25em;
+	margin:0;
+	padding:0;
+	font-weight:300;
+	background-color:#ddd;
+	text-indent:1em;
+	padding:0.25em 0;
+}
+
+.mobileMenu ul {
+	padding-left:1em;
+	list-style:none;
+	margin-bottom:2em;
+}
+
+.mobileMenu ul a {
+	text-decoration:none;
+	color:#000;
+	display:block;
+	width:100%;	
+}
+
+.mobileMenu li{
+	border-bottom:1px solid #ddd;
+	text-indent:0.25em;
+	background: url(http://b.ichiba.jp.rakuten-static.com/com/img/rms/storefront/pc/page/smart/shopName_arrow_gr.png) no-repeat right;
+    background-size: 7.5px 11.5px;
+	 background-position: 95% 25%; 
+}
+
+.mobileMenu li:last-child {
+	border:none;	
+}
+
+form {
+ -webkit-appearance: none;
+	border-radius: 0;	
+}
+
+input {
+    -webkit-appearance: none;
+	border-radius: 0;
+	text-indent: 0.5em;
+    border: 1px solid #AAAAAA;
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+}
+
+input[type="text"],input[type="submit"] {
+    -webkit-appearance: none;
+  }
+	</style>
+  </head>
+  
+  <body>
+    <nav class="mobileMenu">
+      <div class="mobileMenu__inner">
+       <h1>MENU</h1>
+       <form accept-charset="euc-jp" method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" class="mobileMenu__search">
+          <div class="input-group">
+            <input type="text" name="sitem" placeholder="キーワードから探す" class="form-control" 　accept-charset="EUC-JP">
+            <input type="hidden" name="sv" value="6">
+            <input type="hidden" name="sid" value="235529">
+            <input type="hidden" name="su" value="auc-rodeo">
+            <input type="hidden" name="sn" value="ロデオブロスRODEO BROS">
+            <input type="hidden" name="f" value="A">
+            <span>
+              <button type="submit" name="検索" class="btn btn-default" onclick="org=document.charset;
+            document.charset='EUC-JP';
+            document.sitem.submit();
+            document.sv.submit();
+            document.sid.submit();
+            document.su.submit();
+            document.sn.submit();
+            document.f.submit();
+            document.charset=org;">
+                検索
+              </button>
+            </span>
+          </div>
+        </form>
+       <h2>カテゴリーからさがす</h2>
+       <ul>
+       	  <li><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000632/"><p>トップス</p></a></li>
+          <li><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000633/"><p>アウター</p></a></li>
+          <li><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000631/"><p>ボトムス</p></a></li>
+          <li><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000634/"><p>アクセサリー</p></a></li>
+       </ul>
+       <h2>ブランドからさがす</h2>
+       <ul>
+       	  <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html"><p>ブランド一覧</p></a></li>
+       </ul>
+       <h2>特集からさがす</h2>
+       <ul class="mobileMenu__body__menu">
+          <li><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/"><p>新着商品</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/bestseller/index.html"><p>ベストセラー商品</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/souvenirjacket/index.html"><p>トータルコーディネート</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/souvenirjacket/index.html"><p>2016年トレンド、スカジャン特集</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/toyo/"><p>東洋50周年記念アイテム</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/feature/alpha_boots.html"><p>ALPHAブーツ特集</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/onidenim/"><p>職人芸の傑作、鬼デニム</p></a></li>
+          <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/backnumber.html"><p>特集一覧</p></a></li>
+       </ul>
+        <h2>SNS</h2>
+        <ul>
+          <li><a target="_top" href="http://www.rakuten.co.jp/auc-rodeo/news.html"><p>メールマガジン</p></a></li>
+          <li><a target="_top" href="https://twitter.com/rodeobros"><p>Twitter</p></a></li>
+          <li><a target="_top" href="https://www.facebook.com/Rodeobros"><p>Facebook</p></a></li>
+          <li><a target="_top" href="https://instagram.com/rodeo_bros/"><p>Instagram</p></a></li>
+    	</ul>
+          
+        
+     </div>
+    </nav>
+  </body>
+</html>

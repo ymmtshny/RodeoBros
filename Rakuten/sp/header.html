@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width,user-scalable=0">
+</head>
+
+<style>
+body {
+	margin:0;	
+	
+}
+
+b {
+font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+position:relative;
+}
+
+b > p {
+	backgrond:#ddd;	
+	text-align:center;
+	background:#000;
+	margin:0;
+	font-size:1.25em;
+	font-weight:300;
+	height:50px;
+	overflow:hidden;
+}
+
+b > p > img {
+	width:17px;
+	position:absolute;
+	left:20px;
+	top: 11px;	
+}
+
+b > p > a > img {
+	width:150px;	
+	margin-top:4px;
+}
+
+b > p > a {
+	text-decoration:none;
+	color:#fff;
+}
+
+b > table {
+	width:100%;	
+	background:#f7f8f7;
+	padding:10px 0;
+	position: absolute;
+	top:-10px;
+	border-bottom:1px solid #ddd;
+}
+
+b > table tr td a {
+	text-decoration:none;
+	color:#000;	
+	
+}
+
+b > table tr td {
+	font-size:0.8em;
+	border-right:1px solid #ddd;
+	text-align:center;
+	width:33.3%;
+	
+}
+
+b > table tr td:last-child {
+	border:none;	
+}
+
+
+input#openMenu {
+	cursor: pointer;
+	position: absolute;
+	top:15px;
+	left:20px;
+	margin:0;
+	visibility: visible;
+	opacity:0;
+	z-index: 999;
+	width:25%;
+	height:20px;
+}
+
+#openMenu:checked {
+	opacity:1;
+}
+
+#openMenu:after {
+	visibility: visible;
+    content: "";
+    font-size: 10px;
+    position: absolute;
+    color: #000;
+    left: 50%;
+	top:0px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+#openMenu + iframe { 
+    position:fixed;
+    left: -80%;
+    top:0;
+    background:rgba(245, 245, 245, 0.1);
+    width: 70%;
+    text-align: left;
+    color: #ccc;
+	transition: 0.1s ease-in-out;
+    height: 100%;
+    overflow:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+#openMenu:checked + iframe{
+	z-index: 9999;
+	 left: 0%;
+}
+
+/*黒い背景*/
+#openMenu:checked:before {
+	visibility: visible; 
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	background: rgba(0, 0, 0, 0.40);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	z-index: 2147483645;
+}
+
+#overlay {
+	overflow-x: hidden;
+	overflow-y:scroll;
+}
+
+#overlay iframe{
+	display:block;
+	position: fixed;
+    left: -75%;
+    top: 0;
+    width: 75%;
+	height:100%;
+    text-align: left;
+    transition: 0.4s ease-in-out;
+    height: 100%;
+	z-index:2147483646;
+}
+
+</style>
+
+<body>
+
+<b>
+<p>
+<img src="./img/menu.png">
+<a href="http://www.rakuten.ne.jp/gold/auc-rodeo/"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo-white.png"></a></p>
+<table>
+  <tr>
+  　<td><a href="http://item.rakuten.co.jp/waiper/c/0000000802/?s=4#risFil">CATEGORY</a></td>
+    <td><a href="http://item.rakuten.co.jp/waiper/c/0000000767/?s=4#risFil">BRAND</a></td>
+    <td><a href="http://item.rakuten.co.jp/waiper/c/0000001825/">FEATURE</a></td>
+  </tr>
+</table>
+</b>
+
+<p id="overlay">
+<input id="openMenu" type="checkbox" >
+<iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/sp/menu.html" width="80%"  frameborder="0"></iframe>
+</p>
+
+</body>
+</html>

@@ -131,6 +131,22 @@ body {
 
 }
 
+.imagebox {
+
+	// opacity: 0;
+
+	a {
+		display: block;
+		position: relative;
+		top: 1em;
+		right: 1em;
+		text-decoration: underline;
+		color:rgba(0, 0, 0, 1);
+	}
+	
+
+}
+
 }
 
 @media (min-width:769px){
