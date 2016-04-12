@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -395,191 +397,199 @@ th {
   padding: 0;
 }
 
-p {
+.mb-ss {
+  margin-bottom: 5px;
+}
+
+.mb-ms {
+  margin-bottom: 10px;
+}
+
+.mb-ss {
+  margin-bottom: 15px;
+}
+
+.mb-sm {
+  margin-bottom: 20px;
+}
+
+.mb-mm {
+  margin-bottom: 25px;
+}
+
+.mb-ml {
+  margin-bottom: 30px;
+}
+
+.mb-sl {
+  margin-bottom: 35px;
+}
+
+.mb-ml {
+  margin-bottom: 45px;
+}
+
+.mb-ll {
+  margin-bottom: 50px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
   font-size: 12px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0px;
+  font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 
-.brand {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 0.6rem;
-  color: #000;
-  border: solid 1px #CBCBCB;
-  overflow: hidden;
-  transition: background-color 0.2s;
-}
-
-.brand:hover {
-  background-color: rgba(0, 0, 0, 0.08);
-}
-
-.brand__inner {
-  overflow: hidden;
-  display: table;
-  table-layout: fixed;
+img {
   width: 100%;
 }
 
-.brand__header {
-  display: table-cell;
-  vertical-align: middle;
-  width: 70px;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.brand__header > img {
-  vertical-align: bottom;
-  width: 100%;
+.text-center {
+  text-align: center;
 }
 
-.brand__body {
-  display: table-cell;
-  text-align: left;
-  vertical-align: middle;
-  padding-left: 0.5em;
-}
-
-.brand__body .brand__nameEng {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.brand__body .brand__nameJa {
-  margin: 0;
-  font-size: 0.6rem;
-  color: #999;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.brandList {
+#wrapper {
+  width: 1040px;
   margin: 0 auto;
-  padding: 1rem;
-  padding-left: 0;
-  max-width: 970px;
-  overflow: hidden;
 }
 
-.brandList__main {
-  width: 80%;
-  float: right;
-}
-
-.brandList__index {
-  font-weight: normal;
-  border-bottom: solid 1px #CBCBCB;
-  margin: 3.5% 0 1%;
-  line-height: 1.8em;
-  font-size: 0.9rem;
-}
-
-.brandList__wrap {
-  overflow: hidden;
-}
-
-.brandList__item {
+#left-nav {
+  width: 18%;
   float: left;
-  margin: 1%;
-  width: 32%;
+  margin-right: 2%;
 }
 
-.brandList__item:nth-of-type(3n+1) {
-  margin-left: 0;
+#main {
+  width: 70%;
+  float: left;
 }
 
-.brandList__item:nth-of-type(3n) {
-  margin-right: 0;
+#main-without-leftnav {
+  width: 100%;
+  max-width: 1100px;
 }
 
-.brandList__nav {
-  width: 20%;
-  max-width: 162px;
-  float: right;
-  padding-top: 0.34rem;
-  padding-left: 1rem;
-  box-sizing: border-box;
-  padding-right: 1rem;
+a {
+  color: #0044CC;
 }
 
-.brandList__nav ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0;
-}
-
-.brandList__nav li {
-  border-bottom: 1px solid #CBCBCB;
-  line-height: 3rem;
-  font-size: 0.7em;
-}
-
-.brandList__nav li:last-child {
-  border-bottom: none;
-}
-
-.brandList__nav a {
-  display: block;
-  text-decoration: none;
+a:hover {
   color: #000;
-  padding: 0 0.5em;
 }
 
-.brandList__nav a:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+.myGrayBorder {
+  border: 1px solid #ddd;
 }
 
+.myButtonWhiteBlack {
+  margin: auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.myButtonWhiteBlack:hover {
+  background: #000;
+  color: #fff;
+}
 
 @media (max-width: 768px) {
-  iframe{
-    display: none!important;
-  }
-
-  .brandList {
-    padding: 0;
-  }
-
-  .brandList__nav {
+  .pc-header-box {
     display: none;
   }
-
-  .brandList__main {
+  #left-nav {
+    display: none;
+  }
+  #wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #main {
     width: 100%;
   }
-
-  .brandList__index {
-    text-align: center;
-    background: #000;
-    color:#fff;
-    border: none;
-    padding: 0.25em 0;
-    margin-top: 0;
+  footer {
+    display: none;
   }
-  .brandList__wrap {
-    width: 100%;
-  }
+}
 
-  .brandList__item {
-    width: 90%;
-    margin: 0 5% 0.5em 5%!important;
-    border: none;
+.backnumbers {
+  margin-top: 5em;
+}
+
+.backnumbers li {
+  margin-bottom: 3em;
+}
+
+.backnumbers a {
+  color: #000;
+}
+
+.backnumbers span {
+  font-weight: bold;
+}
+
+.backnumbers h3 {
+  font-size: 1.25em;
+  margin: 0.7em 0 0 0;
+  padding: 0;
+}
+
+.backnumbers p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .backnumbers {
+    margin-top: 0em;
+  }
+  .backnumbers li {
+    margin-bottom: 0;
+  }
+  li a {
+    display: block;
+    position: relative;
     border-bottom: 1px solid #ddd;
-  }
-
-  .brandList__item:last-child {
-    border-bottom: none;
-  }
-
-  .brand__body {
-    padding-left: 10%;
     background: url(http://b.ichiba.jp.rakuten-static.com/com/img/rms/storefront/pc/page/smart/shopName_arrow_gr.png) no-repeat right;
     background-size: 7.5px 11.5px;
     background-position: 98% 50%;
   }
+  li span {
+    display: none;
+  }
+  .backnumber__header {
+    width: 35%;
+    margin: 0.75em 0;
+    display: inline-block;
+  }
+  .backnumber__body {
+    width: 57%;
+    margin-left: 3%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+  }
+  .backnumber__body h3 {
+    font-weight: bold;
+    font-size: 1em !important;
+  }
+  .backnumber__body p {
+    color: gray;
+  }
 }
-
-
-
-

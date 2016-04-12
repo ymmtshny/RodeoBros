@@ -5,16 +5,16 @@ div.headerTop
 	div.headerTop__nav.col-sm-8
 			ul.list-inline.text-right
 				li
-					a(target='_top', href='http://store.shopping.yahoo.co.jp/rodeobros/info.html') COMPANY
+					a(target='_top', href='http://www.aun-wa.com/company.html') COMPANY
 				li
-					a(target='_top', href='http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html') GUIDE
+					a(target='_top', href='http://www.aun-wa.com/faq.html') GUIDE
 				li
-					a(target='_top', href='http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/') REVIEW
+					a(target='_top', href='http://www.aun-wa.com/SHOP/rating_list.html') REVIEW
 
 //RODEO BROSロゴ
 div.headerLogo
 	div.logo.text-center
-		a(target='_top', href='http://shopping.geocities.jp/rodeobros/')
+		a(target='_top', href='http://www.aun-wa.com/')
 			img(alt='Rodeo Bros', src='http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo.png')
 
 //メニューバー
@@ -31,9 +31,9 @@ div.headerMenu
 				a NEW TOPICS
 		li.col-sm-3
 			div.no-right-border
-				form.headerNav__search(target='_top', method='get', action='http://store.shopping.yahoo.co.jp/rodeobros/search.html')
-					div.input-group
-						input.form-control(type='text', name='p', placeholder='検索する')
+				form.headerNav__search(method='get', action='http://www.aun-wa.com/SHOP/list.cgi')
+					.input-group
+						input.form-control(type='text', name='Search', placeholder='検索する')
 						span.input-group-btn
-							button.btn.btn-default(type='submit', name='検索')
+							button.btn.btn-default(type='submit')
 								i.fa.fa-search
