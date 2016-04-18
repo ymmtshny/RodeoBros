@@ -1,0 +1,88 @@
+
+<script>
+  new Vue({
+  	el: '#Vue',
+  	//template: '#VueTopsTemplate',
+  
+  	data: {
+  		Tops: [],
+  		Outers: [],
+  		Bottoms: [],
+  		Accesories: [],
+  		foo: "foooo!",
+  		items: [
+  			{ msg: 'foo!' },
+  			{ msg: 'bar!' }
+  		]
+  	},
+  	
+  	created: function() {
+  		
+  		var _this = this;
+  		//get json file
+  		$.ajax({
+  			url: './json/tops.json',
+  			dataType: 'json'
+  		}).done(function(data) {
+  			var temp = [];
+  			
+  			data.forEach(function (el) {
+  				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
+  				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+  				temp.push(el);
+  			});
+  			_this.Tops = temp;
+  			 console.log(_this.items); 
+  		});
+  
+  		$.ajax({
+  			url: './json/outers.json',
+  			dataType: 'json'
+  		}).done(function(data) {
+  			var temp = [];
+  			
+  			data.forEach(function (el) {
+  				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
+  				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+  				temp.push(el);
+  			});
+  			_this.Outers = temp;
+  			 console.log(_this.items); 
+  		});
+  
+  		$.ajax({
+  			url: './json/buttoms.json',
+  			dataType: 'json'
+  		}).done(function(data) {
+  			var temp = [];
+  			
+  			data.forEach(function (el) {
+  				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
+  				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+  				temp.push(el);
+  			});
+  			_this.Bottoms = temp;
+  			 console.log(_this.items); 
+  		});
+  
+  		$.ajax({
+  			url: './json/accesorries.json',
+  			dataType: 'json'
+  		}).done(function(data) {
+  			var temp = [];
+  			
+  			data.forEach(function (el) {
+  				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
+  				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
+  				temp.push(el);
+  			});
+  			_this.Accesories = temp;
+  			 console.log(_this.items); 
+  		});
+  
+  	}
+  
+  
+  
+  });
+</script>

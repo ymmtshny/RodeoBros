@@ -1,0 +1,36 @@
+[
+
+	{
+		"number": "gsjr-002",
+		"image": "amazon2/gsjr-002",
+		"brand": "さとり",
+		"name": "スカジャン 桜 白虎 刺繍"
+	},
+
+	{
+		"number": "tt13330",
+		"image": "amazon2/tt13330",
+		"brand": "テーラー東洋",
+		"name": "リバーシブル スカル 虎 ギター "
+	},
+
+{
+		"number": "chsk-02",
+		"image": "amazon2/chsk-02",
+		"brand": "クロップドヘッズ ",
+		"name": "和柄 スカジャン 白虎 ジャケット"
+	},
+
+	{
+		"number": "chsk-04",
+		"image": "amazon2/chsk-04",
+		"brand": "クロップドヘッズ ",
+		"name": "和柄 スカジャン 猛虎"
+	},
+		{
+		"number": "tt13467",
+		"image": "amazon2/tt13467",
+		"brand": "テーラー東洋",
+		"name": "スカジャン 虎 鷹 白虎 リバーシブル"
+	}
+]

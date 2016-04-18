@@ -1,0 +1,345 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+h1 {
+	font-size: 2.5em;
+	border-bottom: 1px solid #ddd;
+}
+
+h2 {
+	font-size: 2em;
+	// border-left:0.25em solid #ddd;
+	// text-indent: 0.25em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.actual-leftnav{
+	width: 185px;
+}
+
+/****************************************************
+* レフトナビのスタイルシートここから
+* 
+*****************************************************/
+//mb-ssオーバーロード
+a {
+	text-decoration: underline;
+}
+
+.mb-ss {
+	margin-bottom: 1em;
+}
+
+.section0{
+	
+}
+
+/****************************************************
+* レフトナビの大きな画像ここから
+*****************************************************/
+.section1{
+	
+}
+
+/****************************************************
+* レフトナビのデフォルトメニューここから
+*****************************************************/
+.section2{
+
+	img:hover {
+		opacity: 0.7;
+	}
+	
+}
+
+ ::-webkit-scrollbar {
+	width: 12px;
+	
+}
+ 
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 1px;
+}
+ 
+::-webkit-scrollbar-thumb {
+	border-radius: 1px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.99);
+	background:rgba(0,0,0,0.8);
+}
+
+.outerbox {
+	width:185px;
+	height:600px;
+	overflow-y:scroll;
+	overflow-x:none;
+}
+
+.outerbox img {
+	width:100%;
+}
+
+		.title {
+			padding-top:10px;	
+		}
+	
+		.trigger {
+			background:#f7f8f7;
+			margin:0;
+			padding: 6px 0;
+			
+		}
+		
+		.trigger:hover {
+			background-color: #414040;
+			color:#fff;	
+		}
+		
+		.pickupitems {
+			border:1px dotted #ddd;	
+		}
+/****************************************************
+* レフトナビのカテゴリーここから
+*****************************************************/
+
+.section4{
+
+	margin-top: 1em;
+
+	.category{
+		border: 1px solid #414040;
+	}
+
+	p{
+		margin: 0;
+		padding: 0.5em 0;
+		padding-left:1em;
+		color: #fff;
+		background-color: #414040;
+		border-bottom: 1px dotted #ddd;
+
+		&::after{
+			text-align: right;
+		}
+
+	}
+
+	a {
+		text-decoration: none;
+		color:#000;
+		display: block;
+		padding: 0.5em;
+		
+		&:hover{
+			color: #ddd;
+		}
+	}
+
+	ul{
+		margin-bottom: 0;
+	}
+
+	li{
+		
+		//padding: 0.5em;選択範囲を広げるためaタグをdisplay:blockにしてこのpaddingを追加する。
+		padding-left:1em;
+		border: 1px dotted #ddd;
+		border-bottom: none;
+
+		&:last-child{
+			border-bottom: 1px dotted #ddd;
+		}
+
+		background: url('http://www.rakuten.ne.jp/gold/auc-rodeo/items/assets_20151105/img/item_right.png');
+		background-repeat: no-repeat;
+		background-position: 0.4em center;
+		background-size: 0.40em;
+
+		&::before{
+			//content: ">　";
+			//font-size: 0.7em;
+			
+		}
+	}
+
+}
+
+.section3 {
+	
+	margin-top: 2em;
+	
+	a {
+		text-decoration: none;
+		color:#000;
+
+		&:hover{
+			color: #ddd;
+		}
+	}
+
+	.brandList__index {
+		font-size: 12px;
+		margin:0;
+		padding: 0.8em 0;
+		padding-left:1em;
+		color: #fff;
+		background-color: #414040;
+		border-bottom: 1px dotted #ddd;
+	}
+
+	.brand {
+		width: 100%;
+		display: table;
+		font-size: 0.9em;
+		padding: 0.5em 0;
+		padding-left:0.5em;
+		border: 1px dotted #ddd;
+		border-bottom: none;
+		&:last-child{
+			border-bottom: 1px dotted #ddd;
+		}
+
+	}
+
+	.brandList-wrap {
+		width: 100%;
+	}
+
+	.brand__header {
+		width: 30%;
+		float: left;
+		display: table-cell;
+		
+		img{
+			width: 90%;
+			padding-right:10%;
+		}
+	
+	}
+	
+	.brand-body {
+		width:70%;
+		float:left;
+		display: table-cell;
+
+	}
+
+	.brand__nameEng {
+		padding-top:0.6em;
+		text-indent: 0.3em;
+		box-sizing:inner-box;
+		margin-bottom: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.brand__nameJa {
+		margin-bottom: 0;
+		text-indent: 0.3em;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+}
+
+.round-corner{
+	// border-top-right-radius: 0.5em;
+	// border-top-left-radius: 0.5em;
+	background: #000!important;
+}
+/****************************************************
+* レフトナビの特集ここから
+*****************************************************/
+.section5{
+
+	margin-top: 2em;
+
+	img:hover {
+		opacity: 0.7;
+	}
+	
+	p{
+		background: url('http://www.rakuten.ne.jp/gold/auc-rodeo/images/topic_arrow.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		margin:0.325em 0 1.625em 0;
+		padding-left: 1.5em;
+	}
+
+	a {
+		//text-decoration: none;
+		//color:#000;
+	}
+
+	.gray-border {
+		border: 1px solid #ddd;
+	}
+
+}
+
+.section6{
+	
+}
+
+
+
+//カテゴリーのオーバーレイここから
+
+.categorywrapper {
+	width:780px;
+}
+
+.categorytitle {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	margin-top: 3em;
+	font-size: 1.5em;
+
+}
+
+.brandbox1 {
+	margin-bottom: 3em;
+	width: 20%;
+}
+
+.moreButton {
+	display: block;
+	text-align: center;
+	background: #000;
+	color:#fff;
+	text-decoration: none;
+	width: 60%;
+	padding: 0.2em 0;
+	margin: 0 auto;
+	margin-top:1em;
+	margin-bottom: 2em;
+	border: 1px solid #000;
+
+	&:hover {
+		background: #fff;
+		color:#000;
+		transition:all 0.5s;
+		border: 1px solid #000;
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+}
