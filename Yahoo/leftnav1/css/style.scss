@@ -331,8 +331,27 @@ a {
 }
 
 
+//予約商品
+.reserve-title {
+	font-weight: normal;
+		font-size: 1em;
+		background: #000;
+		color:#fff;
+		padding: 1em 0;
+		margin-bottom: 0;
+		text-align: center;
+}
+.reserve {
+	text-align: center;
+	height: 600px;
+	overflow-y:scroll;
 
+	.items {
+		border: 1px solid #ddd;
+		border-top: none;
+	}
 
+}
 
 
 

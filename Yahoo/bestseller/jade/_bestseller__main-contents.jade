@@ -4,9 +4,20 @@ article
 	div.l-main.main-box
 		
 		div#Vue
+
+			//トップス一覧ここから
+			h1#spTitleTops.main__category-title-sp.visible-xs.u-mb-small トップス
+			div.main__items.tops.visible-xs
+				div(v-for="element in Tops").items-box.two-columns.text-center.u-mb-small
+						a(href="{{ element.number }}")
+							div.items__header
+								img(src="{{ element.image }}")
+							p.brand {{ element.brand }}
+							p.name {{ element.name }}
+
 			//アウター一覧ここから
 			h1#spTitleOuter.main__category-title-sp.visible-xs.u-mb-small.u-clear アウター
-			div.main__items.outers.visible-xs
+			div.main__items.outers.visible-xs.u-mb-large
 				div(v-for="element in Outers").items-box.two-columns.text-center.u-mb-small
 						a(href="{{ element.number }}")
 							div.items__header
@@ -14,15 +25,6 @@ article
 							p.brand {{ element.brand }}
 							p.name {{ element.name }}
 
-			//トップス一覧ここから
-			h1#spTitleTops.main__category-title-sp.visible-xs.u-mb-small トップス
-			div.main__items.tops.visible-xs.u-mb-large
-				div(v-for="element in Tops").items-box.two-columns.text-center.u-mb-small
-						a(href="{{ element.number }}")
-							div.items__header
-								img(src="{{ element.image }}")
-							p.brand {{ element.brand }}
-							p.name {{ element.name }}
 
 			//ボトムス一覧ここから
 			h1#spTitleBottom.main__category-title-sp.visible-xs.u-mb-small.u-clear ボトムス

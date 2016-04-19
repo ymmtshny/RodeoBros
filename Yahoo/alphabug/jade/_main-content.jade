@@ -1,0 +1,20 @@
+div#Vue
+	h1.title カジュアルバッグ
+	div(v-for = "element in Casual" ).items.col-sm-12
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif")
+			div.items__body
+				//p.brand {{ element.brand }}
+				h1.name {{ element.name }}
+	h1.title ビジネスバッグ
+	div(v-for = "element in Business" ).items.col-sm-12
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif")
+			div.items__body
+				//p.brand {{ element.brand }}
+				h1.name {{ element.name }}
+				
+				
+	

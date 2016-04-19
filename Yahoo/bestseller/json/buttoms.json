@@ -1,149 +1,60 @@
 [
 
 	{
-		"number": "oni-552nigr",
-		"image": "amazon2/oni-552nigr",
-		"brand": "ONI DENIM",
-		"name": "20oz Celebration Secret Selvedge Denim Jeans"
+		"number": "nvbl-206",
+		"image": "amazon2/nvbl-206",
+		"brand": "VANSON",
+		"name": "ストライプパンツ"
 	},
 
 	{
-		"number": "oni-512",
-		"image": "amazon2/oni-512",
-		"brand": "ONI DENIM",
-		"name": "16.5oz Selvedge Relax Skinny Denim Jeans"
+		"number": "nvbl-404",
+		"image": "amazon2/nvbl-404",
+		"brand": "VANSON",
+		"name": "ボーダーダックパンツ"
 	},
 
 	{
-		"number": "oni-511hm",
-		"image": "oni/oni-511hm",
-		"brand": "ONI DENIM",
-		"name": "Handmade Regular Straight Jeans"
-	},
-
-
-	{
-		"number": "810",
-		"image": "amazon2/810",
+		"number": "ih-666-xhs",
+		"image": "amazon2/ih-666-xhs",
 		"brand": "IRON HEART",
-		"name": "17oz Heavy Hickory Engineer Painter Pants"
+		"name": "25オンスジーンズ"
 	},
 
-	{
-		"number": "814",
-		"image": "amazon2/814",
-		"brand": "IRON HEART",
-		"name": "12oz. Indigo Wabash Stripe Engineer Painter Pants"
-	},
-
-	{
-		"number": "ih-803",
-		"image": "ironheart/ih-803",
-		"brand": "IRON HEART",
-		"name": "10.5oz.Herringbone Double Knee Logger Jeans"
-	},
 
 	{
 		"number": "d109fxr-ltd",
-		"image": "amazon2/d109fxr-ltd",
+		"image": "amazon2/d109fxr-1",
 		"brand": "THE FLAT HEAD",
-		"name": "R.J.B×THE FLAT HEAD Collaboration 14oz Taperd Straight Jeans"
+		"name": "RJBコラボ ジーンズ"
 	},
 
 	{
-		"number": "d109fxr-ltd",
-		"image": "amazon2/d109fxr-ltd",
-		"brand": "THE FLAT HEAD",
-		"name": "R.J.B×THE FLAT HEAD Collaboration 14oz Taperd Straight Jeans"
+		"number": "634sr",
+		"image": "amazon2/634sr",
+		"brand": "IRON HEART",
+		"name": "21/23オンスジーンズ"
 	},
 
 	{
-		"number": "3005",
-		"image": "amazon2/3005",
-		"brand": "THE FLAT HEAD",
-		"name": "14.5oz Selvedge Denim Jeans"
-	},
-
-
-
-
-	{
-		"number": "461-505o",
-		"image": "amazon2/461-505o",
-		"brand": "YOROI",
-		"name": "14oz. Selvedge One Wash Jean"
-	},
-
-	{
-		"number": "461-104",
-		"image": "amazon2/461-104",
-		"brand": "YOROI",
-		"name": "West Point Chino Pants"
+		"number": "666s-21",
+		"image": "amazon2/666s-21",
+		"brand": "IRON HEART",
+		"name": "21オンススリム"
 	},
 
 	{
 		"number": "461-506",
 		"image": "amazon2/461-506",
 		"brand": "YOROI",
-		"name": "Wrinkle Free Stretch Black Jeans"
+		"name": "ブラックジーンズ"
 	},
 
 	{
-		"number": "br40973",
-		"image": "buzzricksons/br40973",
-		"brand": "BUZZ RICKSON'S",
-		"name": "U.S. Air Force Sweat Pants"
-	},
-
-
-	{
-		"number": "sc41501r",
-		"image": "amazon2/sc41501r",
-		"brand": "SUGAR CANE",
-		"name": "14oz Lone Star Jeans Slim Fit「10Year Aged」"
-	},
-
-	{
-		"number": "sc41501r",
-		"image": "amazon2/sc41501r",
-		"brand": "SUGAR CANE",
-		"name": "14oz Lone Star Jeans Slim Fit「10Year Aged」"
-	},
-
-	{
-		"number": "sc40901r",
-		"image": "amazon2/sc40901r",
-		"brand": "SUGAR CANE",
-		"name": "14oz Lone Star Jeans 「10Year Aged」"
-	},
-
-	{
-		"number": "sc40901h",
-		"image": "amazon2/sc40901h",
-		"brand": "SUGAR CANE",
-		"name": "14oz Lone Star Jeans 「5Year Aged」"
-	},
-
-
-	{
-		"number": "nvbl-206",
-		"image": "amazon2/nvbl-206",
-		"brand": "VANSON",
-		"name": "Bone Embroidered Stripe Pants"
-	},
-
-	{
-		"number": "fxv-510w",
-		"image": "amazon2/fxv-510w",
-		"brand": "VANSON",
-		"name": "14oz Felix Print Denim Jeans"
-	},
-
-	{
-		"number": "nvbl-206",
-		"image": "amazon2/nvbl-206",
-		"brand": "VANSON",
-		"name": "Bone Embroidered Stripe Pants"
+		"number": "461-104",
+		"image": "amazon2/461-104",
+		"brand": "YOROI",
+		"name": "ウエポン チノパン"
 	},
 
 
@@ -151,26 +62,148 @@
 		"number": "sp-b-7",
 		"image": "amazon2/sp-b-7",
 		"brand": "VANSON",
-		"name": "Wings Skull Embroidered Denim Jeans"
+		"name": "スカルジーンズ"
 	},
 
 	{
-		"number": "nvbl-404",
-		"image": "vanson/nvbl-404",
-		"brand": "VANSON",
-		"name": "Border Duck Pants"
-	}, {
-		"number": "nvbl-505",
-		"image": "amazon2/nvbl-505",
-		"brand": "VANSON",
-		"name": "21oz Red Selvedge Denim Pants"
+		"number": "814",
+		"image": "amazon2/814",
+		"brand": "IRON HEART",
+		"name": "エンジニアパンツ"
 	},
 
 	{
+		"number": "rnb-1159",
+		"image": "amazon2/rnb-1159",
+		"brand": "クローズ×WORST",
+		"name": "児島ジーンズコラボ"
+	},
+
+	{
+		"number": "oni-552nigr",
+		"image": "amazon2/oni-552nigr",
+		"brand": "鬼デニム",
+		"name": "天然藍 鬼秘ジーンズ"
+	},
+
+
+	{
+		"number": "oni-546zr",
+		"image": "amazon2/oni-546zr",
+		"brand": "鬼デニム",
+		"name": "タイトジーンズ"
+	},
+
+	{
+		"number": "3005",
+		"image": "amazon2/3005",
+		"brand": "THE FLAT HEAD",
+		"name": "14.5ozレギュラー"
+	},
+
+	{
+		"number": "ih-707",
+		"image": "amazon2/707",
+		"brand": "IRON HEART",
+		"name": "ワークパンツ"
+	},
+
+	{
+		"number": "imbl-503",
+		"image": "indianmotorcycle/imbl-503",
+		"brand": "INDIAN MOTOCYCLE",
+		"name": "イーグルデニム"
+	},
+
+	{
+		"number": "sc41455",
+		"image": "amazon2/sc41455",
+		"brand": "SUGAR CANE",
+		"name": "ストライプリブパン"
+	},
+
+	{
+		"number": "sc41501h",
+		"image": "amazon2/sc41501h",
+		"brand": "SUGAR CANE",
+		"name": "5YEAR AGED スリム"
+	}, 
+	
+	{
+		"number": "sc41501r",
+		"image": "amazon2/sc41501r",
+		"brand": "SUGAR CANE",
+		"name": "10YEAR AGED スリム"
+	},
+
+	{
+		"number": "sc40901h",
+		"image": "amazon2/sc40901h",
+		"brand": "SUGAR CANE",
+		"name": "5YEAR AGED"
+	},
+	
+	{
+		"number": "sc40901r",
+		"image": "amazon2/sc40901r",
+		"brand": "SUGAR CANE",
+		"name": "10YEAR AGED"
+	},
+	
+		{
+		"number": "sc41470",
+		"image": "amazon2/sc41470",
+		"brand": "SUGAR CANE",
+		"name": "ブラックジーンズ"
+	},
+	
+		{
+		"number": "sc40786a",
+		"image": "amazon2/sc40786a",
+		"brand": "SUGAR CANE",
+		"name": "ワークパンツ"
+	},
+	
+		{
+		"number": "br40025a",
+		"image": "amazon2/br40025a",
+		"brand": "BUZZ RICKSON'S",
+		"name": "オリジナルチノパン"
+	},
+	
+		{
+		"number": "devil-007",
+		"image": "amazon2/devil007ts",
+		"brand": "TEDMAN",
+		"name": "テーパードジーンズ"
+	},
+			{
+		"number": "devil003",
+		"image": "amazon2/devil003",
+		"brand": "TEDMAN",
+		"name": "セルビッチジーンズ"
+	},
+	
+		{
+		"number": "53670",
+		"image": "amazon2/53670",
+		"brand": "ETERNAL",
+		"name": "ブッシュパンツ"
+	},
+	
+			{
 		"number": "595203",
 		"image": "amazon2/595203",
-		"brand": "EVANGELION×nishiki",
-		"name": "Evangelion Unit 1 Embroidered Denim Jeans"
+		"brand": "エヴァンゲリオン",
+		"name": "初号機刺繍ジーンズ"
+	},
+	
+		{
+		"number": "rsbl-201",
+		"image": "amazon2/rsbl-201",
+		"brand": "さとり",
+		"name": "オリジナルジーンズ"
 	}
+	
 
 ]

@@ -1,0 +1,9 @@
+
+<div id="Vue">
+  <div v-for="element in Souvenir" class="items col-sm-12"><a href="{{ element.number }}">
+      <div class="items__header"><img data-original="{{ element.image }}" src="./load.gif" class="lazy mb-sm"/></div>
+      <div class="items__body">
+        <p class="brand">{{ element.brand }}</p>
+        <p class="name mb-ll">{{ element.name }}</p>
+      </div></a></div>
+</div>

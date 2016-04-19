@@ -563,7 +563,7 @@ p {
 
   .brandList__item {
     width: 90%;
-    margin: 0 5% 0.5em 5%!important;
+    margin: 0 5% 0em 5%!important;
     border: none;
     border-bottom: 1px solid #ddd;
   }

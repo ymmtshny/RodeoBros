@@ -1,9 +1,10 @@
 doctype html
 include jade/_bestseller__data.jade
 html
-	include jade/_bestseller__head.jade
+	include ../../common/jade/head/_head-y.jade
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-	script(src="js/navigation.js")
+	script(src="./js/navigation.js")
+	include ../../common/jade/_google.jade
 	body
 		//へっだーここから
 		include jade/_bestseller__header.jade
@@ -85,7 +86,7 @@ html
 						dataType: 'json'
 					}).done(function(data) {
 						var temp = [];
-						
+
 						data.forEach(function (el) {
 							el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
 							el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=430x430";
@@ -131,6 +132,8 @@ html
 
 			});
 
+			
+
 
 		<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
-		include js/bestseller.js
+		

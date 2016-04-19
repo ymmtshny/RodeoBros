@@ -805,3 +805,24 @@ a {
   border: 1px solid #000;
   text-decoration: none;
 }
+
+.reserve-title {
+  font-weight: normal;
+  font-size: 1em;
+  background: #000;
+  color: #fff;
+  padding: 1em 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.reserve {
+  text-align: center;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.reserve .items {
+  border: 1px solid #ddd;
+  border-top: none;
+}

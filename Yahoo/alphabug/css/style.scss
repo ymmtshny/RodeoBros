@@ -1,0 +1,42 @@
+@import 'vendor/normalize';
+@import 'base';
+@import 'utility';
+
+h1 {
+	font-size: 1.7em;
+}
+
+.items a {
+	display: block;
+	margin-bottom: 10em;
+}
+#Vue {
+	.title {
+		font-weight: 200;
+		background: #f7f8f7;
+		clear: both;
+		padding: 0.3em 0;
+		
+	}
+}
+
+.items__body {
+	h1 {
+		font-weight:200;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+h1 {
+	font-size: 1.3em;
+}
+
+.items a{
+	border: 1px solid #ddd;
+	margin-bottom: 4em;
+	box-shadow: 2px 2px rgba(0,0,0,0.15);
+}
+
+}

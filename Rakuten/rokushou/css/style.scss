@@ -1,0 +1,44 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+
+.col-sm-6 {
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.images {
+	img {
+		padding-right: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+h1 {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+span {
+	color:red;
+}
+
+@media (max-width: 768px) {
+	.explanation {
+		padding: 1.5em;
+		font-size: 1.15em;
+		line-height: 1.5;
+		margin-bottom: 5em;
+
+		p {
+			margin-bottom: 2em;
+		}
+	}
+
+}
+
+@media (min-width:769px){
+
+}
