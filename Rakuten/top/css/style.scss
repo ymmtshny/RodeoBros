@@ -1,0 +1,111 @@
+@import '../../../common/scss/normalize';
+@import '../../../common/scss/utility';
+@import '../../../common/scss/base';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css';
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.clear {
+	clear: both;
+}
+.sp-visible{
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.sp-visible{
+		display: block;
+	}
+}
+////////////////////////////////////////////
+//ブランドここから
+.selectedBrands {
+	li {
+		padding:0;
+	}
+
+	figure {
+		margin: 1em;
+	}
+}
+//ブランドここまで
+////////////////////////////////////////////
+////////////////////////////////////////////
+//フッターここから
+.shop-infomation {
+	background: #eeeeee;
+	padding: 0 4em;
+	position: relative;
+	padding-bottom: 2em;
+	//SHOP INFORMATION
+	h2 {
+		font-size: 1.5em;
+		padding: 1em 0;
+		border-bottom: 1px solid #888;
+	}
+	
+	//SNS
+	.sns {
+		position: absolute;
+		top:1.5em;
+		right:4em;
+
+		li {
+			display: inline-block;
+		}
+
+		i {
+			font-size: 1.5em;
+			margin-left: 1em;
+			color:#000;
+		}
+	}
+
+	//説明文
+	.shop-infomation__textbox {
+
+		h3 {
+			font-size: 1.5em;
+		}
+
+	}
+
+}
+
+//copy right
+.copy-right {
+	background: #000;
+	color:#fff;
+
+	a {
+		padding-top: 0.3em;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	p {
+		padding: 0.3em 0;
+	}
+}
+
+.copy-right__phone.text-center {
+	padding-top: 0.5em;
+}
+
+
+@media (max-width: 768px) {
+
+	.shop-infomation {
+		padding: 0 2em;
+	}
+
+	.sns {
+		display: none;
+	}
+
+}
+//フッターここまで
+////////////////////////////////////////////
+
