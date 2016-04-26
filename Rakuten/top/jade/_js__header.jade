@@ -6,29 +6,36 @@ script.
 	$( "#topicContent" ).css("display","none");
 	$( "#js-menu-tops" ).css("background","#fff");
 	
+	
 	var spMenuHidden = true;
+	var body = $(document.body);
+	var menu = $( '.menu' );
+	var navIcon = $( '.fa-bars' );
+	var closeIcon = $( '.fa-times' );
+
 	$('#js-sp-menu').click(function() {
 
 		if(spMenuHidden) {
-
-			$( '.menu' ).animate({
-			left: 0
-			}, 400, function() {
-					spMenuHidden = false;
-			});
-
+			
+			body.animate({'left' : "100%" }, 300);
+			menu.animate({'left' : 0 }, 300);
+			navIcon.css("display", "none");
+			closeIcon.css("display", "inline-block");
+			spMenuHidden = false;
+	
 		} else {
 
-				$( ".menu" ).animate({
-				left: "-70%"
-				}, 400, function() {
-						spMenuHidden = true;
-				});
+			body.animate({'left' : 0 }, 300);
+			menu.animate({'left' : "-100%" }, 300);
+			navIcon.css("display", "inline-block");
+			closeIcon.css("display", "none");
+			spMenuHidden = true;
 		}
-
 	
 
 	});
+
+
 
 	$("#categoryContent").mouseleave(function() {
 		$( "#categoryContent" ).css("display","none");

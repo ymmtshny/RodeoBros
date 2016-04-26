@@ -36,19 +36,19 @@ script.
 					
 					switch(currentpage) {
 						case 1:
-								vm.$set('PageOne', this.PageTwo);
+								vm.$set('NewArrival', this.PageTwo);
 								currentpage = 2;
 								break;
 						case 2:
-								vm.$set('PageOne', this.PageThree);
+								vm.$set('NewArrival', this.PageThree);
 								currentpage = 3;
 								break;
 						case 3:
-								vm.$set('PageOne', this.PageFour);
+								vm.$set('NewArrival', this.PageFour);
 								currentpage = 4;
 								break;
 						case 4:
-								vm.$set('PageOne', this.PageOne);
+								vm.$set('NewArrival', this.PageOne);
 								currentpage = 1;
 								break;
 						default:
@@ -66,19 +66,19 @@ script.
 				onClickBack: function (e) {
 					switch(currentpage) {
 						case 1:
-								vm.$set('PageOne', this.PageFour);
+								vm.$set('NewArrival', this.PageFour);
 								currentpage = 4;
 								break;
 						case 2:
-								vm.$set('PageOne', this.PageOne);
+								vm.$set('NewArrival', this.PageOne);
 								currentpage = 1;
 								break;
 						case 3:
-								vm.$set('PageOne', this.PageTwo);
+								vm.$set('NewArrival', this.PageTwo);
 								currentpage = 2;
 								break;
 						case 4:
-								vm.$set('PageOne', this.PageThree);
+								vm.$set('NewArrival', this.PageThree);
 								currentpage = 3;
 								break;
 						default:
@@ -87,7 +87,7 @@ script.
 
 					setTimeout(function(){ 
 							LazyLoad();
-					},200);
+					},100);
 
 					console.log(currentpage);
 
@@ -120,7 +120,7 @@ script.
 						temp.push(el);
 					});
 
-					 _this.NewArrival = temp.slice(0,　25);
+					 _this.NewArrival = temp.slice(0,NUMBER_OF_ITMES);
 					 _this.PageOne = temp.slice(0,NUMBER_OF_ITMES);
 					 _this.PageTwo = temp.slice(NUMBER_OF_ITMES + 1, NUMBER_OF_ITMES * 2 + 1);
 					 _this.PageThree = temp.slice(NUMBER_OF_ITMES * 2 + 1, NUMBER_OF_ITMES * 3 + 1);
@@ -136,7 +136,7 @@ script.
 				$("img.lazy").lazyload({
 							"threshold":250,
 							"effect":"fadeIn",
-							"effect_speed":800,
+							"effect_speed":0,
 							"failure_limit":1} );
 						console.log("Lazy Loadを起動する");
 

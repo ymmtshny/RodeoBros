@@ -11,12 +11,14 @@ html
 		include ../../common/jade/_google.jade
 		
 		//headerここから
-		include ./jade/_header.jade
-		include ./jade/_category.jade
-		include ./jade/_brand.jade
-		include ./jade/_topic.jade
-		include ./jade/_info.jade
-
+		div.hidden-sp
+			include ./jade/_header.jade
+			include ./jade/_category.jade
+			include ./jade/_brand.jade
+			include ./jade/_topic.jade
+			//include ./jade/_info.jade
+		div.hidden-pc
+			include ./jade/_sp.jade
 		//javascript
 		include ./jade/_script.jade
 		

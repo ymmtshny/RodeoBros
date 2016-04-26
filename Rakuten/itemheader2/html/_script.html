@@ -1,0 +1,72 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+<script src="./js/jquery.lazyload.min.js"></script>
+<script>
+  
+  
+  
+  
+  new Vue({
+  	el: '#Vue',
+  	//template: '#VueTopsTemplate',
+  
+  	data: {
+  		Tedmantee: []
+  	},
+  	
+  	created: function() {
+  		
+  		var _this = this;
+  		//get json file
+  		$.ajax({
+  			async:false,//同期処理にする。
+  			url: './json/tedmantee.json', //index.jadeに対してのURL
+  			dataType: 'json'
+  		}).done(function(data) {
+  			var temp = [];
+  			
+  			data.forEach(function (el) {
+  				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+  				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+  				temp.push(el);
+  			});
+  			_this.Tedmantee = temp;
+  			 console.log(_this.items); 
+  		});
+  
+  
+  
+  	}
+  });
+  
+</script>
+<script>
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  		var target = $(this.hash);
+  		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  		if (target.length) {
+  			$('html, body').animate({
+  				scrollTop: target.offset().top
+  			}, 800);
+  			return false;
+  		}
+  	}
+  });
+  
+  $('#goToTop').click(function(){
+  		window.scrollTo(0, 0);
+  });
+  
+  });
+  
+  $(function(){
+  	$("img.lazy").lazyload({
+  		"threshold":250,
+  		"effect":"fadeIn",
+  		"effect_speed":800,
+  		"failure_limit":1} );
+  });
+</script>

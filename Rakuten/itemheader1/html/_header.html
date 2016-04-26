@@ -1,19 +1,47 @@
 
-<ul class="list-inline text-center">
-  <li data-type="category" class="js-dropdownMenu__item"><a>CATEGORY</a></li>
-  <li data-type="brand" class="js-dropdownMenu__item"><a>BRAND</a></li>
-  <li data-type="newTopics" class="js-dropdownMenu__item"><a>NEW TOPICS</a></li>
-  <li>
-    <form accept-charset="euc-jp" method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" class="headerNav__search">
-      <div class="input-group">
-        <input type="text" name="sitem" placeholder="検索する" class="form-control"/>
-        <input type="hidden" name="sv" value="6"/>
-        <input type="hidden" name="sid" value="235529"/>
-        <input type="hidden" name="su" value="auc-rodeo"/>
-        <input type="hidden" name="sn" value="ロデオブロスRODEO BROS"/>
-        <input type="hidden" name="f" value="A"/><span class="input-group-btn">
-          <button type="submit" name="検索" onclick="org=document.charset;							document.charset='EUC-JP';							document.sitem.submit();							document.sv.submit();							document.sid.submit();							document.su.submit();							document.sn.submit();							document.f.submit();							document.charset=org;" class="btn btn-default"><i class="fa fa-search"></i></button></span>
+<!--最上部黒いところ-->
+<div class="headerTop">
+  <div class="headerTop__message col-sm-4">
+    <p>店内全品送料無料+15時までのご注文は即日発送</p>
+  </div>
+  <div class="headerTop__nav col-sm-8">
+    <ul class="list-inline text-right">
+      <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/company/company000.html">COMPANY</a></li>
+      <li><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/faq.html">GUIDE</a></li>
+      <li><a target="_top" href="http://review.rakuten.co.jp/shop/4/235529_235529/1.1/">REVIEW</a></li>
+    </ul>
+  </div>
+</div>
+<!--RODEO BROSロゴ-->
+<div class="headerLogo">
+  <div class="logo text-center"><a target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/"><img alt="Rodeo Bros" src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo.png"/></a></div>
+</div>
+<!--メニューバー-->
+<div class="headerMenu">
+  <ul class="text-center">
+    <li id="headerMenu__category" class="col-sm-3">
+      <div class="right-border"><a>CATEGORY</a></div>
+    </li>
+    <li id="headerMenu__brand" class="col-sm-3">
+      <div class="right-border"><a>BRAND</a></div>
+    </li>
+    <li id="headerMenu__topic" class="col-sm-3">
+      <div class="right-border"><a>NEW TOPICS</a></div>
+    </li>
+    <li class="col-sm-3">
+      <div class="no-right-border">
+        <form accept-charset="euc-jp" method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top">
+          <div class="input-group">
+            <input type="text" name="sitem" placeholder="検索する" class="form-control"/>
+            <input type="hidden" name="sv" value="6"/>
+            <input type="hidden" name="sid" value="235529"/>
+            <input type="hidden" name="su" value="auc-rodeo"/>
+            <input type="hidden" name="sn" value="ロデオブロスRODEO BROS"/>
+            <input type="hidden" name="f" value="A"/><span class="input-group-btn">
+              <button type="submit" name="検索" onclick="org=document.charset; document.charset='EUC-JP'; document.sitem.submit(); document.sv.submit(); document.sid.submit(); document.su.submit(); document.sn.submit(); document.f.submit(); document.charset=org;" class="btn btn-default"><i class="fa fa-search"></i></button></span>
+          </div>
+        </form>
       </div>
-    </form>
-  </li>
-</ul>
+    </li>
+  </ul>
+</div>

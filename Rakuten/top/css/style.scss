@@ -2,11 +2,12 @@
 // @import '../../../common/scss/utility';
 // @import '../../../common/scss/base';
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css';
-@import '../../itemheader1/css/style.scss';
+@import '../../itemheader2/css/style.scss';
 body {
-	max-width: 1240px;
+	//max-width: 1240px;
 	width: 100%;
 	min-width: 100%!important;
+
 }
 
 p {
@@ -110,6 +111,7 @@ $mb_item: 3em !default;
 		margin-bottom: $mb_item; 
 		padding: 0;
 		float: left;
+
 	}
 
 	img {
@@ -395,6 +397,7 @@ $mb_item: 3em !default;
 		display: none;
 	}
 
+	
 }
 
 
@@ -404,11 +407,19 @@ $mb_item: 3em !default;
 	.newArrival__item {
 	width: 46%!important;
 	margin: 3% 2%; 
-	box-shadow: 2px 2px rgba(0,0,0, 0.15);
+
 }
+	.carousel {
 
+		img {
+			margin-bottom: 5em!important;
+		}
 
-
+		ul {
+			display: none!important;
+		}
+	}
+	
 }
 
 //スマフォここから
@@ -445,6 +456,15 @@ $mb_item: 3em !default;
 	background-repeat: no-repeat;
 	background-size: 3%;
 	background-position: 95% center;
+
+		&:first-child {
+			border-top:1px solid #ddd!important;
+			padding-top: 2em;
+		}
+
+		&:last-child {
+			border: none!important;
+		}
 
 	img {
 		width: 40%;

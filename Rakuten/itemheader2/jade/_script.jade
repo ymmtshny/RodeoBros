@@ -7,8 +7,30 @@ script.
 	$( "#headerMenu__topic" ).css("background","rgba(0, 0, 0, 0.1)");
 	$( "#categoryContent" ).css("display","none");
 	$( "#brandContent" ).css("display","none");
-	$( "#topicContent" ).css("display","block");
+	$( "#topicContent" ).css("display","none");
 	$( "#js-menu-tops" ).css("background","#fff");
+
+	var spMenuHidden = true;
+	var body = $(document.body);
+	var menu = $( '.menu' );
+
+	$('#js-sp-menu').click(function() {
+
+		if(spMenuHidden) {
+			
+			body.animate({'left' : "100%" }, 300);
+			menu.animate({'left' : 0 }, 300);
+			spMenuHidden = false;
+	
+		} else {
+
+			body.animate({'left' : 0 }, 300);
+			menu.animate({'left' : "-100%" }, 300);
+			spMenuHidden = false;
+		}
+	
+
+	});
 
 	//categoryクリックしたとき
 	$( "#headerMenu__category" ).click(function() {
