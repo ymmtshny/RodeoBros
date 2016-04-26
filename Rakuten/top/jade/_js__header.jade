@@ -1,15 +1,11 @@
-script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
-	
 script.
-
 	//初期化
-	$( "#headerMenu__topic" ).css("background","rgba(0, 0, 0, 0.1)");
+	//$( "#headerMenu__topic" ).css("background","rgba(0, 0, 0, 0.1)");
 	$( "#categoryContent" ).css("display","none");
 	$( "#brandContent" ).css("display","none");
 	$( "#topicContent" ).css("display","none");
 	$( "#js-menu-tops" ).css("background","#fff");
-
+	
 	var spMenuHidden = true;
 	$('#js-sp-menu').click(function() {
 
@@ -34,8 +30,26 @@ script.
 
 	});
 
+	$("#categoryContent").mouseleave(function() {
+		$( "#categoryContent" ).css("display","none");
+		$( "#brandContent" ).css("display","none");
+		$( "#topicContent" ).css("display","none");
+	});
+
+	$("#brandContent").mouseleave(function() {
+		$( "#categoryContent" ).css("display","none");
+		$( "#brandContent" ).css("display","none");
+		$( "#topicContent" ).css("display","none");
+	});
+
+	$("#topicContent").mouseleave(function() {
+		$( "#categoryContent" ).css("display","none");
+		$( "#brandContent" ).css("display","none");
+		$( "#topicContent" ).css("display","none");
+	});
+
 	//categoryクリックしたとき
-	$( "#headerMenu__category" ).click(function() {
+	$( "#headerMenu__category" ).hover(function() {
 		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
 		$(this).css("background","rgba(0, 0, 0, 0.1)");
 		$( "#categoryContent" ).css("display","block");
@@ -45,7 +59,7 @@ script.
 	});
 
 	//brandクリックしたとき
-	$( "#headerMenu__brand" ).click(function() {
+	$( "#headerMenu__brand" ).hover(function() {
 		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
 		$(this).css("background","rgba(0, 0, 0, 0.1)");
 		$( "#categoryContent" ).css("display","none");
@@ -54,7 +68,7 @@ script.
 	});
 
 	//topicsクリックしたとき
-	$( "#headerMenu__topic" ).click(function() {
+	$( "#headerMenu__topic" ).hover(function() {
 		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
 		$(this).css("background","rgba(0, 0, 0, 0.1)");
 		$( "#categoryContent" ).css("display","none");

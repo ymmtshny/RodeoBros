@@ -5,17 +5,24 @@ html
 		//Goolge Tag から
 		include ../../common/jade/_google.jade
 		//ヘッダーここから
-		section
+		section.mb-section
 			include ./jade/_header.jade
-		section
+		section.mb-section
 			include ./jade/_carousel.jade
-		section
+		section.mb-section
 			include ./jade/_newarrival.jade
-		section
-			include ./jade/_totalcoorde.jade
-		section
+		section.mb-section
 			include ./jade/_brand.jade
+		section.mb-section
+			include ./jade/_totalcoorde.jade
 		section
 			include ./jade/_footer.jade
 		//スクリプトここから
-		include ./jade/_setting.jade
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+		script(src="./js/jquery.lazyload.min.js")
+		script(src="./js/jquery.flexslider-min.js")
+		include ./jade/_vue.jade
+		include ./jade/_js__header.jade
+		include ./jade/_js__newarrival.jade
+		include ./jade/_js__carousel.jade

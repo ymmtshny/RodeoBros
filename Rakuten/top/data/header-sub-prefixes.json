@@ -1,0 +1,18 @@
+{
+  "localhost:3000": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg"
+  },
+  "www.rakuten.ne.jp": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg"
+  },
+  "www.aun-wa.com": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg"
+   },
+  "shopping.geocities.jp": {
+    "image_before": "./images/header-carousel/",
+    "image_after": ".jpg"
+  }
+}

@@ -1,0 +1,38 @@
+h2.sectionTitle NEW ARRIVLAS
+//- .flexslider.newArrival#Vue__NewArrival
+//- 	ul.slides
+//- 		li.slides__page
+//- 			ul.row
+//- 					li(v-for = "element in PageOne").col-xs-2.newArrival__item
+//- 						a(href="{{ element.number }}")
+//- 							img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif")
+//- 							h3 {{ element.brand }}
+//- 							p {{ element.name }}
+//- 		li.slides__page
+//- 			ul.row
+//- 					li(v-for = "element in PageTwo").col-xs-2.newArrival__item
+//- 						a(href="{{ element.number }}")
+//- 							img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif")
+//- 							h3 {{ element.brand }}
+//- 							p {{ element.name }}
+	.text-center
+		a(href='http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html')
+			button.btn.btn-default 新商品一覧へ
+
+
+
+.newArrival#Vue__NewArrival
+	a.rightArrow(v-on:click="onClickNext") Next
+	a.leftArrow(v-on:click="onClickBack") Back
+	ul.row
+		li(v-for = "element in PageOne").newArrival__item
+			a(href="{{ element.number }}")
+				img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif")
+				.newArrival__texts
+					h3 {{ element.brand }}
+					p {{ element.name }}
+		
+	.text-center
+			button.btn.btn-default 新商品一覧へ
+			
+
