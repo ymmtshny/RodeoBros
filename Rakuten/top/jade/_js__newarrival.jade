@@ -1,35 +1,18 @@
 script.
-
-		$('.flexslider').flexslider({
-			animation: "fade",
-			slideshow: false,
-			slideshowSpeed: 3000
-		});
-
-		//- $('.newArrival__item ').unwrap();
-		//- $('.newArrival__item').unwrap();
-
-
-		var lastWidth = $(window).width();
-		$(window).resize(function(){
-			if($(window).width()!=lastWidth){
-				//execute code.
-				lastWidth = $(window).width();
-				console.log(lastWidth);
-			}
-
-			if(lastWidth < 768) {
+		function LazyLoad() {
+				$("img.lazy").lazyload({
+							"threshold":50,
+							"effect":"fadeIn",
+							"effect_speed":0,
+							"failure_limit":1} );
+						console.log("Lazy Loadを起動する");
 
 			}
-
-
-		});
 
 		var currentpage = 1;
 		var NUMBER_OF_ITMES = 12;
 		var vm = new Vue({
 			el: '#Vue__NewArrival',
-			//template: '#VueTopsTemplate',
 
 			methods: {
 				onClickNext: function (e) {
@@ -64,6 +47,7 @@ script.
 				},
 
 				onClickBack: function (e) {
+
 					switch(currentpage) {
 						case 1:
 								vm.$set('NewArrival', this.PageFour);
@@ -116,7 +100,7 @@ script.
 					
 					data.forEach(function (el) {
 						el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
-						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=500x500";
+						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=400x400";
 						temp.push(el);
 					});
 
@@ -126,23 +110,19 @@ script.
 					 _this.PageThree = temp.slice(NUMBER_OF_ITMES * 2 + 1, NUMBER_OF_ITMES * 3 + 1);
 					 _this.PageFour = temp.slice(NUMBER_OF_ITMES * 3 + 1, NUMBER_OF_ITMES * 4 + 1);
 					//console.log(_this.NewArrival); 
+
 				});
 
 			}
 
 		});
 
-			function LazyLoad() {
-				$("img.lazy").lazyload({
-							"threshold":250,
-							"effect":"fadeIn",
-							"effect_speed":0,
-							"failure_limit":1} );
-						console.log("Lazy Loadを起動する");
-
-			}
+			
+		$(window).load(function(){
+			LazyLoad();
+		});
 	
 			// Lazy Loadを起動する
-			setTimeout(function(){ 
-				LazyLoad();
-			},100);
+			//- setTimeout(function(){ 
+			//- 	LazyLoad();
+			//- },100);
