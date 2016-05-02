@@ -1,4 +1,5 @@
 script.
+
 		function LazyLoad() {
 				$("img.lazy").lazyload({
 							"threshold":50,
@@ -95,6 +96,7 @@ script.
 					//async:false,//同期処理にする。
 					url: './data/new-arrival.json',
 					dataType: 'json'
+
 				}).done(function(data) {
 					var temp = [];
 					
@@ -116,13 +118,26 @@ script.
 			}
 
 		});
+		
+		//- $(window).on('load', function() {
+		//- 	 LazyLoad();
+		//- 	console.log('hello'); 
+		//- });
 
-			
 		$(window).load(function(){
 			LazyLoad();
+			//alert('hello');
 		});
 	
-			// Lazy Loadを起動する
+			//- // Lazy Loadを起動する
 			//- setTimeout(function(){ 
 			//- 	LazyLoad();
 			//- },100);
+
+			//- setTimeout(function(){ 
+			//- 	LazyLoad();
+			//- },1000);
+
+			//- setTimeout(function(){ 
+			//- 	LazyLoad();
+			//- },2000);

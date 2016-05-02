@@ -5,8 +5,8 @@ h2.sectionTitle NEW ARRIVAL
 	a.leftArrow(v-on:click="onClickBack") Back
 	ul.row
 		li(v-for = "element in NewArrival").newArrival__item
-			a(href="{{ element.number }}")
-				img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif")
+			a(href="{{ element.number }}" title="{{ element.name }}")
+				img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif" alt="{ element.name }}")
 				.newArrival__texts
 					h3 {{ element.brand }}
 					p {{ element.name }}
