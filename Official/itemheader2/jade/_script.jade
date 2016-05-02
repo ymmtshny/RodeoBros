@@ -1,0 +1,112 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+	
+script.
+
+	//初期化
+	$( "#headerMenu__topic" ).css("background","rgba(0, 0, 0, 0.1)");
+	$( "#categoryContent" ).css("display","none");
+	$( "#brandContent" ).css("display","none");
+	$( "#topicContent" ).css("display","none");
+	$( "#js-menu-tops" ).css("background","#fff");
+
+	var spMenuHidden = true;
+	var body = $(document.body);
+	var menu = $( '.menu' );
+
+	$('#js-sp-menu').click(function() {
+
+		if(spMenuHidden) {
+			
+			body.animate({'left' : "100%" }, 300);
+			menu.animate({'left' : 0 }, 300);
+			spMenuHidden = false;
+	
+		} else {
+
+			body.animate({'left' : 0 }, 300);
+			menu.animate({'left' : "-100%" }, 300);
+			spMenuHidden = false;
+		}
+	
+
+	});
+
+	//categoryクリックしたとき
+	$( "#headerMenu__category" ).click(function() {
+		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
+		$(this).css("background","rgba(0, 0, 0, 0.1)");
+		$( "#categoryContent" ).css("display","block");
+		$( "#brandContent" ).css("display","none");
+		$( "#topicContent" ).css("display","none");
+		$( "#js-tops" ).css("display", "block");
+	});
+
+	//brandクリックしたとき
+	$( "#headerMenu__brand" ).click(function() {
+		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
+		$(this).css("background","rgba(0, 0, 0, 0.1)");
+		$( "#categoryContent" ).css("display","none");
+		$( "#brandContent" ).css("display","block");
+		$( "#topicContent" ).css("display","none");
+	});
+
+	//topicsクリックしたとき
+	$( "#headerMenu__topic" ).click(function() {
+		$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
+		$(this).css("background","rgba(0, 0, 0, 0.1)");
+		$( "#categoryContent" ).css("display","none");
+		$( "#brandContent" ).css("display","none");
+		$( "#topicContent" ).css("display","block");
+	});
+
+	//カテゴリー
+	$( "#js-menu-tops" ).click(function() {
+		$(".headerCategoryList__menu li").css("background","#f7f8f7");
+		$(this).css("background","#fff");
+		$( "#js-content-tops" ).css("display","block");
+		$( "#js-content-outer" ).css("display","none");
+		$( "#js-content-bottoms" ).css("display","none");
+		$( "#js-content-accessories" ).css("display","none");
+		$( "#js-content-others" ).css("display","none");
+	});
+
+	$( "#js-menu-outer" ).click(function() {
+		$(".headerCategoryList__menu li").css("background","#f7f8f7");
+		$(this).css("background","#fff");
+		$( "#js-content-tops" ).css("display","none");
+		$( "#js-content-outer" ).css("display","block");
+		$( "#js-content-bottoms" ).css("display","none");
+		$( "#js-content-accessories" ).css("display","none");
+		$( "#js-content-others" ).css("display","none");
+	});
+
+	$( "#js-menu-bottoms" ).click(function() {
+		$(".headerCategoryList__menu li").css("background","#f7f8f7");
+		$(this).css("background","#fff");
+		$( "#js-content-tops" ).css("display","none");
+		$( "#js-content-outer" ).css("display","none");
+		$( "#js-content-bottoms" ).css("display","block");
+		$( "#js-content-accessories" ).css("display","none");
+		$( "#js-content-others" ).css("display","none");
+	});
+
+	$( "#js-menu-accessories" ).click(function() {
+		$(".headerCategoryList__menu li").css("background","#f7f8f7");
+		$(this).css("background","#fff");
+		$( "#js-content-tops" ).css("display","none");
+		$( "#js-content-outer" ).css("display","none");
+		$( "#js-content-bottoms" ).css("display","none");
+		$( "#js-content-accessories" ).css("display","block");
+		$( "#js-content-others" ).css("display","none");
+	});
+
+	$( "#js-menu-others" ).click(function() {
+		$(".headerCategoryList__menu li").css("background","#f7f8f7");
+		$(this).css("background","#fff");
+		$( "#js-content-tops" ).css("display","none");
+		$( "#js-content-outer" ).css("display","none");
+		$( "#js-content-bottoms" ).css("display","none");
+		$( "#js-content-accessories" ).css("display","none");
+		$( "#js-content-others" ).css("display","block");
+	});
