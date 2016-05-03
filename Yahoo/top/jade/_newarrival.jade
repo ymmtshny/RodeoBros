@@ -1,0 +1,18 @@
+h2.sectionTitle NEW ARRIVAL
+
+.newArrival#Vue__NewArrival
+	a.rightArrow(v-on:click="onClickNext") Next
+	a.leftArrow(v-on:click="onClickBack") Back
+	ul.row
+		li(v-for = "element in NewArrival").newArrival__item
+			a(href="{{ element.number }}" title="{{ element.name }}")
+				img.lazy(data-original="{{ element.image }}" src="./load1000x1000.gif" alt="{ element.name }}")
+				.newArrival__texts
+					h3 {{ element.brand }}
+					p {{ element.name }}
+		
+	.text-center
+		a(href="http://store.shopping.yahoo.co.jp/rodeobros/a5b9a5bfa52.html?n=50&X=99#CentItemList1")
+			button.btn.btn-default 新商品一覧へ
+			
+

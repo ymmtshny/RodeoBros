@@ -1,0 +1,35 @@
+script.
+
+		var mainImage = $('#js__carousel');
+		var src__pc = mainImage.attr("src__pc");
+		var src__sp = mainImage.attr("src__sp");
+		console.log(src__sp, src__pc);
+
+		var lastWidth = $(window).width();
+
+		//初期のwindowサイズで画像を切り替える
+		if(lastWidth > 768) {
+
+			mainImage.attr("src",src__pc);
+
+		} else {
+
+			mainImage.attr("src",src__sp);
+
+		}
+
+		//windowをリサイズしたとき
+		$(window).resize(function(){
+
+			if($(window).width()!=lastWidth){
+				lastWidth = $(window).width();
+				console.log(lastWidth);
+			}
+
+			if(lastWidth > 768) {
+					mainImage.attr("src",src__pc);
+			} else {
+					mainImage.attr("src",src__sp);
+			}
+
+		});

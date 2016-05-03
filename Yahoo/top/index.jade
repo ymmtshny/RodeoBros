@@ -1,0 +1,26 @@
+doctype html
+html
+	include ../../common/jade/head/_head-y.jade
+	body
+		//Goolge Tag から
+		include ../../common/jade/_google.jade
+		//ヘッダーここから
+		section.mb-section
+			include ./jade/_header.jade
+		section.mb-section
+			include ./jade/_carousel.jade
+		section.mb-section
+			include ./jade/_newarrival.jade
+		section.mb-section
+			include ./jade/_brand.jade
+		section.mb-section
+			include ./jade/_totalcoorde.jade
+		section
+			include ./jade/_footer.jade
+		//スクリプトここから
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+		script(src="./js/jquery.lazyload.min.js")
+		include ./jade/_js__header.jade
+		include ./jade/_js__newarrival.jade
+		include ./jade/_js__carousel.jade

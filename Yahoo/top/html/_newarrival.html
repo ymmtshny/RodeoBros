@@ -1,0 +1,13 @@
+
+<h2 class="sectionTitle">NEW ARRIVAL</h2>
+<div id="Vue__NewArrival" class="newArrival"><a v-on:click="onClickNext" class="rightArrow">Next</a><a v-on:click="onClickBack" class="leftArrow">Back</a>
+  <ul class="row">
+    <li v-for="element in NewArrival" class="newArrival__item"><a href="{{ element.number }}" title="{{ element.name }}"><img data-original="{{ element.image }}" src="./load1000x1000.gif" alt="{ element.name }}" class="lazy"/>
+        <div class="newArrival__texts">
+          <h3>{{ element.brand }}</h3>
+          <p>{{ element.name }}</p>
+        </div></a></li>
+  </ul>
+  <div class="text-center"><a href="http://store.shopping.yahoo.co.jp/rodeobros/a5b9a5bfa52.html?n=50&amp;X=99#CentItemList1">
+      <button class="btn btn-default">新商品一覧へ</button></a></div>
+</div>
