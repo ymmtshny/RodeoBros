@@ -1425,6 +1425,29 @@ header {
     overflow: visible !important;
     text-overflow: ellipsis;
   }
+  .news {
+    background: #000;
+    color: #fff;
+  }
+  .news h2 {
+    padding: 1.5em 0;
+    margin: 0;
+  }
+  .news img {
+    margin-bottom: 1.3em;
+  }
+  .news h3 {
+    margin: 0;
+    margin-bottom: 0.3em;
+    font-size: 1.3em;
+  }
+  .news p {
+    margin-bottom: 2em;
+  }
+  .news__wrapper {
+    padding: 0 1.5em;
+    padding-bottom: 0.5em;
+  }
   .shop-infomation {
     padding: 0 2em;
   }

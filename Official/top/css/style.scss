@@ -525,6 +525,37 @@ $mb_item: 3em !default;
 
 }
 
+//news
+.news {
+	background: #000;
+	color:#fff;
+
+	h2 {
+		padding: 1.5em 0;
+		margin: 0;
+	}
+
+	img {
+		margin-bottom: 1.3em;
+	}
+	
+	h3 {
+		margin:0;
+		margin-bottom: 0.3em;
+		font-size: 1.3em;
+	}
+
+	p {
+		margin-bottom: 2em;
+	}
+}
+
+.news__wrapper {
+	padding: 0 1.5em;
+	padding-bottom: 0.5em;
+
+}
+
 
 //フッター
 	.shop-infomation {
