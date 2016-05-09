@@ -1,22 +1,147 @@
 script.
-
-		var mainImage = $('#js__carousel');
-		var src__pc = mainImage.attr("src__pc");
-		var src__sp = mainImage.attr("src__sp");
-		console.log(src__sp, src__pc);
-
 		var lastWidth = $(window).width();
 
-		//初期のwindowサイズで画像を切り替える
-		if(lastWidth > 768) {
+		var mainImage = $('#js__carousel__image');
+		var mainLink = $('#js__carousel__link');
 
-			mainImage.attr("src",src__pc);
+		var src__pc__sun = mainImage.attr("src__pc__sun");
+		var src__sp__sun = mainImage.attr("src__sp__sun");
+		var href__sun = mainLink.attr("href__sun");
+		var title__sun = mainLink.attr("title__sun");
 
-		} else {
+		var src__pc__mon = mainImage.attr("src__pc__mon");
+		var src__sp__mon = mainImage.attr("src__sp__mon");
+		var href__mon = mainLink.attr("href__mon");
+		var title__mon = mainLink.attr("title__mon");
 
-			mainImage.attr("src",src__sp);
+		var src__pc__tue = mainImage.attr("src__pc__tue");
+		var src__sp__tue = mainImage.attr("src__sp__tue");
+		var href__tue = mainLink.attr("href__tue");
+		var title__tue = mainLink.attr("title__tue");
 
+		var src__pc__wed = mainImage.attr("src__pc__wed");
+		var src__sp__wed = mainImage.attr("src__sp__wed");
+		var href__wed = mainLink.attr("href__wed");
+		var title__wed = mainLink.attr("title__wed");
+
+		var src__pc__thu = mainImage.attr("src__pc__thu");
+		var src__sp__thu = mainImage.attr("src__sp__thu");
+		var href__thu = mainLink.attr("href__thu");
+		var title__thu = mainLink.attr("title__thu");
+
+		var src__pc__fri = mainImage.attr("src__pc__fri");
+		var src__sp__fri = mainImage.attr("src__sp__fri");
+		var href__fri = mainLink.attr("href__fri");
+		var title__fri = mainLink.attr("title__fri");
+
+		var src__pc__sat = mainImage.attr("src__pc__sat");
+		var src__sp__sat = mainImage.attr("src__sp__sat");
+		var href__sat = mainLink.attr("href__sat");
+		var title__sat = mainLink.attr("title__sat");
+
+		var dateObj = new Date() ;
+		var weekDayList = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;
+		var weekDay = weekDayList[ dateObj.getDay()] ;	// 曜日
+
+		function setMainImage(day, width) {
+			if(width > 768) {
+
+				switch(day) {
+					case "Sun":
+							mainImage.attr("src",src__pc__sun);
+							mainLink.attr("href",href__sun);
+							mainLink.attr("title",title__sun);
+							break;
+					case "Mon":
+							mainImage.attr("src",src__pc__mon);
+							mainLink.attr("href",href__mon);
+							mainLink.attr("title",title__mon);
+							break;
+					case "Tue":
+							mainImage.attr("src",src__pc__tue);
+							mainLink.attr("href",href__tue);
+							mainLink.attr("title",title__tue);
+							break;
+					case "Wed":
+							mainImage.attr("src",src__pc__wed);
+							mainLink.attr("href",href__wed);
+							mainLink.attr("title",title__wed);
+							break;
+					case "Thu":
+							mainImage.attr("src",src__pc__thu);
+							mainLink.attr("href",href__thu);
+							mainLink.attr("title",title__thu);
+							break;
+					case "Fri":
+							mainImage.attr("src",src__pc__fri);
+							mainLink.attr("href",href__fri);
+							mainLink.attr("title",title__fri);
+							break;
+					case "Sat":
+							mainImage.attr("src",src__pc__sat);
+							mainLink.attr("href",href__sat);
+							mainLink.attr("title",title__sat);
+							break;
+					default:
+							mainImage.attr("src",src__pc__sun);
+							mainLink.attr("href",href__sun);
+							mainLink.attr("title",title__sun);
+							console.log("ERROR");
+				}
+
+			} else {
+
+				switch(day) {
+					case "Sun":
+							mainImage.attr("src",src__sp__sun);
+							mainLink.attr("href",href__sun);
+							mainLink.attr("title",title__sun);
+							break;
+					case "Mon":
+							mainImage.attr("src",src__sp__mon);
+							mainLink.attr("href",href__mon);
+							mainLink.attr("title",title__mon);
+							break;
+					case "Tue":
+							mainImage.attr("src",src__sp__tue);
+							mainLink.attr("href",href__tue);
+							mainLink.attr("title",title__tue);
+							break;
+					case "Wed":
+							mainImage.attr("src",src__sp__wed);
+							mainLink.attr("href",href__wed);
+							mainLink.attr("title",title__wed);
+							break;
+					case "Thu":
+							mainImage.attr("src",src__sp__thu);
+							mainLink.attr("href",href__thu);
+							mainLink.attr("title",title__thu);
+							break;
+					case "Fri":
+							mainImage.attr("src",src__sp__fri);
+							mainLink.attr("href",href__fri);
+							mainLink.attr("title",title__fri);
+							break;
+					case "Sat":
+							mainImage.attr("src",src__sp__sat);
+							mainLink.attr("href",href__sat);
+							mainLink.attr("title",title__sat);
+							break;
+					default:
+							mainImage.attr("src",src__sp__sun);
+							mainLink.attr("href",href__sun);
+							mainLink.attr("title",title__sun);
+							console.log("ERROR");
+				}
+
+			}
+
+			console.log(day);
+			console.log(mainLink.attr('href'));
+			console.log( mainImage.attr('src'));
 		}
+
+		setMainImage(weekDay, lastWidth);
 
 		//windowをリサイズしたとき
 		$(window).resize(function(){
@@ -26,10 +151,6 @@ script.
 				console.log(lastWidth);
 			}
 
-			if(lastWidth > 768) {
-					mainImage.attr("src",src__pc);
-			} else {
-					mainImage.attr("src",src__sp);
-			}
+			setMainImage(weekDay, lastWidth);
 
 		});
