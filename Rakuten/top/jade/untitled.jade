@@ -1,0 +1,13 @@
+script.
+	var lastWidth = $(window).width();
+
+	$(window).resize(function() {
+
+		if($(window).width()!=lastWidth){
+				lastWidth = $(window).width();
+				console.log(lastWidth);
+		}
+
+		setMainImage(weekDay, lastWidth);
+
+	});

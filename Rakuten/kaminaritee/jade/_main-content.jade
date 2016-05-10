@@ -1,0 +1,20 @@
+div.text-center.top-image-box
+	img#js__carousel__image.mb-ll(src="" src__pc="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/kaminari_cate.jpg" src__sp = "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-20.jpg")
+
+	p.mb-ml 2005年より立ち上げたカミナリレーベルは「太陽族」「カミナリ族」「みゆき族」「六本木野獣会」など、懐かしい日本の カッコイイ不良文化をイメージして「JAPANESE BADBOY KULTURE」をコンセプトとして展開。 2011年からはエフ商会との業務提携を機に、コンセプトを「JAPANESE BADBOY KULTURE」から「OLD SCHOOL SHOWA MODE RN」（古き良き時代の昭和モダン）に改め、ノスタルジーを感じさせる当時の不良っぽくイカシタ文化、風俗、流行などをウェアに 落とし込み、独自の世界を展開。
+
+	p.mb-mm.campain-text 2016年の春 / 夏、KAMINARIのTシャツが入荷しました。
+	p.mb-ml
+
+
+div.hanger.mb-ll
+	img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/hanger0.png" alt="ハンガー")
+
+div#Vue
+	div(v-for = "element in Tedmantee" ).items.col-sm-6.text-center
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+			div.items__body
+				p.brand {{ element.brand }}
+				p.name.mb-ll {{ element.name }}
