@@ -370,7 +370,7 @@
     <div class="hidden-pc">
       <div class="sp">
         <ul>
-          <li id="js-sp-menu" class="sp__menu"><span class="fa fa-bars"></span><span class="fa fa-times"></span></li>
+          <li id="js-sp-menu" class="sp__menu"><span class="fa fa-search"></span><span class="fa fa-times"></span></li>
           <li class="sp__logo"><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo-white.png"></a></li>
           <li class="sp__cart"><span class="fa fa-shopping-cart"></span></li>
         </ul>
@@ -378,6 +378,21 @@
       <div class="menu__outerbox">
         <div class="menu">
           <ul class="menu__top">
+            <li>
+              <form accept-charset="euc-jp" method="get" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" target="_top" class="searchForm">
+                <div class="input-group">
+                  <input type="text" name="sitem" placeholder="検索する" class="form-control">
+                  <input type="hidden" name="sv" value="6">
+                  <input type="hidden" name="sid" value="235529">
+                  <input type="hidden" name="su" value="auc-rodeo">
+                  <input type="hidden" name="sn" value="ロデオブロスRODEO BROS">
+                  <input type="hidden" name="f" value="A"><span class="input-group-btn">
+                    <button type="submit" name="検索" onclick="org=document.charset; document.charset='EUC-JP'; document.sitem.submit(); document.sv.submit(); document.sid.submit(); document.su.submit(); document.sn.submit(); document.f.submit(); document.charset=org;" class="btn btn-default">
+                      <!--i.fa.fa-search--><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/btn2.png">
+                    </button></span>
+                </div>
+              </form>
+            </li>
             <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/">新着商品</a></li>
             <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000002630/">アウトレットセール</a></li>
             <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000000632/">トップス</a></li>

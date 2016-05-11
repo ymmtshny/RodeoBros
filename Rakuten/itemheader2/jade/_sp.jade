@@ -1,7 +1,7 @@
 div.sp
 	ul
 		li.sp__menu#js-sp-menu
-			span.fa.fa-bars
+			span.fa.fa-search
 			span.fa.fa-times
 		li.sp__logo
 			a(href="")
@@ -11,6 +11,20 @@ div.sp
 div.menu__outerbox
 	div.menu
 		ul.menu__top
+			li
+				form.searchForm(accept-charset='euc-jp', method='get', action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc', target='_top')
+					.input-group
+						input.form-control(type='text', name='sitem', placeholder='検索する')
+						input(type='hidden', name='sv', value='6')
+						input(type='hidden', name='sid', value='235529')
+						input(type='hidden', name='su', value='auc-rodeo')
+						input(type='hidden', name='sn', value='ロデオブロスRODEO BROS')
+						input(type='hidden', name='f', value='A')
+						span.input-group-btn
+							button.btn.btn-default(type='submit', name='検索', onclick="org=document.charset; document.charset='EUC-JP'; document.sitem.submit(); document.sv.submit(); document.sid.submit(); document.su.submit(); document.sn.submit(); document.f.submit(); document.charset=org;")
+								//i.fa.fa-search
+								img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/btn2.png")
+
 			li
 				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/") 新着商品
 			li

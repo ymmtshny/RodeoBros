@@ -1,10 +1,10 @@
 @import '../../../common/scss/normalize';
 @import '../../../common/scss/utility';
-@import '../../../common/scss/base';
+@import '../../../common/scss/base.scss';
 
 body {
 	width: 100%;
-	
+
 }
 
 html {
@@ -47,7 +47,7 @@ html {
 		border-top: solid 1px #cdcdcd;
 		border-bottom: solid 1px #cdcdcd;
 		background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain;
-		
+
 		ul {
 			width: 100%;
 			margin:0 auto;
@@ -71,16 +71,16 @@ html {
 		a {
 			color:#000;
 			text-decoration: none;
-			
+
 
 			&:hover {
 				text-decoration: none;
 			}
-		} 
+		}
 
 		.right-border {
 			border-right: 1px solid #cdcdcd;
-			
+
 		}
 
 		.no-right-border {
@@ -89,13 +89,13 @@ html {
 
 		//検索窓
 		form {
-			
+
 		}
 
 		.input-group {
 			margin-left: 20px;
 			margin-top: 8px;
-			
+
 		}
 
 		input {
@@ -171,7 +171,7 @@ html {
 }
 
 .tab__contents {
-	
+
 	height: 330px;
 
 	ul {
@@ -182,7 +182,7 @@ html {
 		margin-top: 10px;
 		float: left;
 	}
-	
+
 	li {
 		border-bottom:1px solid #cdcdcd;
 		height: 30px;
@@ -191,7 +191,7 @@ html {
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		
+
 		&:last-child {
 			border: none;
 		}
@@ -229,7 +229,7 @@ html {
 
 //ブランドここから
 .headerBrandList {
-	
+
 	clear: both;
 	margin: 30px auto;
 	max-width: 1240px;
@@ -244,7 +244,7 @@ html {
 	li:hover {
 		opacity: 0.7;
 	}
-	
+
 	.brand__wrapper {
 		border: 1px solid #cdcdcd;
 		width: 100%;
@@ -261,7 +261,7 @@ html {
 		text-overflow: ellipsis;
 	}
 
-	
+
 
 	.brand__header {
 		width: 20%;
@@ -337,7 +337,7 @@ html {
 	}
 
 	p {
-		font-size:12px;	
+		font-size:12px;
 		color:gray;
 		margin-bottom: 15px;
 		white-space: nowrap;
@@ -359,7 +359,7 @@ html {
 
 }
 
-//ヘッダー５段目 
+//ヘッダー５段目
 .headerInfo {
 	width: 100%;
 	height: 80px;
@@ -413,14 +413,14 @@ html {
 }
 
 @media (max-width: 768px) {
-	
+
 	.hidden-sp {
 		display: none!important;
 	}
 
 	.hidden-pc {
 		display: block!important;
-		
+
 	}
 
 	.sp {
@@ -437,6 +437,16 @@ html {
 			float: left;
 		}
 
+	}
+
+	.searchForm {
+		width:90%;
+		margin-bottom:2em;
+		margin-top:1em;
+
+		button img {
+			width:18px;
+		}
 	}
 
 
