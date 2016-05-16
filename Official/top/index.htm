@@ -366,7 +366,7 @@
         <div class="hidden-pc">
           <div class="sp">
             <ul>
-              <li id="js-sp-menu" class="sp__menu"><span class="fa fa-bars"></span><span class="fa fa-times"></span></li>
+              <li id="js-sp-menu" class="sp__menu"><span class="fa fa-search"></span><span class="fa fa-times"></span></li>
               <li class="sp__logo"><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo-white.png"></a></li>
               <li class="sp__cart"><span class="fa fa-shopping-cart"></span></li>
             </ul>
@@ -374,6 +374,14 @@
           <div class="menu__outerbox">
             <div class="menu">
               <ul class="menu__top">
+                <li>
+                  <form target="_top" method="get" action="http://www.aun-wa.com/SHOP/list.cgi" class="searchForm">
+                    <div class="input-group">
+                      <input type="text" name="Search" placeholder="検索する" class="form-control"><span class="input-group-btn">
+                        <button type="submit" name="検索" class="btn btn-default"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/btn2.png"></button></span>
+                    </div>
+                  </form>
+                </li>
                 <li><a href="http://www.aun-wa.com/SHOP/list.cgi">新着商品</a></li>
                 <li><a href="http://www.aun-wa.com/SHOP/411534/list.html">トップス</a></li>
                 <li><a href="http://www.aun-wa.com/SHOP/411844/list.html">アウター</a></li>
@@ -387,10 +395,10 @@
                 <li><a href="http://www.aun-wa.com/recruit/">採用情報</a></li>
               </ul>
               <ul class="menu__sns">
-                <li><a href="http://www.aun-wa.com/SHOP/mailmag.html"> <span class="fa fa-envelope"></span>メールマガジン</a></li>
-                <li><a href="https://twitter.com/rodeobros"> <span class="fa fa-twitter-square"></span>Twitter</a></li>
-                <li><a href="https://www.facebook.com/Rodeobros"> <span class="fa fa-facebook-official"></span>Facebook</a></li>
-                <li><a href="https://www.instagram.com/rodeo_bros/"> <span class="fa fa-instagram"></span>Instagram</a></li>
+                <li><a href="http://www.aun-wa.com/SHOP/mailmag.html"><span class="fa fa-envelope"></span>メールマガジン</a></li>
+                <li><a href="https://twitter.com/rodeobros"><span class="fa fa-twitter-square"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/Rodeobros"><span class="fa fa-facebook-official"></span>Facebook</a></li>
+                <li><a href="https://www.instagram.com/rodeo_bros/"><span class="fa fa-instagram"></span>Instagram</a></li>
               </ul>
             </div>
           </div>
@@ -419,7 +427,7 @@
       <h2 class="sectionTitle">NEW ARRIVAL</h2>
       <div id="Vue__NewArrival" class="newArrival"><a v-on:click="onClickNext" class="rightArrow">Next</a><a v-on:click="onClickBack" class="leftArrow">Back</a>
         <ul class="row">
-          <li v-for="element in NewArrival" class="newArrival__item"><a href="{{ element.number }}" title="{{ element.name }}"><img data-original="{{ element.image }}" src="./load1000x1000.gif" alt="{ element.name }}" class="lazy">
+          <li v-for="element in NewArrival" class="newArrival__item"><a href="{{ element.number }}" title="{{ element.name }}"><img data-original="{{ element.image }}" src="./load1000x1000.gif" alt="{{ element.name }}" class="lazy">
               <div class="newArrival__texts">
                 <h3>{{ element.brand }}</h3>
                 <p>{{ element.name }}</p>
@@ -701,7 +709,7 @@
       var spMenuHidden = true;
       var body = $(document.body);
       var menu = $( '.menu' );
-      var navIcon = $( '.fa-bars' );
+      var navIcon = $( '.fa-search' );
       var closeIcon = $( '.fa-times' );
 
       $('#js-sp-menu').click(function() {

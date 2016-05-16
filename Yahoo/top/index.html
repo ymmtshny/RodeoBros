@@ -6,7 +6,7 @@
     <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
     <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
     <title>RODEO BROS | Yahoo店</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_min.css">
     <link rel="shortcut icon" href="http://www.rakuten.ne.jp/gold/auc-rodeo/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="initial-scale=1">
   </head>
@@ -362,7 +362,7 @@
         <div class="hidden-pc">
           <div class="sp">
             <ul>
-              <li id="js-sp-menu" class="sp__menu"><span class="fa fa-bars"></span><span class="fa fa-times"></span></li>
+              <li id="js-sp-menu" class="sp__menu"><span class="fa fa-search"></span><span class="fa fa-times"></span></li>
               <li class="sp__logo"><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo-white.png"></a></li>
               <li class="sp__cart"><span class="fa fa-shopping-cart"></span></li>
             </ul>
@@ -370,6 +370,14 @@
           <div class="menu__outerbox">
             <div class="menu">
               <ul class="menu__top">
+                <li>
+                  <form target="_top" method="get" action="http://store.shopping.yahoo.co.jp/rodeobros/search.html" class="searchForm">
+                    <div class="input-group">
+                      <input type="text" name="p" placeholder="検索する" class="form-control"><span class="input-group-btn">
+                        <button type="submit" name="検索" class="btn btn-default"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/btn2.png"></button></span>
+                    </div>
+                  </form>
+                </li>
                 <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/a5b9a5bfa52.html?n=50&amp;X=99#CentItemList1">新着商品</a></li>
                 <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/a5a2a5a6a5.html">アウトレットセール</a></li>
                 <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/tops28a5c8.html">トップス</a></li>
@@ -693,59 +701,59 @@
       $( "#brandContent" ).css("display","none");
       $( "#topicContent" ).css("display","none");
       $( "#js-menu-tops" ).css("background","#fff");
-      
-      
+
+
       var spMenuHidden = true;
       var body = $(document.body);
       var menu = $( '.menu' );
-      var navIcon = $( '.fa-bars' );
+      var navIcon = $( '.fa-search' );
       var closeIcon = $( '.fa-times' );
-      
+
       $('#js-sp-menu').click(function() {
-      
+
       	if(spMenuHidden) {
-      		
+
       		body.animate({'left' : "100%" }, 300);
       		menu.animate({'left' : 0 }, 300);
       		navIcon.css("display", "none");
       		closeIcon.css("display", "inline-block");
       		spMenuHidden = false;
-      
+
       	} else {
-      
+
       		body.animate({'left' : 0 }, 300);
       		menu.animate({'left' : "-100%" }, 300);
       		navIcon.css("display", "inline-block");
       		closeIcon.css("display", "none");
       		spMenuHidden = true;
       	}
-      
-      
+
+
       });
-      
-      
-      
+
+
+
       $("#categoryContent").mouseleave(function() {
       	$( "#categoryContent" ).css("display","none");
       	$( "#brandContent" ).css("display","none");
       	$( "#topicContent" ).css("display","none");
       	$( "#headerMenu__category" ).css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
       });
-      
+
       $("#brandContent").mouseleave(function() {
       	$( "#categoryContent" ).css("display","none");
       	$( "#brandContent" ).css("display","none");
       	$( "#topicContent" ).css("display","none");
       	$( "#headerMenu__brand" ).css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
       });
-      
+
       $("#topicContent").mouseleave(function() {
       	$( "#categoryContent" ).css("display","none");
       	$( "#brandContent" ).css("display","none");
       	$( "#topicContent" ).css("display","none");
       	$( "#headerMenu__topic" ).css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
       });
-      
+
       //categoryクリックしたとき
       $( "#headerMenu__category" ).hover(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -755,7 +763,7 @@
       	$( "#topicContent" ).css("display","none");
       	$( "#js-tops" ).css("display", "block");
       });
-      
+
       //brandクリックしたとき
       $( "#headerMenu__brand" ).hover(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -764,7 +772,7 @@
       	$( "#brandContent" ).css("display","block");
       	$( "#topicContent" ).css("display","none");
       });
-      
+
       //topicsクリックしたとき
       $( "#headerMenu__topic" ).hover(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -773,7 +781,7 @@
       	$( "#brandContent" ).css("display","none");
       	$( "#topicContent" ).css("display","block");
       });
-      
+
       //カテゴリー
       $( "#js-menu-tops" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
@@ -784,7 +792,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-outer" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -794,7 +802,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-bottoms" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -804,7 +812,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-accessories" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -814,7 +822,7 @@
       	$( "#js-content-accessories" ).css("display","block");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-others" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -827,7 +835,7 @@
     </script>
     <script>
       window.onunload = function() {};
-      
+
       function LazyLoad() {
       		$("img.lazy").lazyload({
       					"threshold":50,
@@ -835,17 +843,17 @@
       					"effect_speed":0,
       					"failure_limit":1} );
       				console.log("Lazy Loadを起動する");
-      
+
       	}
-      
+
       var currentpage = 1;
       var NUMBER_OF_ITMES = 12;
       var vm = new Vue({
       	el: '#Vue__NewArrival',
-      
+
       	methods: {
       		onClickNext: function (e) {
-      
+
       			switch(currentpage) {
       				case 1:
       						vm.$set('NewArrival', this.PageTwo);
@@ -866,17 +874,17 @@
       				default:
       						console.log("ERROR");
       			}
-      
+
       			setTimeout(function(){
       					LazyLoad();
       			},100);
-      
+
       			console.log(currentpage);
-      
+
       		},
-      
+
       		onClickBack: function (e) {
-      
+
       			switch(currentpage) {
       				case 1:
       						vm.$set('NewArrival', this.PageFour);
@@ -897,17 +905,17 @@
       				default:
       						console.log("ERROR");
       			}
-      
+
       			setTimeout(function(){
       					LazyLoad();
       			},100);
-      
+
       			console.log(currentpage);
-      
+
       		}
-      
+
       	},
-      
+
       	data: {
       		NewArrival: [],
       		PageOne:[],
@@ -915,110 +923,110 @@
       		PageThree:[],
       		PageFour:[]
       	},
-      
+
       	created: function() {
-      
+
       		var _this = this;
       		//get json file
       		$.ajax({
       			//async:false,//同期処理にする。
       			url: './data/new-arrival.json',
       			dataType: 'json'
-      
+
       		}).done(function(data) {
       			var temp = [];
-      
+
       			data.forEach(function (el) {
       				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html";
       				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=400x400";
       				temp.push(el);
       			});
-      
+
       			 _this.NewArrival = temp.slice(0,NUMBER_OF_ITMES);
       			 _this.PageOne = temp.slice(0,NUMBER_OF_ITMES);
       			 _this.PageTwo = temp.slice(NUMBER_OF_ITMES , NUMBER_OF_ITMES * 2 );
       			 _this.PageThree = temp.slice(NUMBER_OF_ITMES * 2 , NUMBER_OF_ITMES * 3 );
       			 _this.PageFour = temp.slice(NUMBER_OF_ITMES * 3 , NUMBER_OF_ITMES * 4 );
-      
+
       			//console.log(_this.NewArrival);
-      
+
       		});
-      
+
       	}
-      
+
       });
-      
+
       //- $(window).on('load', function() {
       //- 	 LazyLoad();
       //- 	console.log('hello');
       //- });
-      
+
       $(window).load(function(){
       	LazyLoad();
       	//alert('hello');
       });
-      
+
       	//- // Lazy Loadを起動する
       	//- setTimeout(function(){
       	//- 	LazyLoad();
       	//- },100);
-      
+
       	//- setTimeout(function(){
       	//- 	LazyLoad();
       	//- },1000);
-      
+
       	//- setTimeout(function(){
       	//- 	LazyLoad();
       	//- },2000);
     </script>
     <script>
       var lastWidth = $(window).width();
-      
+
       var mainImage = $('#js__carousel__image');
       var mainLink = $('#js__carousel__link');
-      
+
       var src__pc__sun = mainImage.attr("src__pc__sun");
       var src__sp__sun = mainImage.attr("src__sp__sun");
       var href__sun = mainLink.attr("href__sun");
       var title__sun = mainLink.attr("title__sun");
-      
+
       var src__pc__mon = mainImage.attr("src__pc__mon");
       var src__sp__mon = mainImage.attr("src__sp__mon");
       var href__mon = mainLink.attr("href__mon");
       var title__mon = mainLink.attr("title__mon");
-      
+
       var src__pc__tue = mainImage.attr("src__pc__tue");
       var src__sp__tue = mainImage.attr("src__sp__tue");
       var href__tue = mainLink.attr("href__tue");
       var title__tue = mainLink.attr("title__tue");
-      
+
       var src__pc__wed = mainImage.attr("src__pc__wed");
       var src__sp__wed = mainImage.attr("src__sp__wed");
       var href__wed = mainLink.attr("href__wed");
       var title__wed = mainLink.attr("title__wed");
-      
+
       var src__pc__thu = mainImage.attr("src__pc__thu");
       var src__sp__thu = mainImage.attr("src__sp__thu");
       var href__thu = mainLink.attr("href__thu");
       var title__thu = mainLink.attr("title__thu");
-      
+
       var src__pc__fri = mainImage.attr("src__pc__fri");
       var src__sp__fri = mainImage.attr("src__sp__fri");
       var href__fri = mainLink.attr("href__fri");
       var title__fri = mainLink.attr("title__fri");
-      
+
       var src__pc__sat = mainImage.attr("src__pc__sat");
       var src__sp__sat = mainImage.attr("src__sp__sat");
       var href__sat = mainLink.attr("href__sat");
       var title__sat = mainLink.attr("title__sat");
-      
+
       var dateObj = new Date() ;
       var weekDayList = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ] ;
       var weekDay = weekDayList[ dateObj.getDay()] ;	// 曜日
-      
+
       function setMainImage(day, width) {
       	if(width > 768) {
-      
+
       		switch(day) {
       			case "Sun":
       					mainImage.attr("src",src__pc__sun);
@@ -1061,9 +1069,9 @@
       					mainLink.attr("title",title__sun);
       					console.log("ERROR");
       		}
-      
+
       	} else {
-      
+
       		switch(day) {
       			case "Sun":
       					mainImage.attr("src",src__sp__sun);
@@ -1106,26 +1114,26 @@
       					mainLink.attr("title",title__sun);
       					console.log("ERROR");
       		}
-      
+
       	}
-      
+
       	console.log(day);
       	console.log(mainLink.attr('href'));
       	console.log( mainImage.attr('src'));
       }
-      
+
       setMainImage(weekDay, lastWidth);
-      
+
       //windowをリサイズしたとき
       $(window).resize(function(){
-      
+
       	if($(window).width()!=lastWidth){
       		lastWidth = $(window).width();
       		console.log(lastWidth);
       	}
-      
+
       	setMainImage(weekDay, lastWidth);
-      
+
       });
     </script>
   </body>

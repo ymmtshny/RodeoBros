@@ -1,0 +1,46 @@
+doctype html
+html
+	include ../../common/jade/head/_head-r.jade
+	body
+		//Goolge Tag から
+		include ../../common/jade/_google.jade
+		//ヘッダーここから
+		//include ../../common/jade/header/_header-r.jade
+
+		//外枠ここから
+		//div#wrapper
+		//レフトナビここから
+		//include jade/_leftnav-r.jade
+		div.actual-leftnav
+			//////////////////////////////////////////////////
+			section.mb-ms
+				//include jade/totalcoorde.jade
+				include jade/_crows.jade
+			//////////////////////////////////////////////////　
+			section.mb-ms
+				include jade/new.jade
+			//////////////////////////////////////////////////
+			section.mb-ms
+				include jade/items.jade
+			//////////////////////////////////////////////////
+			section.mb-ms
+				include jade/brand.jade
+			//////////////////////////////////////////////////
+			section.mb-ms
+				include jade/category.jade
+			//////////////////////////////////////////////////
+			section.mb-ms
+				include jade/topics.jade
+			//////////////////////////////////////////////////
+			section.mb-ms
+				//include jade/sns.jade
+
+			//メインコンテンツここから
+			//div#main.main-box
+				include jade/_main-content.jade
+
+		//フッターここから
+		//include ../../common/jade/footer/_footer-r.jade
+	//スクリプトここから
+	include jade/_javascript.jade
+

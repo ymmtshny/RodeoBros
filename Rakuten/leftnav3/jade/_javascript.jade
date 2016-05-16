@@ -1,0 +1,40 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+
+script.
+
+	new Vue({
+		el: '#Vue',
+
+		data: {
+			Items: []
+		},
+
+		created: function() {
+
+			var _this = this;
+			//get json file
+			$.ajax({
+				//async:false,//同期処理にする。
+				url: '../data/new-arrival.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=200x200";
+					//の商品だけ配列に格納する
+					if(el.brand == "CROWS×WORST") {
+						temp.push(el);
+					}
+
+					if ( el.brand.match(/クローズ/)) {
+						temp.push(el);
+					}
+				});
+				_this.Items = temp.slice(0, 8);
+				 console.log(_this.Items);
+			});
+
+		}
+	});

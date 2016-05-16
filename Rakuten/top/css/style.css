@@ -1111,6 +1111,10 @@ header {
   float: left;
 }
 
+.newArrival .newArrival__item:nth-of-type(7) {
+  clear: both;
+}
+
 .newArrival img {
   border-bottom: 1px solid #ddd;
   margin-bottom: 1em;

@@ -5,24 +5,24 @@ script.
 	$( "#brandContent" ).css("display","none");
 	$( "#topicContent" ).css("display","none");
 	$( "#js-menu-tops" ).css("background","#fff");
-	
-	
+
+
 	var spMenuHidden = true;
 	var body = $(document.body);
 	var menu = $( '.menu' );
-	var navIcon = $( '.fa-bars' );
+	var navIcon = $( '.fa-search' );
 	var closeIcon = $( '.fa-times' );
 
 	$('#js-sp-menu').click(function() {
 
 		if(spMenuHidden) {
-			
+
 			body.animate({'left' : "100%" }, 300);
 			menu.animate({'left' : 0 }, 300);
 			navIcon.css("display", "none");
 			closeIcon.css("display", "inline-block");
 			spMenuHidden = false;
-	
+
 		} else {
 
 			body.animate({'left' : 0 }, 300);
@@ -31,7 +31,7 @@ script.
 			closeIcon.css("display", "none");
 			spMenuHidden = true;
 		}
-	
+
 
 	});
 

@@ -1,0 +1,6 @@
+h1.reserve-title CROWS×WORST
+div.reserve#Vue
+	div.items(v-for="item in Items")
+		a(href="{{item.number}}", target="_top")
+			img(src="{{item.image}}")
+			p {{ item.name }}
