@@ -1,0 +1,68 @@
+div.sp
+	ul
+		li.sp__menu#js-sp-menu
+			span.fa.fa-search
+			span.fa.fa-times
+		li.sp__logo
+			a(href="")
+				img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo-white.png")
+		li.sp__cart
+			span.fa.fa-shopping-cart
+div.menu__outerbox
+	div.menu
+		ul.menu__top
+			li
+				form.searchForm(accept-charset='euc-jp', method='get', action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc', target='_top')
+					.input-group
+						input.form-control(type='text', name='sitem', placeholder='検索する')
+						input(type='hidden', name='sv', value='6')
+						input(type='hidden', name='sid', value='235529')
+						input(type='hidden', name='su', value='auc-rodeo')
+						input(type='hidden', name='sn', value='ロデオブロスRODEO BROS')
+						input(type='hidden', name='f', value='A')
+						span.input-group-btn
+							button.btn.btn-default(type='submit', name='検索', onclick="org=document.charset; document.charset='EUC-JP'; document.sitem.submit(); document.sv.submit(); document.sid.submit(); document.su.submit(); document.sn.submit(); document.f.submit(); document.charset=org;")
+								//i.fa.fa-search
+								img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/img/btn2.png")
+
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/") 新着商品
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000002630/") アウトレットセール
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000632/") トップス
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000633/") アウター
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000631/") ボトムス
+			li
+				a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000634/") アクセサリー
+			li
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html") ブランド一覧へ
+			li
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/backnumber/") 特集一覧へ
+			li
+				a(href="http://review.rakuten.co.jp/shop/4/235529_235529/1.1/") ユーザーレビュー
+			li
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/faq.html") ショッピングガイド
+			li
+				a(href="rodeo@aun-wa.com") お問い合わせ
+			li
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/recruit/") 採用情報
+		ul.menu__sns
+			li
+				a(href="http://www.rakuten.co.jp/auc-rodeo/news.html")
+					span.fa.fa-envelope
+					| メールマガジン
+			li
+				a(href="https://twitter.com/rodeobros")
+					span.fa.fa-twitter-square
+					| Twitter
+			li
+				a(href="https://www.facebook.com/Rodeobros")
+					span.fa.fa-facebook-official
+					| Facebook
+			li
+				a(href="https://www.instagram.com/rodeo_bros/")
+					span.fa.fa-instagram
+					| Instagram

@@ -1,0 +1,32 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script.
+
+	var spMenuHidden = true;
+	var body = $(document.body);
+	var menu = $( '.menu' );
+	var navIcon = $( '.fa-search' );
+	var closeIcon = $( '.fa-times' );
+
+	closeIcon.css("display","none")
+
+	$('#js-sp-menu').click(function() {
+
+		if(spMenuHidden) {
+
+			body.animate({'left' : "100%" }, 300);
+			menu.animate({'left' : 0 }, 300);
+			navIcon.css("display", "none");
+			closeIcon.css("display", "inline-block");
+			spMenuHidden = false;
+
+		} else {
+
+			body.animate({'left' : 0 }, 300);
+			menu.animate({'left' : "-100%" }, 300);
+			navIcon.css("display", "inline-block");
+			closeIcon.css("display", "none");
+			spMenuHidden = true;
+		}
+
+
+	});

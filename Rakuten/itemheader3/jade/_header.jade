@@ -1,0 +1,44 @@
+//最上部黒いところ
+div.headerTop
+	div.headerTop__message.col-sm-4
+		p 店内全品送料無料+15時までのご注文は即日発送
+	div.headerTop__nav.col-sm-8
+			ul.list-inline.text-right
+				li
+					a(target='_top', href='http://www.rakuten.ne.jp/gold/auc-rodeo/company/company000.html') COMPANY
+				li
+					a(target='_top', href='http://www.rakuten.ne.jp/gold/auc-rodeo/faq.html') GUIDE
+				li
+					a(target='_top', href='http://review.rakuten.co.jp/shop/4/235529_235529/1.1/') REVIEW
+
+//RODEO BROSロゴ
+div.headerLogo
+	div.logo.text-center
+		a(target='_top', href='http://www.rakuten.ne.jp/gold/auc-rodeo/')
+			img(alt='Rodeo Bros', src='http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo.png')
+
+//メニューバー
+div.headerMenu
+	ul.text-center
+		li.col-sm-3#headerMenu__category
+			div.right-border
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/categorylist/") CATEGORY
+		li.col-sm-3#headerMenu__brand
+			div.right-border
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html") BRAND
+		li.col-sm-3#headerMenu__topic
+			div.right-border
+				a(href="http://www.rakuten.ne.jp/gold/auc-rodeo/backnumber/") NEW TOPICS
+		li.col-sm-3
+			div.no-right-border
+				form(accept-charset='euc-jp', method='get', action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc', target='_top')
+					div.input-group
+						input.form-control(type='text', name='sitem', placeholder='検索する')
+						input(type='hidden', name='sv', value='6')
+						input(type='hidden', name='sid', value='235529')
+						input(type='hidden', name='su', value='auc-rodeo')
+						input(type='hidden', name='sn', value='ロデオブロスRODEO BROS')
+						input(type='hidden', name='f', value='A')
+						span.input-group-btn
+							button.btn.btn-default(type='submit', name='検索', onclick="org=document.charset; document.charset='EUC-JP'; document.sitem.submit(); document.sv.submit(); document.sid.submit(); document.su.submit(); document.sn.submit(); document.f.submit(); document.charset=org;")
+										i.fa.fa-search

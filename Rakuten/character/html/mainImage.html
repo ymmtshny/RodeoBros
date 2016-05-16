@@ -1,0 +1,23 @@
+
+<script>
+  var lastWidth = $(window).width();
+  var mainImage = $('#js__carousel__image');
+  var src__pc__sun = mainImage.attr("src__pc__sun");
+  var src__sp__sun = mainImage.attr("src__sp__sun");
+  
+  
+  $(window).resize(function() {
+  
+  	if($(window).width()!=lastWidth){
+  			lastWidth = $(window).width();
+  			console.log(lastWidth);
+  	}
+  
+  	setMainImage(lastWidth);
+  
+  });
+  
+  function setMainImage(lastWidth) {
+  	mainImage.attr("src", s)
+  }
+</script>
