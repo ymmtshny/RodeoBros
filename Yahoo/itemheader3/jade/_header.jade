@@ -1,0 +1,39 @@
+//最上部黒いところ
+div.headerTop
+	div.headerTop__message.col-sm-4
+		p 店内全品送料無料+15時までのご注文は即日発送
+	div.headerTop__nav.col-sm-8
+			ul.list-inline.text-right
+				li
+					a(target='_top', href='http://store.shopping.yahoo.co.jp/rodeobros/info.html') COMPANY
+				li
+					a(target='_top', href='http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html') GUIDE
+				li
+					a(target='_top', href='http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/') REVIEW
+
+//RODEO BROSロゴ
+div.headerLogo
+	div.logo.text-center
+		a(target='_top', href='http://shopping.geocities.jp/rodeobros/')
+			img(alt='Rodeo Bros', src='http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo.png')
+
+//メニューバー
+div.headerMenu
+	ul.text-center
+		li.col-sm-3#headerMenu__category
+			div.right-border
+				a(href="http://shopping.geocities.jp/rodeobros/categorylist/") CATEGORY
+		li.col-sm-3#headerMenu__brand
+			div.right-border
+				a(href="http://shopping.geocities.jp/rodeobros/brandlist/brand-list.html") BRAND
+		li.col-sm-3#headerMenu__topic
+			div.right-border
+				a(href="http://shopping.geocities.jp/rodeobros/backnumber/") NEW TOPICS
+		li.col-sm-3
+			div.no-right-border
+				form.headerNav__search(target='_top', method='get', action='http://store.shopping.yahoo.co.jp/rodeobros/search.html')
+					div.input-group
+						input.form-control(type='text', name='p', placeholder='検索する')
+						span.input-group-btn
+							button.btn.btn-default(type='submit', name='検索')
+								i.fa.fa-search

@@ -1,0 +1,24 @@
+div.text-center.top-image-box
+	img#js__carousel__image.mb-ll(src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-37.jpg" src__pc="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-37.jpg" src__sp = "http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-37.jpg" alt="父の日ギフト")
+
+	p.mb-ml RODEO BROSとメーカーがコラボして作り上げたこだわりの商品。当店でしか購入することのできないアイテムとなります。
+
+	p.mb-mm.campain-text RODEO BROS オリジナル商品
+	p.mb-ml
+
+
+div.hanger.mb-ll
+	img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/hanger0.png" alt="ハンガー")
+
+div#Vue
+	div(v-for = "element in Tedmantee" ).items.col-sm-6.text-center
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+			div.items__body
+				p.brand {{ element.brand }}
+				p.name.mb-ll {{ element.name }}
+
+
+div.moreBox
+	a(href= "http://search.rakuten.co.jp/search/inshop-mall/%E5%88%A5%E6%B3%A8/-/sid.235529-st.A") 別注商品一覧へ

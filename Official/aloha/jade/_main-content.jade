@@ -1,0 +1,20 @@
+div.text-center.top-image-box
+	img#js__carousel__image.mb-ll(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/aloha_cate.jpg" src__pc="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/aloha_cate.jpg" src__sp = "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-23.jpg" alt="父の日ギフト")
+
+	p.mb-ml 夏の定番のアロハシャツ、季節感を出せる柄に涼しげな素材で夏のファッションを爽快に。アメカジを中心としたファッションでは、アロハが夏の装いとしても人気を博している。"Aloha（アロハ）"とはハワイ語で「好意」、「愛情」、「慈悲」、「優しい気持ち」、「思いやり」、「挨拶」などの意味がある。
+
+	p.mb-mm.campain-text 2016はアロハが熱い
+	p.mb-ml
+
+
+div.hanger.mb-ll
+	img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/hanger0.png" alt="ハンガー")
+
+div#Vue
+	div(v-for = "element in Tedmantee" ).items.col-sm-6.text-center
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+			div.items__body
+				p.brand {{ element.brand }}
+				p.name.mb-ll {{ element.name }}

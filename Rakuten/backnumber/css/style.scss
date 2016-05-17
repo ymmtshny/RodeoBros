@@ -1,7 +1,8 @@
-@import '../../../common/scss/normalize';
-@import '../../../common/scss/utility';
-@import '../../../common/scss/base';
+// @import '../../../common/scss/normalize';
+// @import '../../../common/scss/utility';
+// @import '../../../common/scss/base';
 
+@import '../../itemheader3/css/style.scss';
 
 .backnumbers {
 
@@ -38,11 +39,9 @@
 
 	.backnumbers {
 
-		margin-top: 0em;
+		margin-top: 4em;
 
-	}
-
-	.backnumbers li{
+	 li{
 		margin-bottom: 0;
 	}
 
@@ -58,7 +57,9 @@
 	li span {
 		display: none;
 	}
-	
+
+	}
+
 	.backnumber__header {
 		width: 35%;
 		margin: 0.75em 0;
@@ -83,7 +84,7 @@
 
 	}
 
-	
+
 
 
 

@@ -1,0 +1,39 @@
+//最上部黒いところ
+div.headerTop
+	div.headerTop__message.col-sm-4
+		p 店内全品送料無料+15時までのご注文は即日発送
+	div.headerTop__nav.col-sm-8
+			ul.list-inline.text-right
+				li
+					a(target='_top', href='http://www.aun-wa.com/company.html') COMPANY
+				li
+					a(target='_top', href='http://www.aun-wa.com/faq.html') GUIDE
+				li
+					a(target='_top', href='http://www.aun-wa.com/SHOP/rating_list.html') REVIEW
+
+//RODEO BROSロゴ
+div.headerLogo
+	div.logo.text-center
+		a(target='_top', href='http://www.aun-wa.com/')
+			img(alt='Rodeo Bros', src='http://www.rakuten.ne.jp/gold/auc-rodeo/images/logo.png')
+
+//メニューバー
+div.headerMenu
+	ul.text-center
+		li.col-sm-3#headerMenu__category
+			div.right-border
+				a(href="http://www.aun-wa.com/categorylist/") CATEGORY
+		li.col-sm-3#headerMenu__brand
+			div.right-border
+				a(href="http://www.aun-wa.com/brand-list.html") BRAND
+		li.col-sm-3#headerMenu__topic
+			div.right-border
+				a(href="http://www.aun-wa.com/backnumber/") NEW TOPICS
+		li.col-sm-3
+			div.no-right-border
+				form.headerNav__search(method='get', action='http://www.aun-wa.com/SHOP/list.cgi', target='_top')
+					.input-group
+						input.form-control(type='text', name='Search', placeholder='検索する')
+						span.input-group-btn
+							button.btn.btn-default(type='submit')
+								i.fa.fa-search

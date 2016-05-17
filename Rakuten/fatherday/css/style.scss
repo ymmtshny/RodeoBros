@@ -2,6 +2,30 @@
 // @import '../../../common/scss/utility.scss';
 // @import '../../../common/scss/base.scss';
 @import '../../itemheader3/css/style.scss';
+.moreBox {
+	clear:both;
+	width:25%;
+	padding-bottom:5em;
+
+	margin:0 auto;
+
+	a {
+		display:block;
+		height:3em;
+		line-height:3;
+		text-align:center;
+		background-color:#000;
+		color:#fff;
+		border: 1px solid #000;
+
+		&:hover {
+			transition:all 0.5s;
+			background:#fff;
+			color:#000;
+			text-decoration:none;
+		}
+	}
+}
 
 #wrapper {
 	margin-top:2em;

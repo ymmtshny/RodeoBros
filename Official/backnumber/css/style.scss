@@ -1,0 +1,95 @@
+// @import '../../../common/scss/normalize';
+// @import '../../../common/scss/utility';
+// @import '../../../common/scss/base';
+@import '../../itemheader3/css/style.scss';
+
+
+.backnumbers {
+
+	margin-top: 5em;
+
+	li {
+		margin-bottom: 3em;
+	}
+
+	a {
+		color:#000;
+	}
+
+	span {
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 1.25em;
+		margin:0.7em 0 0 0;
+		padding: 0;
+	}
+
+	p {
+		margin:0;
+		padding: 0;
+	}
+
+
+}
+
+
+@media (max-width: 768px) {
+
+	.backnumbers {
+
+		margin-top: 4em;
+
+		li{
+		margin-bottom: 0;
+	}
+
+		li a {
+			display: block;
+			position: relative;
+			border-bottom: 1px solid #ddd;
+			background: url(http://b.ichiba.jp.rakuten-static.com/com/img/rms/storefront/pc/page/smart/shopName_arrow_gr.png) no-repeat right;
+			background-size: 7.5px 11.5px;
+			background-position: 98% 50%;
+		}
+
+		li span {
+			display: none;
+		}
+
+
+	}
+
+
+	.backnumber__header {
+		width: 35%;
+		margin: 0.75em 0;
+		display: inline-block;
+	}
+
+	.backnumber__body {
+		width: 57%;
+		margin-left: 3%;
+		display: inline-block;
+		position: absolute;
+		top:0;
+
+		h3 {
+		font-weight: bold;
+		font-size: 1em!important;
+	}
+
+		p {
+			color:gray;
+		}
+
+	}
+
+
+
+
+
+
+}
+

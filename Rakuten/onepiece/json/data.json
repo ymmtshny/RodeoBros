@@ -1,141 +1,46 @@
 [
 
-{
-		"number" : "tdw-250",
-		"image"  : "ted1/tdw-250",
-		"brand"  : "TEDMAN",
-		"name"   : "【再入荷】牛革長財布"
+
+	{
+		"number" : "opsj-001",
+		"image"  : "script/opsj-001",
+		"brand"  : "ONE PIECE",
+		"name"   : "【予約】麦わらの一味　海賊旗 スカジャン"
 	},
 
 	{
-		"number" : "krw001-g",
-		"image"  : "amazon2/krw001-g",
-		"brand"  : "KC,s",
-		"name"   : "【再入荷】象革長財布"
+		"number" : "opsj-002",
+		"image"  : "script/opsj-002",
+		"brand"  : "ONE PIECE",
+		"name"   : "【予約】火拳のエース スカジャン"
 	},
-
 
 	{
-		"number" : "pi-2860",
-		"image"  : "soltandsugar/pi-2860",
-		"brand"  : "SALT&SUGAR",
-		"name"   : "Indian Leather Short Wallet"
+		"number" : "opsj-003",
+		"image"  : "script/opsj-003",
+		"brand"  : "ONE PIECE",
+		"name"   : "【予約】トラファルガーロー スカジャン"
 	},
+
 	{
-		"number" : "pi-2859",
-		"image"  : "soltandsugar/pi-2859",
-		"brand"  : "SALT&SUGAR",
-		"name"   : "Indian Leather Wallet & Pass Caset"
+		"number" : "opsj-004",
+		"image"  : "script/opsj-004",
+		"brand"  : "ONE PIECE",
+		"name"   : "バギー海賊団 スカジャン"
 	},
+
 	{
-		"number" : "pi-2855",
-		"image"  : "soltandsugar/pi-2855",
-		"brand"  : "SALT&SUGAR",
-		"name"   : "Flat Washable Long Wallet"
+		"number" : "opsj-005",
+		"image"  : "script/opsj-005",
+		"brand"  : "ONE PIECE",
+		"name"   : "【予約】メリー号 スカジャン"
 	},
+
 	{
-		"number" : "pi-2853",
-		"image"  : "soltandsugar/pi-2853",
-		"brand"  : "SALT&SUGAR",
-		"name"   : "Italian Leather Long Wallet"
-	},
-
-{
-	"number" : "gcp-95",
-	"image"  : "gocoo/gcp-95",
-	"brand"  : "GO-COO!! ",
-	"name"   : "【再入荷】 メッシュ キャップ"
-},
-
-{
-	"number" : "gcp-96",
-	"image"  : "gocoo/gcp-96",
-	"brand"  : "GO-COO!! ",
-	"name"   : "桜流水 メッシュ キャップ"
-},
-
-{
-	"number" : "gcp-94",
-	"image"  : "gocoo/gcp-94",
-	"brand"  : "GO-COO!! ",
-	"name"   : "テレコチェック メッシュ キャップ"
-},
-
-
-{
-	"number" : "gcp-93",
-	"image"  : "gocoo/gcp-93",
-	"brand"  : "GO-COO!! ",
-	"name"   : "ステルスカモ メッシュ キャップ"
-},
-
-
-
-{
-	"number" : "crv-619",
-	"image"  : "crows-worst/crv-619",
-	"brand"  : "クローズ×VANSON",
-	"name"   : "七代目 T.F.O.A. キャップ"
-},
-
-{
-	"number" : "crv-618",
-	"image"  : "crows-worst/crv-618",
-	"brand"  : "クローズ×VANSON",
-	"name"   : "デスラビット キャップ"
-},
-
-
-
-
-{
-	"number" : "nvcp-602",
-	"image"  : "vanson/nvcp-602",
-	"brand"  : "VANSON",
-	"name"   : "スカル PU メッシュ キャップ"
-},
-
-{
-	"number" : "nvcp-601",
-	"image"  : "vanson/nvcp-601",
-	"brand"  : "VANSON",
-	"name"   : "スカル メッシュ キャップ"
-},
-
-
-{
-  "number" : "0472700",
-  "image"  : "alpha/0472700",
-  "brand"  : "ALPHA",
-  "name"   : "ビジネスリュック"
-},
-
-{
-  "number" : "0472600",
-  "image"  : "alpha/0472600",
-  "brand"  : "ALPHA",
-  "name"   : "2WAY 3層ビジネスバッグ"
-},
-
-{
-  "number" : "0472500",
-  "image"  : "alpha/0472500",
-  "brand"  : "ALPHA",
-  "name"   : "3WAY ビジネスバッグ"
-},
-
-{
-  "number" : "0472400",
-  "image"  : "alpha/0472400",
-  "brand"  : "ALPHA",
-  "name"   : "3WAY ビジネスバッグ"
-},
-
-{
-  "number" : "0472300",
-  "image"  : "alpha/0472300",
-  "brand"  : "ALPHA",
-  "name"   : "2WAY ビジネスバッグ"
-}
+		"number" : "opma-001",
+		"image"  : "script/opma-001",
+		"brand"  : "ONE PIECE",
+		"name"   : "【予約】 麦わらの一味 海賊旗 MA-1"
+	}
 
 ]

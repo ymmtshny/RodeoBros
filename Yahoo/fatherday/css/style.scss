@@ -1,0 +1,106 @@
+// @import '../../../common/scss/normalize.scss';
+// @import '../../../common/scss/utility.scss';
+// @import '../../../common/scss/base.scss';
+@import '../../itemheader3/css/style.scss';
+
+#wrapper {
+	margin-top:2em;
+}
+
+.top-image-box {
+	p {
+		margin:0 auto;
+		width:90%;
+		margin-bottom:3em;
+	}
+}
+
+.brand-concept {
+	clear: both;
+	width: 100%;
+	max-width: 1010px;
+	border: 1px solid #ddd;
+
+	img {
+		width:70px;
+	}
+}
+
+.campain-text {
+	font-size: 1.4em;
+}
+
+.pickup-items {
+	h1 {
+		clear: both;
+		background-color: #f7f8f8;
+		padding: 0.3em 0;
+	}
+}
+
+.items {
+
+	p{
+		margin-top: 0;
+	}
+
+	.name {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+}
+
+
+.allItemsButton-box {
+
+	clear: both;
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	p {
+		width: 40%;
+		margin:0 auto;
+		padding:0.8em 0;
+	}
+
+}
+
+@media (max-width: 768px) {
+
+#wrapper {
+		margin-top:4em!important;
+	}
+
+.allItemsButton-box {
+
+	p {
+		width: 80%;
+	}
+
+}
+// .items {
+// 	clear:both;
+// 	border-bottom:1px solid #ddd;
+// 	padding-top:1em;
+// }
+// .items__header {
+// 	width:40%;
+// 	float:left;
+// }
+
+// .items__body {
+// 	width:60%;
+// 	float:left;
+// }
+
+}
+
+@media (min-width:769px){
+	.items__header img {
+		//height: 240px;
+	}
+}
