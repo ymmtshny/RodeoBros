@@ -1,6 +1,6 @@
 @import '../../../common/scss/normalize';
 @import '../../../common/scss/utility';
-@import '../../../common/scss/base';
+@import '../../../common/scss/base.scss';
 
 h1 {
 	font-size: 2.5em;
@@ -23,7 +23,7 @@ h3 {
 
 /****************************************************
 * レフトナビのスタイルシートここから
-* 
+*
 *****************************************************/
 //mb-ssオーバーロード
 a {
@@ -35,14 +35,14 @@ a {
 }
 
 .section0{
-	
+
 }
 
 /****************************************************
 * レフトナビの大きな画像ここから
 *****************************************************/
 .section1{
-	
+
 }
 
 /****************************************************
@@ -53,19 +53,19 @@ a {
 	img:hover {
 		opacity: 0.7;
 	}
-	
+
 }
 
  ::-webkit-scrollbar {
 	width: 12px;
-	
+
 }
- 
+
 ::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 	border-radius: 1px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
 	border-radius: 1px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.99);
@@ -84,23 +84,23 @@ a {
 }
 
 		.title {
-			padding-top:10px;	
+			padding-top:10px;
 		}
-	
+
 		.trigger {
 			background:#f7f8f7;
 			margin:0;
 			padding: 6px 0;
-			
+
 		}
-		
+
 		.trigger:hover {
 			background-color: #414040;
-			color:#fff;	
+			color:#fff;
 		}
-		
+
 		.pickupitems {
-			border:1px dotted #ddd;	
+			border:1px dotted #ddd;
 		}
 /****************************************************
 * レフトナビのカテゴリーここから
@@ -133,7 +133,7 @@ a {
 		color:#000;
 		display: block;
 		padding: 0.5em;
-		
+
 		&:hover{
 			color: #ddd;
 		}
@@ -144,7 +144,7 @@ a {
 	}
 
 	li{
-		
+
 		//padding: 0.5em;選択範囲を広げるためaタグをdisplay:blockにしてこのpaddingを追加する。
 		padding-left:1em;
 		border: 1px dotted #ddd;
@@ -162,16 +162,16 @@ a {
 		&::before{
 			//content: ">　";
 			//font-size: 0.7em;
-			
+
 		}
 	}
 
 }
 
 .section3 {
-	
+
 	margin-top: 2em;
-	
+
 	a {
 		text-decoration: none;
 		color:#000;
@@ -213,14 +213,14 @@ a {
 		width: 30%;
 		float: left;
 		display: table-cell;
-		
+
 		img{
 			width: 90%;
 			padding-right:10%;
 		}
-	
+
 	}
-	
+
 	.brand-body {
 		width:70%;
 		float:left;
@@ -263,7 +263,7 @@ a {
 	img:hover {
 		opacity: 0.7;
 	}
-	
+
 	p{
 		background: url('http://www.rakuten.ne.jp/gold/auc-rodeo/images/topic_arrow.png');
 		background-repeat: no-repeat;
@@ -284,7 +284,7 @@ a {
 }
 
 .section6{
-	
+
 }
 
 
@@ -343,8 +343,8 @@ a {
 }
 .reserve {
 	text-align: center;
-	height: 600px;
-	overflow-y:scroll;
+	// height: 600px;
+	// overflow-y:scroll;
 
 	.items {
 		border: 1px solid #ddd;

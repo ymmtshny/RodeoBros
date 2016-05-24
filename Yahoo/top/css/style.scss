@@ -79,12 +79,12 @@ header {
 	@media (min-width: 1240px) {
 		padding-top:4em;
 	}
-	
+
 	.col-sm-12 {
 		padding:0;
 		margin-bottom: 2.0em;
 	}
-	
+
 	ul {
 		display: inline-block;
 		//padding: 0;
@@ -123,17 +123,21 @@ $mb_item: 3em !default;
 		width: 13.666%;
 		margin-left: 1.5%;
 		margin-right: 1.5%;
-		margin-bottom: $mb_item; 
+		margin-bottom: $mb_item;
 		padding: 0;
 		float: left;
-
+		&:nth-of-type(7) {
+			clear:both;
+		}
 	}
+
+
 
 	img {
 		border-bottom:1px solid #ddd;
 		margin-bottom: 1em;
 	}
-	
+
 
 	h3 {
 		color:#000;
@@ -222,7 +226,7 @@ $mb_item: 3em !default;
 
 	.totalCoorde__main {
 		width: 66.66%;
-		
+
 	}
 
 	.totalCoorde__sub {
@@ -272,7 +276,7 @@ $mb_item: 3em !default;
 		text-overflow: ellipsis;
 		text-align: center;
 	}
-	
+
 	button {
 		@extend .myButton;
 	}
@@ -354,7 +358,7 @@ $mb_item: 3em !default;
 		padding-top: 1em;
 		border-bottom: 1px solid #888;
 	}
-	
+
 	//SNS
 	.sns {
 		position: absolute;
@@ -412,32 +416,32 @@ $mb_item: 3em !default;
 @media (max-width: 992px) {
 	.leftArrow {
 		display: none;
-	} 
+	}
 
 	.rightArrow {
 		display: none;
 	}
-	
+
 	//トータルコーデ
 	.totalCoorde__main {
 		width: 100%!important;
-		
+
 	}
 
 	.totalCoorde__sub {
 		display: none;
 	}
 
-	
+
 }
 
 
 //タブレットここから
 @media (min-width: 768px)and(max-width: 992px) {
-	
+
 	.newArrival__item {
 	width: 46%!important;
-	margin: 3% 2%; 
+	margin: 3% 2%;
 
 }
 	.carousel {
@@ -450,7 +454,7 @@ $mb_item: 3em !default;
 			display: none!important;
 		}
 	}
-	
+
 }
 
 //スマフォここから
@@ -467,6 +471,17 @@ $mb_item: 3em !default;
 //カルーセル
 .carousel {
 	margin-top: -1.8em!important;
+}
+
+.middium-carousel {
+
+	margin: 0 auto;
+	width: 100%;
+
+	li {
+		margin-bottom:1em;
+		text-align:center;
+	}
 }
 
 //NewArrival
@@ -509,9 +524,9 @@ $mb_item: 3em !default;
 		padding-right: 5%;
 		position: absolute;
 		right: 5%;
-		
+
 	}
-	
+
 	h3 {
 		font-size: 1.25em;
 		margin-bottom: 0.5em;
@@ -538,7 +553,7 @@ $mb_item: 3em !default;
 	img {
 		margin-bottom: 1.3em;
 	}
-	
+
 	h3 {
 		margin:0;
 		margin-bottom: 0.3em;

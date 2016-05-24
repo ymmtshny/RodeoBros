@@ -35,7 +35,9 @@
       <!--////////////////////////////////////////////////-->
       <section class="mb-ms">
         <!--include jade/totalcoorde.jade-->
-        <div class="section0 text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000620/"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/selected-brands/08.jpg">
+        <div class="section0 text-center">
+            <a target="_top" href="http://www.youblisher.com/p/1399745-/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/efu-webcatalog.jpg"><p class="mb-ss">エフ商会WEBカタログ 2016 S/S</p></a>
+             <a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000620/"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/selected-brands/08.jpg">
             <p class="mb-ss">TEDMAN 商品一覧</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000619/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/brm_y_cate.jpg" width="200px">
             <p class="mb-ss">爆烈爛漫娘 商品一覧</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002322/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/kaminari_y_cate.jpg" width="200px">
             <p class="mb-ss">カミナリ 商品一覧</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000621/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/blood_y_cate.jpg">
@@ -257,7 +259,7 @@
       <!--メインコンテンツここから-->
       <!--div#main.main-box
       include jade/_main-content.jade
-      
+
       -->
     </div>
     <!--フッターここから-->
@@ -269,13 +271,13 @@
   <script>
     new Vue({
     	el: '#Vue',
-    
+
     	data: {
     		Items: []
     	},
-    
+
     	created: function() {
-    
+
     		var _this = this;
     		//get json file
     		$.ajax({
@@ -295,7 +297,7 @@
     			_this.Items = temp.slice(0, 8);
     			 console.log(_this.Items);
     		});
-    
+
     	}
     });
   </script>
