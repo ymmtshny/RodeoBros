@@ -35,8 +35,11 @@
       <!--////////////////////////////////////////////////-->
       <section class="mb-ms">
         <!--include jade/totalcoorde.jade-->
-        <div class="section0 text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002482/"><img data-original="http://www.rakuten.ne.jp/gold/auc-rodeo/images/selected-brands/03.jpg" style="border: 1px solid rgb(221, 221, 221); display: inline;" src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/selected-brands/03.jpg" class="lazy">
-            <p class="mb-ss">Disney 商品一覧</p></a></div>
+        <div class="section0 text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002669/"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-22.jpg" style="display: inline;">
+            <p class="mb-ss">ONE PIECE 商品一覧</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002670/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/onepiece_cate_1.jpg" style="display: inline;">
+            <p class="mb-ss">ONE PIECE アウター一覧</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002671/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/onepiece_cate_3.jpg" style="display: inline;">
+            <p class="mb-ss">ONE PIECE トップス</p></a><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000002672/"><img src="http://shopping.c.yimg.jp/lib/rodeobros/onepiece_cate_2.jpg" style="display: inline;">
+            <p class="mb-ss">ONE PIECE ボトムス一覧</p></a></div>
       </section>
       <!--////////////////////////////////////////////////　-->
       <section class="mb-ms">
@@ -47,7 +50,7 @@
       </section>
       <!--////////////////////////////////////////////////-->
       <section class="mb-ms">
-        <h1 class="reserve-title">Disney</h1>
+        <h1 class="reserve-title">ONE PIECE</h1>
         <div id="Vue" class="reserve">
           <div v-for="item in Items" class="items"><a href="{{item.number}}" target="_top"><img src="{{item.image}}">
               <p>{{ item.name }}</p></a></div>
@@ -242,17 +245,12 @@
       </section>
       <!--////////////////////////////////////////////////-->
       <section class="mb-ms">
-        <div class="mb-ss"><a href="https://twitter.com/rodeobros" data-widget-id="691906960036380672" class="twitter-timeline">@rodeobrosさんのツイート</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-        <div class="mb-ss">
-          <iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FRodeobros&amp;width=183&amp;height=375&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:185px; height:375px;" allowtransparency="true"></iframe>
-        </div>
+        <!--include jade/sns.jade-->
       </section>
       <!--メインコンテンツここから-->
       <!--div#main.main-box
       include jade/_main-content.jade
-
+      
       -->
     </div>
     <!--フッターここから-->
@@ -264,13 +262,13 @@
   <script>
     new Vue({
     	el: '#Vue',
-
+    
     	data: {
     		Items: []
     	},
-
+    
     	created: function() {
-
+    
     		var _this = this;
     		//get json file
     		$.ajax({
@@ -282,15 +280,15 @@
     			data.forEach(function (el) {
     				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
     				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=200x200";
-    				//VANSONの商品だけ配列に格納する
-    				if(el.brand == "Disney") {
+    				//の商品だけ配列に格納する
+    				if(el.brand == "ONE PIECE") {
     					temp.push(el);
     				}
     			});
     			_this.Items = temp.slice(0, 8);
     			 console.log(_this.Items);
     		});
-
+    
     	}
     });
   </script>
