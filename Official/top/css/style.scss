@@ -475,12 +475,14 @@ $mb_item: 3em !default;
 
 .middium-carousel {
 
+	margin: 0 auto;
+	width: 100%;
+
 	li {
 		margin-bottom:1em;
 		text-align:center;
 	}
 }
-
 //NewArrival
 .sectionTitle{
 	margin-bottom: 2em;
