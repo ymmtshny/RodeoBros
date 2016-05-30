@@ -1,0 +1,174 @@
+@import '../../common/scss/normalize.scss';
+@import '../../common/scss/utility.scss';
+@import '../../common/scss/base.scss';
+
+body {
+	display:none;
+}
+
+h2 {
+	margin:0;
+	color:#fff;
+}
+
+p {
+	color:#fff;
+	line-height:2;
+}
+
+a {
+	color:#fff;
+}
+.section {
+	width:100%;
+	text-align:center;
+}
+
+.innerBox {
+}
+
+#home {
+	background:rgba(255,255,255,1);
+
+
+	img {
+		width:100%;
+		max-width:30em;
+
+	}
+}
+
+#onlineshop {
+	background:rgba(192,192,192,1);
+
+
+	ul {
+		width:40%;
+		margin:0 auto;
+		padding:0;
+		text-align:center;
+	}
+
+	li {
+		margin-top:2.5em;
+	}
+
+}
+
+#sns {
+	background:rgba(182,182,182,1);
+
+	h2 {
+		// margin-bottom:2em;
+	}
+
+	ul {
+		width:100%;
+		max-width:400px;
+		margin:0 auto;
+		padding:0;
+		text-align:center;
+	}
+
+	li {
+		// width:24%;
+		display:inline-block;
+		text-align:center;
+		margin-top:1em;
+		width:19%;
+		padding:3%;
+
+	}
+
+	img {
+		width:100%;
+	}
+
+}
+
+#aboutus {
+	background:rgba(172,172,172,1);
+
+	h2 {
+		margin-bottom:1em;
+	}
+
+	p {
+		margin-bottom:4em;
+	}
+
+	iframe {
+		width:80%;
+		max-width:780px;
+		margin:0 auto;
+		height:450px;
+		display:block;
+	}
+}
+
+#information {
+	background:rgba(162,162,162,1);
+
+	h2 {
+		margin-bottom:1em;
+	}
+
+}
+
+aside {
+	position:fixed;
+	left:50px;
+	top:50px;
+	width:120px;
+
+	li {
+		margin:1em;
+	}
+
+	a {
+		color:#000;
+	}
+}
+
+#officialimage {
+	width:170px;
+}
+
+#rakutenImage {
+	width:70px;
+}
+
+#yahooImage {
+	width:150px;
+}
+
+#denaImage {
+	width:70px;
+}
+
+#amazonImage {
+	width:120px;
+}
+
+
+@media (max-width:769px){
+
+	a {
+		color:blue!important;
+	}
+
+	iframe {
+		display:none!important;
+	}
+
+	aside {
+		display:none;
+	}
+
+	#information {
+		p {
+			width:90%;
+			margin-left:5%;
+		}
+	}
+}

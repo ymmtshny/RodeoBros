@@ -1,0 +1,30 @@
+doctype html
+html
+	include ../../common/jade/head/_head-r.jade
+	body
+		//Goolge Tag から
+		include ../../common/jade/_google.jade
+		//ヘッダーここから
+		section.mb-section
+			include ./jade_eng/_header.jade
+		section.mb-section
+			include ./jade_eng/_carousel.jade
+		section.mb-section
+			include ./jade_eng/_newarrival.jade
+		section.mb-section
+			include ./jade_eng/_brand.jade
+		section.mb-section
+			include ./jade_eng/_news.jade
+		//- section.mb-section
+		//- 	include ./jade_eng/_totalcoorde.jade
+		section.mb-section
+			include ./jade_eng/_topics.jade
+		section
+			include ./jade_eng/_footer.jade
+		//スクリプトここから
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+		script(src="./js/jquery.lazyload.min.js")
+		include ./jade_eng/_js__header.jade
+		include ./jade_eng/_js__newarrival.jade
+		include ./jade_eng/_js__carousel.jade

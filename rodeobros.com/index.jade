@@ -1,0 +1,138 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='content-language', content='ja')
+		meta(name='keywords', content='RODEO,RODEO BROS,ロデオ,ロデオブロス')
+		meta(name='description', content='創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）。長い歴史が誇る品揃えは絡繰魂などの和柄ブランドから東洋、エフ商会、VANSONなどのアメカジブランドまで幅広く取り揃えています。')
+		meta(name='viewport', content='width=1200,user-scalable=1')
+		meta(name='apple-mobile-web-app-capable', content='yes')
+		link(rel='shortcut icon', href='./img/rfavicon_icon.ico', type='image/x-icon')
+		link(rel='stylesheet', type='text/css', href='./css/style.css')
+		link(rel='stylesheet', type='text/css', href='./css/jquery.fullPage.css')
+		meta(name='viewport', content='initial-scale=1')
+		title RODEO BROS
+	body
+		//Goolge Tag から
+		include ../common/jade/_google.jade
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="./js/jquery.fullPage.min.js")
+		script.
+
+			$(document).ready(function() {
+				$('#fullpage').fullpage({});
+				$("body").css("display","block");
+			});
+
+		//////////////////////////////////////////////////////////////////////////////////////
+		div#fullpage
+			//////////////////////////////////////////////////////////////////////////////////////
+			div.section#home
+				div.innerBox
+					img(src="./img/rodeo_logo.jpg" alt="株式会社ロデオブロスのロゴ")
+
+			//////////////////////////////////////////////////////////////////////////////////////
+			div.section#onlineshop
+				div.innerBox
+					h2 ONLINE SHOP
+					ul
+						li
+							a(href="")
+								img#officialimage(src="./img/online_01.png" alt="RODEO BROSの公式サイトロゴ")
+								p Official Web Site
+						li
+							a(href="")
+								img#rakutenImage(src="./img/online_02.png" alt="Rakutenのロゴ")
+								p Rakuten
+						li
+							a(href="")
+								img#yahooImage(src="./img/online_03.png" alt="Yahooのロゴ" )
+								p Yahoo!
+						li
+							a(href="")
+								img#denaImage(src="./img/online_04.png" alt="DeNAのロゴ")
+								p DeNA
+						li
+							a(href="")
+								img#amazonImage(src="./img/online_05.png" alt="amazon.co.jpのロゴ")
+								p Amazon
+
+			//////////////////////////////////////////////////////////////////////////////////////
+			div.section#sns
+				div.innerBox
+					h2 SNS
+						ul
+							li
+								a(href="")
+									img(src="./img/sns1.png" alt="twitterのロゴ")
+							li
+								a(href="")
+									img(src="./img/sns2.png" alt="twitterのロゴ")
+							li
+								a(href="")
+									img(src="./img/sns3.png" alt="twitterのロゴ")
+							li
+								a(href="")
+									img(src="./img/sns4.png" alt="twitterのロゴ")
+
+			//////////////////////////////////////////////////////////////////////////////////////
+			div.section#aboutus
+				div.innerBox
+					h2 ABOUT US
+					p
+						a(href="https://www.google.co.jp/maps/place/RODEO+BROS+%E3%83%AD%E3%83%87%E3%82%AA%E3%83%96%E3%83%AD%E3%82%B9/@35.7822897,139.8109579,18.66z/data=!4m13!1m7!3m6!1s0x601891d3795a0a05:0x8901b8061719ef84!2s2+Chome-3-3+Hitotsuya,+Adachi-ku,+T%C5%8Dky%C5%8D-to+121-0075!3b1!8m2!3d35.7825525!4d139.8115085!3m4!1s0x0000000000000000:0x2b11de25bf1d55fc!8m2!3d35.7825526!4d139.8115088") 〒121-0075	東京都足立区一ツ家2-3-3
+						br
+						|TEL/FAX: 03-5856-5858
+						br
+						|実店舗営業時間： 10:00 ～ 20:00
+						br
+						|電話受付時間： 10:00 ～ 14:00 / 15:00 ～ 18:00
+
+					iframe#googleMap(src='http://www.rakuten.ne.jp/gold/auc-rodeo/rodeomap_inline.html', scrolling='no', frameborder='0', style='border:none;')
+
+			//////////////////////////////////////////////////////////////////////////////////////
+			div.section#information
+				div.innerBox
+					h2 INFORMATION
+					p
+						|お問い合わせ
+						br
+						|商品・店舗に関するご意見ご要望や
+						br
+						|在庫に関するご相談等は、下記メールアドレスよりお問い合わせください。
+						br
+						a(href="rodeo@aun-wa.com") rodeo@aun-wa.com
+						br
+						br
+						|採用情報
+						br
+						|現在、通信販売部のスタッフを募集しております。
+						br
+						|採用情報に関するご質問等は、下記メールアドレスよりお問い合わせください。
+						br
+						a(href="recruit-rodeo@aun-wa.com") recruit-rodeo@aun-wa.com
+		//////////////////////////////////////////////////////////////////////////////////////
+		aside
+			ul
+				li
+					a(href="#home") HOME
+				li
+					a(href="#onlineshop") ONLINE SHOP
+				li
+					a(href="#sns") SNS
+				li
+					a(href="#aboutus") ABOUT US
+				li
+					a(href="#information") INFORMATION
+
+		//////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
