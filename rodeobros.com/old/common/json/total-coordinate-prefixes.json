@@ -1,0 +1,18 @@
+{
+  "localhost:3000": {
+    "number_before": "http://www.aun-wa.com/SHOP/",
+    "number_after": ".html"
+  },
+  "www.rakuten.ne.jp": {
+    "number_before": "http://item.rakuten.co.jp/auc-rodeo/",
+    "number_after": ""
+  },
+  "www.aun-wa.com": {
+    "number_before": "http://www.aun-wa.com/SHOP/",
+    "number_after": ""
+  },
+  "shopping.geocities.jp": {
+    "number_before": "http://store.shopping.yahoo.co.jp/rodeobros/",
+    "number_after": ".html"
+  }
+}

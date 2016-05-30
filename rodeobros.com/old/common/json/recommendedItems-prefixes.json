@@ -1,0 +1,22 @@
+{
+  "localhost:3000": {
+    "number_before": "http://www.aun-wa.com/SHOP/",
+    "number_after": ".html",
+    "image": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/"
+  },
+  "www.rakuten.ne.jp": {
+    "number_before": "http://item.rakuten.co.jp/auc-rodeo/",
+    "number_after": "",
+    "image": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/"
+  },
+  "www.aun-wa.com": {
+    "number_before": "http://www.aun-wa.com/SHOP/",
+    "number_after": "",
+    "image": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/"
+  },
+  "shopping.geocities.jp": {
+    "number_before": "http://store.shopping.yahoo.co.jp/rodeobros/",
+    "number_after": ".html",
+    "image": "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/"
+  }
+}
