@@ -203,7 +203,7 @@
               </div>
             </div>
           </div>
-        </div><a id="OVERLAYBRAND" target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html" class="moreButton">ブランド一覧</a>
+        </div><a id="OVERLAYBRAND" target="_top" href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist1/" class="moreButton">ブランド一覧</a>
       </section>
       <!--////////////////////////////////////////////////-->
       <section class="mb-ms">
@@ -257,7 +257,7 @@
       <!--メインコンテンツここから-->
       <!--div#main.main-box
       include jade/_main-content.jade
-      
+
       -->
     </div>
     <!--フッターここから-->
@@ -269,13 +269,13 @@
   <script>
     new Vue({
     	el: '#Vue',
-    
+
     	data: {
     		Items: []
     	},
-    
+
     	created: function() {
-    
+
     		var _this = this;
     		//get json file
     		$.ajax({
@@ -295,7 +295,7 @@
     			_this.Items = temp.slice(0, 8);
     			 console.log(_this.Items);
     		});
-    
+
     	}
     });
   </script>

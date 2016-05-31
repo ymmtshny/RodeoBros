@@ -1,0 +1,75 @@
+// @import '../../../common/scss/normalize.scss';
+// @import '../../../common/scss/utility.scss';
+// @import '../../../common/scss/base.scss';
+@import '../../itemheader3/css/style.scss';
+
+body {
+	line-height:1.7;
+	font-size:14px;
+}
+
+#wrapper {
+	margin-top:2em;
+	position:relative;
+}
+
+#sidebar {
+
+	width:30%;
+	float:left;
+	//background:#fff;
+
+	ul {
+		//width:80%;
+		list-style:point;
+	}
+
+	li {
+		//border-bottom:1px solid #888;
+		//padding-bottom:1.5em;
+		//margin:1.5em 0;
+		margin-bottom:0.5em;
+		&:last-child {
+			border:none;
+		}
+
+		a {
+			color:#000;
+		}
+	}
+}
+
+#main {
+	//padding-left:20%;
+	margin-left:4%;
+	width:64%;
+	float:left;
+}
+
+h1 {
+	border-bottom:1px solid #888;
+	padding-bottom:0.3em;
+	font-size:1.3em;
+}
+
+.infobox {
+	background:#f7f8f7;
+	text-align:center;
+	padding:50px 0;
+	margin-bottom:100px;
+}
+
+@media (max-width: 768px) {
+
+#sidebar {
+	display:none;
+}
+
+#main {
+	margin:0 auto;
+	width:90%;
+	margin-top:5em;
+	margin-left:5%;
+}
+
+}

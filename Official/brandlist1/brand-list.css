@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+  
+*{
+	font-size:12px;
+  	letter-spacing:1px;
+	 font-family: 'Noto Sans Japanese',Arial, Helvetica, sans-serif;
+}
+
+a {
+text-decoration: none;
+color:#000000;
+}
+
+a:hover{
+color:#999999;
+}
+body {
+	text-align: center;
+	margin:0;
+}
+
+#header,
+#container {
+	margin: 0 auto;
+	width: 1040px;
+}
+
+#all {
+	margin:0 auto;
+	width:1040px;	
+}
+
+#header {
+width:	100%;
+margin-top:75px;
+text-align: center;
+background:#f7f7f4;
+height:30px;
+}
+
+h1 {
+	padding: 40px 0 80px;
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+h2 {
+	padding-top:3px;
+	font-size:15px;
+	font-weight:300;
+}
+
+#container {
+	text-align: left;
+	/zoom: 1;
+	margin-top:10px;
+}
+
+#container:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+#main {
+	position:relative;
+	float: left;
+	margin-left: 210px;
+	width: 800px;
+	
+	background: #fff;
+	margin-top:-308px;
+}
+
+#sidebar {
+	position: relative;
+	float: left;
+	width: 150px;
+	margin-left:0px;
+	z-index:1000;
+	top:7px;
+}
+
+#nav {
+	width: 150px;
+	height: 300px;
+	background: #fff;
+	text-align:left;
+}
+
+.fixed {
+	position: fixed;
+	top: 80px;
+}
+
+/*========================================*/
+
+/*{
+
+	line-height:14px;
+}*/
+
+ul li{
+	list-style-type: none
+}
+
+#menu {
+	position:fixed;
+	top:100px;
+	left:50px;
+	background:#EFEFEF;
+	padding: 5px 20px;
+}
+
+#menu ul li{
+	margin-top:10px;
+	margin-left:-40px;
+}
+#all {
+	margin-left:200px;
+	width:100%;
+	max-width:1000px;
+}
+
+.brandGroup {
+		height:100%;
+		
+}
+
+.brandGroup h1 {
+	font-size:18px;
+	border-bottom:#333333 1px solid;
+	padding-bottom:5px;
+	clear:both;
+	text-align:left;
+	font-weight:300;
+}
+
+.brandGroup ul{
+	float:left;
+	margin-left:0px;
+	padding:0; 
+}
+
+.brandGroup ul a li{
+	float:left;
+	margin:20px 5px;
+	width:190px;
+	height:80px;
+	
+}
+
+.brandLsit img{
+	width:95px;
+}
+
+#nav ul li{
+	margin-top:18px;
+	padding-bottom:15px;
+	margin-left:0px;
+	border-bottom:#000000 1px solid;
+}
+
+@media(max-width:1040px)
+{
+	#menu {
+		display:none;
+	}	
+	
+	#all {
+		margin:0 auto!important;
+		padding:0 2%;
+		width:96%;	
+	}
+	
+	.brandGroup ul a li{
+	float:left;
+	width:20%;
+	padding-left:3%;
+	
+}
+	
+
+}
+
+@media(max-width:700px)
+{
+	.brandGroup ul a li{
+	float:left;
+	width:28%;
+	
+}
+}
+
+@media(max-width:599px)
+{
+	.brandGroup ul a li{
+	float:left;
+	width:44%;
+	
+}
+}
+/*約 380pxでブランドがカラム落ちするので。*/
+@media(max-width:380px)
+{
+	.brandGroup ul a li{
+	float:left;
+	width:40%;
+	
+}
+}
+
+@media (max-width:1040px) {
+	#sidebar {
+		position:absolute;
+		width:100%;
+		top:100px;
+				height:230px!important;
+	}
+	
+	#nav {
+		width:100%;
+		display:none;
+
+		height:240px!important;
+		background:#000000;
+		
+	}
+	
+	#nav ul{
+		text-align:center;
+	}
+	
+	#nav ul li a{
+		color:white!important;
+	}
+
+
+	#main {
+		margin-left:0!important;
+		margin:0 auto!important;
+		float:none;	
+		width:94%;
+		padding-left:3%;
+		padding-right:3%;
+		
+	}
+	
+	#container{
+		width:100%;
+		margin-right:0;	
+	}
+	
+	#menubotton {
+		width:100%;
+		padding-top:0px;
+		padding-bottom:0px;
+		height: 30px;
+		text-align:center;	
+		background-color:#000000;
+		color:white;
+		position:fixed;
+		bottom:0px;
+	}
+}
+
+
+
+
