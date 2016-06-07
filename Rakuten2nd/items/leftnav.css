@@ -1,0 +1,46 @@
+.leftnav {
+	width:180px;
+	background:#F6F6F6;
+}
+
+.leftnav h2 {
+	font-size:12px;
+	text-align:center;
+	margin:0;
+	padding: 1.5em;
+}
+
+.leftnav ul {
+	padding:0;
+	margin: 0.8em;
+	margin-top:0;
+	list-style:none;
+	background:#fff;
+}
+
+.leftnav li {
+		font-size: 12px;
+		text-indent: 2.2em;
+		height: 2.5em;
+		border-bottom: 1px solid #ddd;
+		line-height: 2.5;
+}
+.leftnav li:last-child  {
+	border:none;
+}
+
+.leftnav li a {
+	color:#000;
+	text-decoration:none;
+	display:block;
+} .leftnav li a:hover {
+	background:#f7f8f7;
+}
+
+.leftnav .arrow {
+	font-size:12px;
+	text-indent:1.5em;
+	background: url(http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/arrow.png) no-repeat right;
+	background-size: 7px 7px;
+    background-position-x: 0.4em;
+}

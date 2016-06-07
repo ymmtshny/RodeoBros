@@ -1,17 +1,101 @@
 [
 
 {
+  "number" : "sh37280",
+  "image"  : "sunsurf/sh37280",
+  "brand"  : "サンサーフ",
+  "name"   : "エルヴィス ドット シャツ"
+},
+
+{
+  "number" : "sh37277",
+  "image"  : "sunsurf/sh37277",
+  "brand"  : "サンサーフ",
+  "name"   : "ヴィンス・レイ　アロハ シャツ"
+},
+
+{
+  "number" : "oni-502zr",
+  "image"  : "amazon2/oni-502zr",
+  "brand"  : "鬼デニム",
+  "name"   : "20オンス スキニージーンズ"
+},
+
+{
+  "number" : "oni-516idid",
+  "image"  : "oni/oni-516idid",
+  "brand"  : "鬼デニム",
+  "name"   : "インディゴ染め タイトストレート"
+},
+
+{
+  "number" : "43768",
+  "image"  : "amazon2/43768",
+  "brand"  : "エターナル",
+  "name"   : "栃木レザー ベルト"
+},
+
+{
+  "number" : "dwb002",
+  "image"  : "amazon2/dwb-002",
+  "brand"  : "達磨",
+  "name"   : "牛革 ベルト 青龍"
+},
+
+{
+  "number" : "0472700",
+  "image"  : "alpha/0472700",
+  "brand"  : "ALPHA",
+  "name"   : "ビジネスリュック"
+},
+
+{
+  "number" : "0472700",
+  "image"  : "alpha/0472700",
+  "brand"  : "ALPHA",
+  "name"   : "ビジネスリュック"
+},
+
+{
+  "number" : "0472600",
+  "image"  : "alpha/0472600",
+  "brand"  : "ALPHA",
+  "name"   : "2WAY 3層ビジネスバッグ"
+},
+
+{
+  "number" : "0472500",
+  "image"  : "alpha/0472500",
+  "brand"  : "ALPHA",
+  "name"   : "3WAY ビジネスバッグ"
+},
+
+{
+  "number" : "0472400",
+  "image"  : "alpha/0472400",
+  "brand"  : "ALPHA",
+  "name"   : "3WAY ビジネスバッグ"
+},
+
+{
+  "number" : "0472300",
+  "image"  : "alpha/0472300",
+  "brand"  : "ALPHA",
+  "name"   : "2WAY ビジネスバッグ"
+},
+
+{
 		"number" : "tdw-250",
 		"image"  : "ted1/tdw-250",
 		"brand"  : "TEDMAN",
-		"name"   : "【再入荷】牛革長財布"
+		"name"   : "牛革長財布"
 	},
 
 	{
 		"number" : "krw001-g",
 		"image"  : "amazon2/krw001-g",
 		"brand"  : "KC,s",
-		"name"   : "【再入荷】象革長財布"
+		"name"   : "象革長財布"
 	},
 
 
@@ -44,7 +128,7 @@
 	"number" : "gcp-95",
 	"image"  : "gocoo/gcp-95",
 	"brand"  : "GO-COO!! ",
-	"name"   : "【再入荷】 メッシュ キャップ"
+	"name"   : "メッシュ キャップ"
 },
 
 {
@@ -100,42 +184,6 @@
 	"image"  : "vanson/nvcp-601",
 	"brand"  : "VANSON",
 	"name"   : "スカル メッシュ キャップ"
-},
-
-
-{
-  "number" : "0472700",
-  "image"  : "alpha/0472700",
-  "brand"  : "ALPHA",
-  "name"   : "ビジネスリュック"
-},
-
-{
-  "number" : "0472600",
-  "image"  : "alpha/0472600",
-  "brand"  : "ALPHA",
-  "name"   : "2WAY 3層ビジネスバッグ"
-},
-
-{
-  "number" : "0472500",
-  "image"  : "alpha/0472500",
-  "brand"  : "ALPHA",
-  "name"   : "3WAY ビジネスバッグ"
-},
-
-{
-  "number" : "0472400",
-  "image"  : "alpha/0472400",
-  "brand"  : "ALPHA",
-  "name"   : "3WAY ビジネスバッグ"
-},
-
-{
-  "number" : "0472300",
-  "image"  : "alpha/0472300",
-  "brand"  : "ALPHA",
-  "name"   : "2WAY ビジネスバッグ"
 }
 
 ]

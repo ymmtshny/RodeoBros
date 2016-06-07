@@ -1,0 +1,53 @@
+extends ./jade/_template.jade
+block meta
+	meta(charset="UTF-8")
+	meta(name="description",content="このページの説明です")
+	meta(name="keywords",content="このページのキーワードです,キーワード2,キーワード3")
+	meta(http-equiv="imagetoolbar",content="no")
+	link(rel='stylesheet', href='./css/swiper.min.css')
+	style.
+			.swiper-container {
+			width: 100%;
+			height: 100%;
+			background: #000;
+			position:absolute;
+			top:0;
+			left:0;
+			}
+			.swiper-slide {
+			font-size: 18px;
+			color:#fff;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			padding: 0px;
+			padding-top:4em;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+			}
+block title
+	title YOROI 鎧のような丈夫な日本製品を世界に発信
+block content
+	#main.site-main
+		// Swiper
+		.swiper-container
+			.swiper-wrapper
+				.swiper-slide(style="background-image:url(http://lorempixel.com/900/600/nightlife/)" alt="")
+				.swiper-slide(style="background-image:url(http://lorempixel.com/900/600/sports/)" alt="")
+				.swiper-slide(style="background-image:url(http://lorempixel.com/900/600/nightlife/)" alt="")
+			// Add Pagination
+			//.swiper-pagination.swiper-pagination-white
+			// Add Navigation
+			.swiper-button-prev.swiper-button-black
+			.swiper-button-next.swiper-button-black
+		script(src='./js/swiper.min.js')
+		script.
+			var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			parallax: true,
+			speed: 600,
+			//	loop: true,
+			});

@@ -1,0 +1,207 @@
+@charset "euc-jp";
+/* CSS Document */
+body {
+font-size:10px;
+font-weight:400;
+letter-spacing: 1px;
+line-height:1.5!important;
+font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+}
+
+img:hover {
+opacity:0.7;
+}
+
+a:link {
+		color: blue;
+}
+
+a:visited {
+		color: blue;
+}
+
+a:hover {
+		color: blue;
+}
+
+a:active {
+		color: blue;
+}
+
+
+/* 商品ここから */
+h1 {
+	font-size: 1em;
+}
+
+#shouhin_main {
+	font-size:12px;
+}
+
+#shouhin_main table {
+	font-size:12px;
+}
+
+#shouhin_main p {
+	font-size:12px;
+}
+
+#shouhin_main_left {
+clear:both;
+float:left;
+width: 400px;
+height:100%;
+margin-bottom:20px;
+}
+
+#shouhin_main_right {
+float:left;
+width:400px;
+height:100%;
+margin-bottom:20px;
+}
+
+#shouhin_main_bottom {
+clear:both;
+}
+
+#item_description {
+float:left;
+margin-bottom:20px;
+}
+
+#brand {
+width:833px;
+height:130px;
+border:1px #E6E6E6 solid;
+margin-bottom:15px;
+
+}
+
+#brand_logo {
+width:110px;
+height:70px;
+padding:20px 20px 20px 20px;
+margin-top:10px;
+}
+
+
+#brand_img{
+float:left;
+}
+
+#brand_description{
+	float:left;
+	padding:50px 0px 0px 150px;
+	width:440px;
+	height:100px;
+}
+
+.staff_img {
+width:70px;
+height:70px;
+
+}
+
+.staff {
+width:108px;
+text-align:right;
+float:left;
+margin-right:10px;
+margin-top:-10px;
+color:#727171;
+}
+
+#stafimg {
+margin-top:10px;
+margin-bottom:5px;
+	background-image:url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/staff_g.jpg");
+	height:73px;
+	width:835px;
+}
+
+.staff-info {
+float:right;
+
+}
+
+.size_person {
+	float: left;
+	width: 100%;
+	height: 100px;
+	line-height: 1.5;
+}
+
+.size_person img {
+		width: 70px;
+		height: 70px;
+		float: left;
+		margin: 0px 5px 0px 0px;
+}
+
+p {
+margin:3px 0px 3px 0px;
+}
+
+
+#m-mate {
+width:80px;
+background-color:#333333;
+color:#FFFFFF;
+text-align:center;
+padding:1px;
+margin-top:20px;
+margin-bottom:10px;
+
+}
+
+#m-size {
+width:50px;
+background-color:#333333;
+color:#FFFFFF;
+text-align:center;
+padding:1px;
+margin-bottom:10px;
+}
+#m-detail {
+width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;margin-top:20px;margin-bottom:10px;
+}
+
+#m-total::before {
+	clear:both;
+}
+#m-total {
+	width:60px;
+	background-color:#333333;
+	color:#FFFFFF;
+	text-align:center;
+	padding:1px;
+	height:auto;
+	clear: both;
+	margin-top: 20px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+}
+
+#m-model{
+width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;margin-top:20px;margin-bottom:10px;
+}
+
+#m-detail {
+width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;margin-top:20px;margin-bottom:10px;
+}
+
+#m-brand {
+width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;margin-bottom:10px;
+}
+
+/*買い物カゴ付近ここから*/
+span.item_name {
+		color: #000000;
+		font-size: 11px;
+}
+
+#rakutenLimitedId_aroundCart table {
+    width: 100%;
+}

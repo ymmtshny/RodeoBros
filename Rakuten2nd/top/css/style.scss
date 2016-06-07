@@ -1,0 +1,239 @@
+@import '../../../common/scss/normalize.scss';
+@import '../../../common/scss/utility.scss';
+@import '../../../common/scss/base.scss';
+@import './header.scss';//ヘッダー
+@import './leftnav.scss';//レフトナビ
+
+
+.wrapper {
+	width:1240px;
+	margin:0 auto;
+}
+
+aside {
+	width:200px;
+	margin-right:20px;
+	float:left;
+}
+
+main {
+	width:1020px;
+	float:left;
+	margin-bottom:8em;
+}
+
+.myButton {
+		border-radius: 0;
+		border:1px solid #000;
+		padding: 0.4em 8em;
+		font-size:1em;
+		text-align: center;
+
+		&:hover {
+			background: #000;
+			color:#fff;
+			transition:all 0.5s;
+		}
+}
+
+.sectionTitle {
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+////////////////////////////////////////////
+//スライダー ここから
+.flexslider:hover .flex-prev { opacity: 1; left: 10px; background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/img/arrow_left.png) no-repeat left; }
+.flexslider:hover .flex-next { opacity: 1; right: 10px; background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/img/arrow_right.png) no-repeat right; }
+.flex-direction-nav li a {display:block !important;opacity:1 !important}
+.flex-control-paging {display:none;}
+
+.mySlider {
+	height:415px;
+}
+////////////////////////////////////////////
+//NEW ARRIVAL ここから
+$mb_item: 3em !default;
+.newArrival {
+		width: 100%;
+		margin: 0 auto;
+		clear: both;
+		position: relative;
+
+	.newArrival__item {
+		border: 1px solid #ddd;
+		width: 22%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		margin-bottom: $mb_item;
+		padding: 0;
+		float: left;
+		&:nth-of-type(5) {
+			clear:both;
+		}
+
+		&:nth-of-type(9) {
+			clear:both;
+		}
+
+	}
+
+
+
+	img {
+		border-bottom:1px solid #ddd;
+		margin-bottom: 1em;
+	}
+
+
+	h3 {
+		color:#000;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		font-size: 1.1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin: 0;
+		margin-bottom: 0.25em;
+	}
+
+	p {
+		color:#888888;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-bottom: 1em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.newArrival button {
+		@extend .myButton;
+}
+///////////////////////////////////////////
+//ブランドここから
+.selectedBrands {
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+
+	li {
+		padding:0;
+		margin-bottom: 0em;
+	}
+
+	figure {
+		margin: 1em;
+		margin-bottom: 0;
+	}
+
+	img {
+		margin-bottom: 0.5em;
+		border: 1px solid #ddd;
+	}
+
+	h3 {
+		font-size: 1em;
+		margin: 0;
+		margin-bottom: 0.25em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	p {
+		margin: 0;
+		color:#777777;
+		margin-bottom: 1em;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	button {
+		border-radius: 0;
+		border:1px solid #000;
+		padding: 0.25em 2em;
+		font-size:1em;
+
+			&:hover {
+				background: #000;
+				color:#fff;
+				transition:all 0.5s;
+			}
+		}
+
+	.morebtn {
+		@extend .myButton;
+	}
+}
+//ブランドここまで
+////////////////////////////////////////////
+//フッターここから
+.shop-infomation {
+	clear: both;
+	background: #eeeeee;
+	padding: 0 4em;
+	position: relative;
+	padding-bottom: 2em;
+
+	//SHOP INFORMATION
+	h2 {
+		font-size: 1.3em;
+		padding: 0.8em 0;
+		padding-top: 1em;
+		border-bottom: 1px solid #888;
+	}
+
+	//SNS
+	.sns {
+		position: absolute;
+		top:1.5em;
+		right:4em;
+
+		li {
+			display: inline-block;
+		}
+
+		i {
+			font-size: 1.5em;
+			margin-left: 1em;
+			color:#000;
+		}
+	}
+
+	//説明文
+	.shop-infomation__textbox {
+
+		h3 {
+			font-size: 1.3em;
+		}
+
+	}
+
+}
+
+//copy right
+.copy-right {
+	background: #000;
+	color:#fff;
+
+	a {
+		padding-top: 0.3em;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	p {
+		padding: 0.3em 0;
+	}
+}
+
+.copy-right__phone.text-center {
+	padding-top: 0.5em;
+}
+
+//フッターここまで
+////////////////////////////////////////////
