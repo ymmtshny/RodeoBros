@@ -68,8 +68,8 @@
             </div>
             <div class="headerTop__nav col-sm-8">
               <ul class="list-inline text-right">
-                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/info.html">COMPANY</a></li>
-                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">GUIDE</a></li>
+                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/company/">COMPANY</a></li>
+                <li><a target="_top" href="http://shopping.geocities.jp/rodeobros/faq/">GUIDE</a></li>
                 <li><a target="_top" href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">REVIEW</a></li>
               </ul>
             </div>
@@ -131,7 +131,7 @@
                 <li><a href="http://shopping.geocities.jp/rodeobros/brandlist/brand-list.html">ブランド一覧へ</a></li>
                 <li><a href="http://shopping.geocities.jp/rodeobros/backnumber/">特集一覧へ</a></li>
                 <li><a href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">ユーザーレビュー</a></li>
-                <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">ショッピングガイド</a></li>
+                <li><a href="http://shopping.geocities.jp/rodeobros/faq/">ショッピングガイド</a></li>
                 <li><a href="rodeobros@aun-wa.com">お問い合わせ</a></li>
                 <li><a href="http://shopping.geocities.jp/rodeobros/recruit/">採用情報</a></li>
               </ul>
@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-          
+
           closeIcon.css("display","none")
-          
+
           $('#js-sp-menu').click(function() {
-          
+
           	if(spMenuHidden) {
-          
+
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-          
+
           	} else {
-          
+
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-          
-          
+
+
           });
         </script>
       </body>

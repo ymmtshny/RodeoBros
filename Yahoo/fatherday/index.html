@@ -68,8 +68,8 @@
             </div>
             <div class="headerTop__nav col-sm-8">
               <ul class="list-inline text-right">
-                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/info.html">COMPANY</a></li>
-                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">GUIDE</a></li>
+                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/company/">COMPANY</a></li>
+                <li><a target="_top" href="http://shopping.geocities.jp/rodeobros/faq/">GUIDE</a></li>
                 <li><a target="_top" href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">REVIEW</a></li>
               </ul>
             </div>
@@ -131,7 +131,7 @@
                 <li><a href="http://shopping.geocities.jp/rodeobros/brandlist/brand-list.html">ブランド一覧へ</a></li>
                 <li><a href="http://shopping.geocities.jp/rodeobros/backnumber/">特集一覧へ</a></li>
                 <li><a href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">ユーザーレビュー</a></li>
-                <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">ショッピングガイド</a></li>
+                <li><a href="http://shopping.geocities.jp/rodeobros/faq/">ショッピングガイド</a></li>
                 <li><a href="rodeobros@aun-wa.com">お問い合わせ</a></li>
                 <li><a href="http://shopping.geocities.jp/rodeobros/recruit/">採用情報</a></li>
               </ul>
@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-          
+
           closeIcon.css("display","none")
-          
+
           $('#js-sp-menu').click(function() {
-          
+
           	if(spMenuHidden) {
-          
+
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-          
+
           	} else {
-          
+
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-          
-          
+
+
           });
         </script>
       </body>
@@ -210,13 +210,13 @@
       new Vue({
       	el: '#Vue',
       	//template: '#VueTopsTemplate',
-      
+
       	data: {
       		Tedmantee: []
       	},
-      
+
       	created: function() {
-      
+
       		var _this = this;
       		//get json file
       		$.ajax({
@@ -225,19 +225,19 @@
       			dataType: 'json'
       		}).done(function(data) {
       			var temp = [];
-      
+
       			data.forEach(function (el) {
       				el.number = "http://store.shopping.yahoo.co.jp/rodeobros/" + el.number + ".html"
       				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
       				temp.push(el);
       			});
       			_this.Tedmantee = temp;
-      
+
       		});
-      
+
       	}
       });
-      
+
     </script>
     <script>
       $(function() {
@@ -253,13 +253,13 @@
       		}
       	}
       });
-      
+
       $('#goToTop').click(function(){
       		window.scrollTo(0, 0);
       });
-      
+
       });
-      
+
       $(function(){
       	$("img.lazy").lazyload({
       		"threshold":250,
@@ -273,22 +273,22 @@
       var mainImage = $('#js__carousel__image');
       var src__pc = mainImage.attr("src__pc");
       var src__sp = mainImage.attr("src__sp");
-      
+
       setMainImage(lastWidth);
-      
+
       $(window).resize(function() {
-      
+
       	if($(window).width()!=lastWidth){
       			lastWidth = $(window).width();
       			console.log(lastWidth);
       	}
-      
+
       	setMainImage(lastWidth);
-      
+
       });
-      
+
       function setMainImage(lastWidth) {
-      
+
       	if(lastWidth > 768) {
       		mainImage.attr("src", src__pc);
       	} else {

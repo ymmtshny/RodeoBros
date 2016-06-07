@@ -1,0 +1,73 @@
+[
+
+ {
+    "number" : "opsj-001",
+    "image"  : "script/opsj-001",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】麦わらの一味　海賊旗 スカジャン"
+  },
+
+  {
+    "number" : "opsj-002",
+    "image"  : "script/opsj-002",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】火拳のエース スカジャン"
+  },
+
+  {
+    "number" : "opsj-003",
+    "image"  : "script/opsj-003",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】トラファルガーロー スカジャン"
+  },
+
+  {
+    "number" : "opsj-004",
+    "image"  : "script/opsj-004",
+    "brand"  : "ONE PIECE",
+    "name"   : "バギー海賊団 スカジャン"
+  },
+
+  {
+    "number" : "opsj-005",
+    "image"  : "script/opsj-005",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】メリー号 スカジャン"
+  },
+
+  {
+    "number" : "opma-001",
+    "image"  : "script/opma-001",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】 麦わらの一味 海賊旗 MA-1"
+  },
+
+  {
+    "number" : "opsw-001",
+    "image"  : "script/opsw-001",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】 麦わらの一味 海賊旗 パーカー"
+  },
+
+  {
+    "number" : "opsw-002",
+    "image"  : "script/opsw-002",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】 トラファルガーロー パーカー"
+  },
+
+  {
+    "number" : "opsp-001",
+    "image"  : "script/opsp-001",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】 麦わらの一味 海賊旗 デニム"
+  },
+
+  {
+    "number" : "opsp-002",
+    "image"  : "script/opsp-002",
+    "brand"  : "ONE PIECE",
+    "name"   : "【予約】 トラファルガーロー デニム"
+  }
+
+]

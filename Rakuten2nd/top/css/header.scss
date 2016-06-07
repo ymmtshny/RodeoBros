@@ -117,12 +117,13 @@
 		right: 58px;
 }
 .header__bar table input[type="text"] {
-		/*height: 2.5em;*/
+		height: 2.0em!important;//ずれるので
 		width: 150px;
 		margin-bottom: 0;
 		position: absolute;
 		right:120px;
 		top:0.5em;/* 同じ */
+		border: 1px solid #CECECE;
 }
 
 

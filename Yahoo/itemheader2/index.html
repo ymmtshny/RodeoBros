@@ -37,8 +37,8 @@
         </div>
         <div class="headerTop__nav col-sm-8">
           <ul class="list-inline text-right">
-            <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/info.html">COMPANY</a></li>
-            <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">GUIDE</a></li>
+            <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/company/">COMPANY</a></li>
+            <li><a target="_top" href="http://shopping.geocities.jp/rodeobros/faq/">GUIDE</a></li>
             <li><a target="_top" href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">REVIEW</a></li>
           </ul>
         </div>
@@ -388,7 +388,7 @@
             <li><a href="http://shopping.geocities.jp/rodeobros/brandlist/brand-list.html">ブランド一覧へ</a></li>
             <li><a href="http://shopping.geocities.jp/rodeobros/backnumber/">特集一覧へ</a></li>
             <li><a href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">ユーザーレビュー</a></li>
-            <li><a href="http://store.shopping.yahoo.co.jp/rodeobros/a4e8a4afa4.html">ショッピングガイド</a></li>
+            <li><a href="http://shopping.geocities.jp/rodeobros/faq/">ショッピングガイド</a></li>
             <li><a href="rodeobros@aun-wa.com">お問い合わせ</a></li>
             <li><a href="http://shopping.geocities.jp/rodeobros/recruit/">採用情報</a></li>
           </ul>
@@ -411,29 +411,29 @@
       $( "#brandContent" ).css("display","none");
       $( "#topicContent" ).css("display","none");
       $( "#js-menu-tops" ).css("background","#fff");
-      
+
       var spMenuHidden = true;
       var body = $(document.body);
       var menu = $( '.menu' );
-      
+
       $('#js-sp-menu').click(function() {
-      
+
       	if(spMenuHidden) {
-      		
+
       		body.animate({'left' : "100%" }, 300);
       		menu.animate({'left' : 0 }, 300);
       		spMenuHidden = false;
-      
+
       	} else {
-      
+
       		body.animate({'left' : 0 }, 300);
       		menu.animate({'left' : "-100%" }, 300);
       		spMenuHidden = false;
       	}
-      
-      
+
+
       });
-      
+
       //categoryクリックしたとき
       $( "#headerMenu__category" ).click(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -443,7 +443,7 @@
       	$( "#topicContent" ).css("display","none");
       	$( "#js-tops" ).css("display", "block");
       });
-      
+
       //brandクリックしたとき
       $( "#headerMenu__brand" ).click(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -452,7 +452,7 @@
       	$( "#brandContent" ).css("display","block");
       	$( "#topicContent" ).css("display","none");
       });
-      
+
       //topicsクリックしたとき
       $( "#headerMenu__topic" ).click(function() {
       	$(".headerMenu li").css("background","url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain");
@@ -461,7 +461,7 @@
       	$( "#brandContent" ).css("display","none");
       	$( "#topicContent" ).css("display","block");
       });
-      
+
       //カテゴリー
       $( "#js-menu-tops" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
@@ -472,7 +472,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-outer" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -482,7 +482,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-bottoms" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -492,7 +492,7 @@
       	$( "#js-content-accessories" ).css("display","none");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-accessories" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");
@@ -502,7 +502,7 @@
       	$( "#js-content-accessories" ).css("display","block");
       	$( "#js-content-others" ).css("display","none");
       });
-      
+
       $( "#js-menu-others" ).click(function() {
       	$(".headerCategoryList__menu li").css("background","#f7f8f7");
       	$(this).css("background","#fff");

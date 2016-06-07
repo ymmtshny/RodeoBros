@@ -1,17 +1,26 @@
+@import '../../common/scss/normalize.scss';
+@import '../../common/scss/utility.scss';
+@import '../../common/scss/base.scss';
+
+body {
+	background:rgb(0, 0, 0);
+	color:#fff;
+}
+
 header {
 	position: fixed;
 	z-index: 999;
 	top:0;
 	left:0;
 	width: 100%;
-	background:rgb(38, 5, 5);
+	background:rgb(0, 0, 0);
 
 	ul {
 		padding:0;
 		margin:0 auto;
 		list-style:none;
 		width:1240px;
-		height:4em;
+		height:5em;
 	}
 
 
@@ -32,12 +41,13 @@ header {
 
 	.logo {
 		width:20em;
-		margin-top:0.5em;
+		position: relative;
+		top: -0.7em;
 	}
 
 	.menu {
 		position: relative;
-		top: -1.7em;
+		top: -0.4em;
 		border-right:1px solid #fff;
 
 		a {
@@ -50,7 +60,7 @@ header {
 	.sns  {
 		width: 13em;
 		position: relative;
-		top: -0.3em;
+		top: 1em;
 		a {
 			display:block;
 			width:33%;
@@ -65,7 +75,7 @@ header {
 }
 
 .copy-right p{
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		left: 0;
 		color: #000;
@@ -75,6 +85,24 @@ header {
 		margin: 0;
 		font-size: 9px;
 		text-indent: 2em;
+}
+
+.content {
+	margin-top:3em;
+	h1 {
+		font-size:1.3em;
+	}
+}
+.items__head {
+	margin-bottom:0.5em;
+}
+.items__body {
+
+	margin-bottom:2.5em;
+	p {
+		margin:0;
+		margin-bottom:0.5em;
+	}
 }
 @media (min-width:769px){
 

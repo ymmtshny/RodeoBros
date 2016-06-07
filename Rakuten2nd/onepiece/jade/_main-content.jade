@@ -1,0 +1,20 @@
+div.text-center.top-image-box
+	img#js__carousel__image.mb-ll(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/onepiece_cate.jpg" src__pc="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/onepiece_cate.jpg" src__sp = "http://www.rakuten.ne.jp/gold/auc-rodeo/images/new-topics/topic-bn-22.jpg" alt="父の日ギフト")
+
+	p.mb-ml 尾田栄一郎による日本の大人気漫画ワンピース。『週刊少年ジャンプ』（集英社）にて1997年34号より連載を開始したワンピースは、今や仲間たちとの友情をテーマに、バトルやギャグシーン、感動エピソードをメインとする少年漫画の王道を行く物語として国民的人気を博しています。さらに、ワンピースは、日本だけではなく、世界中から圧倒的な人気を誇る大人気アニメとなりました。
+
+	p.mb-mm.campain-text 日本が誇る大人気アニメ、ワンピースとのコラボ商品の予約を開始しました。
+	p.mb-ml
+
+
+div.hanger.mb-ll
+	img(src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/hanger0.png" alt="ハンガー")
+
+div#Vue
+	div(v-for = "element in Data" ).items.col-sm-6.text-center
+		a(href="{{ element.number }}")
+			div.items__header
+				img.lazy(data-original="{{ element.image }}" src="./load.gif").mb-sm
+			div.items__body
+				p.brand {{ element.brand }}
+				p.name.mb-ll {{ element.name }}

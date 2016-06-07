@@ -1,0 +1,38 @@
+extends ../jade/_template.jade
+block meta
+	meta(charset="UTF-8")
+	meta(name="description",content="創業から40年の老舗セレクトショップRODEO BROS 2nd")
+	meta(name="keywords",content="アメカジ,IRON HEART,アイアンハート, TEDMAN, テッドマン")
+	meta(http-equiv="imagetoolbar",content="no")
+	link(rel='stylesheet', href='../top/css/style.css')
+block title
+	title VANSON バンソン 新作入荷 RODEO BROS
+block content
+	include ../jade/_googleAnalytics.jade
+	div.wrapper
+		header
+			include ../jade/_header.jade
+			//- include ../jade/_slider.jade
+		aside
+			include ../jade/_navigation.jade
+		main
+			//- include ./top/jade/_newarrival.jade
+			//- include ./top/jade/_brand.jade
+			include ./jade/_main-content.jade
+		footer
+			include ../jade/_footer.jade
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+	script(src="../top/js/jquery.lazyload.min.js")
+	include ./jade/_setting.jade
+	script.
+		$("img.lazy").lazyload({
+					"threshold":50,
+					"effect":"fadeIn",
+					"effect_speed":0,
+					"failure_limit":1} );
+		console.log("Lazy Loadを起動する");
+
+
+
+

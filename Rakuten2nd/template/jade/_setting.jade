@@ -1,0 +1,32 @@
+script.
+	new Vue({
+		el: '#Vue',
+		//template: '#VueTopsTemplate',
+
+		data: {
+			Data: []
+		},
+
+		created: function() {
+
+			var _this = this;
+			//get json file
+			$.ajax({
+				async:false,//同期処理にする。
+				url: './json/data.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/rodeo-2nd/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data = temp;
+
+			});
+
+		}
+	});
+
