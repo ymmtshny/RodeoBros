@@ -65,10 +65,10 @@
         </div>
         <div class="flexslider mySlider">
           <ul class="slides">
-            <li><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-33.jpg"></li>
-            <li><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-32.jpg"></li>
-            <li><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-36.jpg"></li>
-            <li><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-20.jpg"></li>
+            <li><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-33.jpg"></a></li>
+            <li><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-32.jpg"></a></li>
+            <li><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-36.jpg"></a></li>
+            <li><a href=""><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-carousel/top-bn-20.jpg"></a></li>
           </ul>
         </div>
       </header>
@@ -426,7 +426,7 @@
       			var temp = [];
       
       			data.forEach(function (el) {
-      				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/";
+      				el.number = "http://item.rakuten.co.jp/rodeo-2nd/" + el.number + "/";
       				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=400x400";
       				temp.push(el);
       			});
@@ -465,7 +465,8 @@
       $(window).load(function() {
       	$('.flexslider').flexslider({
       		animation: "slide",
-      		randomize: "true"
+      		randomize: "true",
+      		slideshowSpeed: "3000"
       	});
       });
     </script>

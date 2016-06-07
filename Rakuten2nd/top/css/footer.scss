@@ -1,0 +1,67 @@
+////////////////////////////////////////////
+//フッターここから
+.shop-infomation {
+	clear: both;
+	background: #eeeeee;
+	padding: 0 4em;
+	position: relative;
+	padding-bottom: 2em;
+
+	//SHOP INFORMATION
+	h2 {
+		font-size: 1.3em;
+		padding: 0.8em 0;
+		padding-top: 1em;
+		border-bottom: 1px solid #888;
+	}
+
+	//SNS
+	.sns {
+		position: absolute;
+		top:1.5em;
+		right:4em;
+
+		li {
+			display: inline-block;
+		}
+
+		i {
+			font-size: 1.5em;
+			margin-left: 1em;
+			color:#000;
+		}
+	}
+
+	//説明文
+	.shop-infomation__textbox {
+
+		h3 {
+			font-size: 1.3em;
+		}
+
+	}
+
+}
+
+//copy right
+.copy-right {
+	background: #000;
+	color:#fff;
+
+	a {
+		padding-top: 0.3em;
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	p {
+		padding: 0.3em 0;
+	}
+}
+
+.copy-right__phone.text-center {
+	padding-top: 0.5em;
+}
+
+//フッターここまで
+////////////////////////////////////////////

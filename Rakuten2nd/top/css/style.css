@@ -746,6 +746,60 @@ a:hover {
   margin-bottom: 2em;
 }
 
+.shop-infomation {
+  clear: both;
+  background: #eeeeee;
+  padding: 0 4em;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+.shop-infomation h2 {
+  font-size: 1.3em;
+  padding: 0.8em 0;
+  padding-top: 1em;
+  border-bottom: 1px solid #888;
+}
+
+.shop-infomation .sns {
+  position: absolute;
+  top: 1.5em;
+  right: 4em;
+}
+
+.shop-infomation .sns li {
+  display: inline-block;
+}
+
+.shop-infomation .sns i {
+  font-size: 1.5em;
+  margin-left: 1em;
+  color: #000;
+}
+
+.shop-infomation .shop-infomation__textbox h3 {
+  font-size: 1.3em;
+}
+
+.copy-right {
+  background: #000;
+  color: #fff;
+}
+
+.copy-right a {
+  padding-top: 0.3em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.copy-right p {
+  padding: 0.3em 0;
+}
+
+.copy-right__phone.text-center {
+  padding-top: 0.5em;
+}
+
 .wrapper {
   width: 1240px;
   margin: 0 auto;
@@ -780,6 +834,9 @@ main {
 .sectionTitle {
   font-size: 1.3em;
   font-weight: bold;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .flexslider:hover .flex-prev {
@@ -909,58 +966,4 @@ main {
   background: #000;
   color: #fff;
   transition: all 0.5s;
-}
-
-.shop-infomation {
-  clear: both;
-  background: #eeeeee;
-  padding: 0 4em;
-  position: relative;
-  padding-bottom: 2em;
-}
-
-.shop-infomation h2 {
-  font-size: 1.3em;
-  padding: 0.8em 0;
-  padding-top: 1em;
-  border-bottom: 1px solid #888;
-}
-
-.shop-infomation .sns {
-  position: absolute;
-  top: 1.5em;
-  right: 4em;
-}
-
-.shop-infomation .sns li {
-  display: inline-block;
-}
-
-.shop-infomation .sns i {
-  font-size: 1.5em;
-  margin-left: 1em;
-  color: #000;
-}
-
-.shop-infomation .shop-infomation__textbox h3 {
-  font-size: 1.3em;
-}
-
-.copy-right {
-  background: #000;
-  color: #fff;
-}
-
-.copy-right a {
-  padding-top: 0.3em;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.copy-right p {
-  padding: 0.3em 0;
-}
-
-.copy-right__phone.text-center {
-  padding-top: 0.5em;
 }

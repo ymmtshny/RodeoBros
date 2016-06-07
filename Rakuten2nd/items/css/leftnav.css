@@ -1,13 +1,23 @@
 .leftnav {
 	width:180px;
+
+}
+
+.leftnav__box {
 	background:#F6F6F6;
+	margin-bottom:1em;
+	padding-bottom:0.1em;
+}
+
+.leftnav__imageBox img{
+	margin-bottom:1em;
 }
 
 .leftnav h2 {
 	font-size:12px;
 	text-align:center;
 	margin:0;
-	padding: 1.5em;
+	padding: 1em;
 }
 
 .leftnav ul {
@@ -20,7 +30,7 @@
 
 .leftnav li {
 		font-size: 12px;
-		text-indent: 2.2em;
+		text-indent: 1em;
 		height: 2.5em;
 		border-bottom: 1px solid #ddd;
 		line-height: 2.5;

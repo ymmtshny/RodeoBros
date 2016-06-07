@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>
@@ -187,7 +187,7 @@
       <div id="main-without-leftnav" class="main-box">
         <div class="text-center top-image-box"><img id="js__carousel__image" src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/vanson_cate.jpg" src__pc="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/category/vanson_cate.jpg" src__sp="http://www.rakuten.ne.jp/gold/auc-rodeo/img/09.jpg" alt="父の日ギフト" class="mb-ll">
           <p class="mb-ml">最高品質のレザーウエアを追求し続ける数多くのライダーから信頼されるライダースジャケットの トップブランドVANSON。しっかりしたコンセプトを着実に守り続けながら 熟練の職人たちの手により生み出だされる高品質のバイカー系アパレルグッズはいずれも魅力満載。 バンソンの持つブランドイメージや、そのクオリティの高さに魅了される人は多く、 品質にこだわるレザーファンを中心に圧倒的な人気を誇っています。</p>
-          <p class="mb-mm campain-text">VANSON バンソン　新着商品・予約商品</p>
+          <p class="mb-mm campain-text">VANSON バンソン　新着商品</p>
           <p class="mb-ml"></p>
         </div>
         <div class="hanger mb-ll"><img src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/img/icon/hanger0.png" alt="ハンガー"></div>
@@ -210,13 +210,13 @@
       new Vue({
       	el: '#Vue',
       	//template: '#VueTopsTemplate',
-
+      
       	data: {
       		Tedmantee: []
       	},
-
+      
       	created: function() {
-
+      
       		var _this = this;
       		//get json file
       		$.ajax({
@@ -225,20 +225,20 @@
       			dataType: 'json'
       		}).done(function(data) {
       			var temp = [];
-
+      
       			data.forEach(function (el) {
-
+      
       				el.number = "http://www.aun-wa.com/SHOP/" + el.number + ".html"
       				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
       				temp.push(el);
       			});
       			_this.Tedmantee = temp;
-
+      
       		});
-
+      
       	}
       });
-
+      
     </script>
     <script>
       $(function() {
@@ -254,13 +254,13 @@
       		}
       	}
       });
-
+      
       $('#goToTop').click(function(){
       		window.scrollTo(0, 0);
       });
-
+      
       });
-
+      
       $(function(){
       	$("img.lazy").lazyload({
       		"threshold":250,
@@ -274,22 +274,22 @@
       var mainImage = $('#js__carousel__image');
       var src__pc = mainImage.attr("src__pc");
       var src__sp = mainImage.attr("src__sp");
-
+      
       setMainImage(lastWidth);
-
+      
       $(window).resize(function() {
-
+      
       	if($(window).width()!=lastWidth){
       			lastWidth = $(window).width();
       			console.log(lastWidth);
       	}
-
+      
       	setMainImage(lastWidth);
-
+      
       });
-
+      
       function setMainImage(lastWidth) {
-
+      
       	if(lastWidth > 768) {
       		mainImage.attr("src", src__pc);
       	} else {
