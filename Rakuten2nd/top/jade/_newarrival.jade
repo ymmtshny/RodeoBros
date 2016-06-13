@@ -3,7 +3,7 @@ h2.sectionTitle NEW ARRIVAL
 	//- a.rightArrow(v-on:click="onClickNext") Next
 	//- a.leftArrow(v-on:click="onClickBack") Back
 	ul.row
-		li(v-for = "element in NewArrival").newArrival__item
+		li(v-for = "element in Data").newArrival__item
 			a(href="{{ element.number }}" title="{{ element.name }}")
 				img.lazy(data-original="{{ element.image }}" src="./top/img/load1000x1000.gif" alt="{{ element.name }}")
 				.newArrival__texts
@@ -11,7 +11,7 @@ h2.sectionTitle NEW ARRIVAL
 					p {{ element.name }}
 
 	.text-center
-		a(href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/")
+		a(href="http://item.rakuten.co.jp/rodeo-2nd/c/0000000100/")
 			button.btn.btn-default 新商品一覧へ
 
 

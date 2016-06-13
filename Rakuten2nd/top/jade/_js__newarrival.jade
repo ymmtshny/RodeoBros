@@ -1,131 +1,30 @@
 script.
-
-		function LazyLoad() {
-				$("img.lazy").lazyload({
-							"threshold":50,
-							"effect":"fadeIn",
-							"effect_speed":0,
-							"failure_limit":1} );
-						console.log("Lazy Loadを起動する");
-
-			}
-
-		var currentpage = 1;
-		var NUMBER_OF_ITMES = 12;
-		var vm = new Vue({
-			el: '#Vue__NewArrival',
-
-			methods: {
-				onClickNext: function (e) {
-
-					switch(currentpage) {
-						case 1:
-								vm.$set('NewArrival', this.PageTwo);
-								currentpage = 2;
-								break;
-						case 2:
-								vm.$set('NewArrival', this.PageThree);
-								currentpage = 3;
-								break;
-						case 3:
-								vm.$set('NewArrival', this.PageFour);
-								currentpage = 4;
-								break;
-						case 4:
-								vm.$set('NewArrival', this.PageOne);
-								currentpage = 1;
-								break;
-						default:
-								console.log("ERROR");
-					}
-
-					setTimeout(function(){
-							LazyLoad();
-					},100);
-
-					console.log(currentpage);
-
-				},
-
-				onClickBack: function (e) {
-
-					switch(currentpage) {
-						case 1:
-								vm.$set('NewArrival', this.PageFour);
-								currentpage = 4;
-								break;
-						case 2:
-								vm.$set('NewArrival', this.PageOne);
-								currentpage = 1;
-								break;
-						case 3:
-								vm.$set('NewArrival', this.PageTwo);
-								currentpage = 2;
-								break;
-						case 4:
-								vm.$set('NewArrival', this.PageThree);
-								currentpage = 3;
-								break;
-						default:
-								console.log("ERROR");
-					}
-
-					setTimeout(function(){
-							LazyLoad();
-					},100);
-
-					console.log(currentpage);
-
-				}
-
-			},
-
-			data: {
-				NewArrival: [],
-				PageOne:[],
-				PageTwo:[],
-				PageThree:[],
-				PageFour:[]
-			},
-
-			created: function() {
-
-				var _this = this;
-				//get json file
-				$.ajax({
-					async:false,//同期処理にする。
-					url: './data/new-arrival.json',
-					dataType: 'json'
-
-				}).done(function(data) {
-					var temp = [];
-
-					data.forEach(function (el) {
-						el.number = "http://item.rakuten.co.jp/rodeo-2nd/" + el.number + "/";
-						el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=400x400";
-						temp.push(el);
-					});
-
-					 _this.NewArrival = temp.slice(0,NUMBER_OF_ITMES);
-					 _this.PageOne = temp.slice(0,NUMBER_OF_ITMES);
-					 _this.PageTwo = temp.slice(NUMBER_OF_ITMES , NUMBER_OF_ITMES * 2 );
-					 _this.PageThree = temp.slice(NUMBER_OF_ITMES * 2 , NUMBER_OF_ITMES * 3 );
-					 _this.PageFour = temp.slice(NUMBER_OF_ITMES * 3 , NUMBER_OF_ITMES * 4 );
-					//console.log(_this.NewArrival);
-
-				});
-
-			}
-
+	new Vue({
+		el: '#Vue__NewArrival',
+		data: {
+		Data: []
+	},
+	created: function() {
+		var _this = this;
+		//get json file
+		$.ajax({
+			async:false,//同期処理にする。
+			url: './data/new-arrival.json', //index.jadeに対してのURL
+			dataType: 'json'
+		}).done(function(data) {
+			var temp = [];
+			data.forEach(function (el) {
+			el.number = "http://item.rakuten.co.jp/rodeo-2nd/" + el.number + "/"
+			el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+			temp.push(el);
 		});
-
-		//- $(window).on('load', function() {
-		//- 	 LazyLoad();
-		//- 	console.log('hello');
-		//- });
-
-		$(window).load(function(){
-			LazyLoad();
-			//alert('hello');
+			_this.Data = temp.slice(0,12);;
 		});
+		}
+	});
 
+	$("img.lazy").lazyload({
+		"threshold":50,
+		"effect":"fadeIn",
+		"effect_speed":0,
+		"failure_limit":1});
