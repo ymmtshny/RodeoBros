@@ -1,0 +1,121 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+script(src="./js/jquery.lazyload.min.js")
+
+script.
+	new Vue({
+		el: '#Vue1',
+		data: { Data1: [] },
+		created: function() {
+			var _this = this;
+			$.ajax({
+				async:false,//同期処理にする。
+				url: './json/data1.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data1 = temp;
+			});
+		}
+	});
+
+script.
+	new Vue({
+		el: '#Vue2',
+		data: { Data2: [] },
+		created: function() {
+			var _this = this;
+			$.ajax({
+				async:false,//同期処理にする。
+				url: './json/data2.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data2 = temp;
+			});
+		}
+	});
+
+script.
+	new Vue({
+		el: '#Vue3',
+		data: { Data3: [] },
+		created: function() {
+			var _this = this;
+			$.ajax({
+				async:false,//同期処理にする。
+				url: './json/data3.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data3 = temp;
+			});
+		}
+	});
+
+script.
+	new Vue({
+		el: '#Vue4',
+		data: { Data4: [] },
+		created: function() {
+			var _this = this;
+			$.ajax({
+				async:false,//同期処理にする。
+				url: './json/data4.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data4 = temp;
+			});
+		}
+	});
+script.
+	new Vue({
+		el: '#Vue5',
+		data: { Data5: [] },
+		created: function() {
+			var _this = this;
+			$.ajax({
+				async:false, //同期処理にする。
+				url: './json/data5.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var temp = [];
+				data.forEach(function (el) {
+					el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+					el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+					temp.push(el);
+				});
+				_this.Data5 = temp;
+			});
+		}
+	});
+
+script.
+	$(function(){
+		$("img.lazy").lazyload({
+			"threshold":250,
+			"effect":"fadeIn",
+			"effect_speed":800,
+			"failure_limit":1} );
+	});

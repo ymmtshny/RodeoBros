@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>

@@ -140,7 +140,7 @@
                 <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000000633/">アウター</a></li>
                 <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000000631/">ボトムス</a></li>
                 <li><a href="http://item.rakuten.co.jp/auc-rodeo/c/0000000634/">アクセサリー</a></li>
-                <li><a href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist1/">ブランド一覧へ</a></li>
+                <li><a href="http://www.rakuten.ne.jp/gold/auc-rodeo/brandlist/brand-list.html">ブランド一覧へ</a></li>
                 <li><a href="http://www.rakuten.ne.jp/gold/auc-rodeo/backnumber/">特集一覧へ</a></li>
                 <li><a href="http://review.rakuten.co.jp/shop/4/235529_235529/1.1/">ユーザーレビュー</a></li>
                 <li><a href="http://www.rakuten.ne.jp/gold/auc-rodeo/faq/">ショッピングガイド</a></li>
@@ -164,29 +164,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>

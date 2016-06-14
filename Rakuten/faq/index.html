@@ -164,29 +164,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>
@@ -270,39 +270,39 @@
       			}
       		}
       	});
-
+      
       });
-
+      
       var navi = $('#sidebar');
       var main = $('#main');
       var lastWidth = $(window).width();
-
+      
       $(window).resize(function(){
-
+      
       	if($(window).width()!=lastWidth){
       		lastWidth = $(window).width();
       		console.log(lastWidth);
       	}
-
+      
       });
-
+      
       $(window).scroll(function () {
       			var ScrTop = $(document).scrollTop();
-
+      
       			$('#sidebar').val(ScrTop);
-
+      
       			if ($('#sidebar').val() < 200 && lastWidth > 768) {
-
+      
       					navi.css('top', '220px');
       					navi.css('position', 'fixed');
-
+      
       			} else if(lastWidth > 768){
       					navi.css('top', '30px');
       					navi.css('position', 'fixed');
       					main.css('margin-left', '34%');
       					navi.css('width', '28%');
       			}
-
+      
       });
     </script>
   </body>

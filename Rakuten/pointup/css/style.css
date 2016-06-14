@@ -265,7 +265,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -528,42 +529,498 @@ a:hover {
   }
 }
 
-.campain-text {
-  font-size: 1.4em;
+body {
+  width: 100%;
 }
 
-.pickup-items h1 {
+html {
+  margin: 0;
+}
+
+.headerTop div {
+  background: #000;
+  color: #fff;
+  display: block;
+  height: 40px;
+  line-height: 3.3;
+}
+
+.headerTop a {
+  color: #fff;
+}
+
+.headerLogo {
   clear: both;
-  background-color: #f7f8f8;
-  padding: 0.3em 0;
+  padding: 30px 0;
 }
 
-.items p {
-  margin-top: 0;
+.headerLogo img {
+  width: 240px;
+  cursor: pointer;
 }
 
-.items .name {
+.headerMenu {
+  width: 100%;
+  height: 54px;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+  background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
-.allItemsButton-box {
-  clear: both;
+.headerMenu ul {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
 }
 
-.allItemsButton-box a:hover {
+.headerMenu li {
+  line-height: 3.8;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.headerMenu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.headerMenu li:last-child:hover {
+  background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain;
+}
+
+.headerMenu a {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.headerMenu a:hover {
   text-decoration: none;
 }
 
-.allItemsButton-box p {
-  width: 40%;
+.headerMenu .right-border {
+  border-right: 1px solid #cdcdcd;
+}
+
+.headerMenu .input-group {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.headerMenu input {
+  border-radius: 0;
+  height: 30px;
+}
+
+.headerMenu button {
+  border-radius: 0;
+  height: 30px;
+  line-height: 1;
+}
+
+#categoryContent {
+  display: none;
+}
+
+#brandContent {
+  display: none;
+}
+
+#topicContent {
+  display: block;
+}
+
+.headerCategoryList {
+  clear: both;
+  width: 100%;
+  max-width: 1240px;
+  height: 330px;
+  overflow: hidden;
   margin: 0 auto;
-  padding: 0.8em 0;
+}
+
+.headerCategoryList__menu {
+  background: #f7f8f7;
+  padding: 0;
+}
+
+.headerCategoryList__menu li {
+  border-bottom: 1px solid #cdcdcd;
+  height: 66px;
+  cursor: pointer;
+}
+
+.headerCategoryList__menu li:last-child {
+  border: none;
+}
+
+.headerCategoryList__menu .tab__inbox {
+  margin-top: 15px;
+  text-align: center;
+  float: left;
+  width: 95%;
+}
+
+.headerCategoryList__menu .tab__inbox span {
+  display: block;
+  width: 100%;
+  color: gray;
+}
+
+.headerCategoryList__menu i {
+  margin-top: 30px;
+  float: left;
+  width: 5%;
+}
+
+.tab__contents {
+  height: 330px;
+}
+
+.tab__contents ul {
+  width: 31%;
+  margin-right: 2%;
+  padding-left: 0;
+  margin-top: 10px;
+  float: left;
+}
+
+.tab__contents li {
+  border-bottom: 1px solid #cdcdcd;
+  height: 30px;
+  line-height: 2.25;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab__contents li:last-child {
+  border: none;
+}
+
+.tab__contents li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tab__contents li span {
+  color: gray;
+  margin-left: 10px;
+}
+
+.tab__contents li .fa {
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+
+.tab__contents a {
+  display: block;
+  color: #000;
+}
+
+.tab__contents a:hover {
+  text-decoration: none;
+}
+
+#js-content-outer {
+  display: none;
+}
+
+#js-content-bottoms {
+  display: none;
+}
+
+#js-content-accessories {
+  display: none;
+}
+
+#js-content-others {
+  display: none;
+}
+
+.headerBrandList {
+  clear: both;
+  margin: 30px auto;
+  max-width: 1240px;
+}
+
+.headerBrandList ul {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.headerBrandList li:hover {
+  opacity: 0.7;
+}
+
+.headerBrandList .brand__wrapper {
+  border: 1px solid #cdcdcd;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.headerBrandList p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerBrandList .brand__header {
+  width: 20%;
+  margin-left: 5%;
+  float: left;
+}
+
+.headerBrandList .brand__header img {
+  height: 49px;
+  width: 49px;
+}
+
+.headerBrandList .brand__body {
+  width: 75%;
+  float: left;
+  padding-top: 8px;
+  text-indent: 10%;
+}
+
+.headerBrandList .brand__nameEng {
+  color: #000;
+}
+
+.headerBrandList .brand__nameJa {
+  color: gray;
+}
+
+.headerBrandList button {
+  border-radius: 0;
+  font-size: 11px;
+  margin-top: 17px;
+}
+
+.headerBrandList .btn-default:hover {
+  color: #fff;
+  background-color: #000 !important;
+  border-color: #000;
+  transition: all 0.5s;
+}
+
+.headerTopicList {
+  clear: both;
+  margin: 30px auto;
+  max-width: 1240px;
+}
+
+.headerTopicList a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.headerTopicList ul {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.headerTopicList img {
+  margin-bottom: 8px;
+}
+
+.headerTopicList h3 {
+  font-size: 12px;
+  color: #000;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerTopicList p {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerTopicList button {
+  border-radius: 0;
+  font-size: 11px;
+}
+
+.headerTopicList .btn-default:hover {
+  color: #fff;
+  background-color: #000 !important;
+  border-color: #000;
+  transition: all 0.5s;
+}
+
+.headerInfo {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.headerInfo ul {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.headerInfo img {
+  margin-top: 3px;
+  width: 180px;
+  margin-left: -15px;
+}
+
+.headerInfo li {
+  border-right: 1px solid #cdcdcd;
+  height: 80px;
+  overflow: hidden;
+}
+
+.headerInfo li:last-child {
+  border-right: none;
+}
+
+.headerInfo li:hover {
+  opacity: 0.7;
+}
+
+.diplay {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-pc {
+  display: none !important;
+}
+
+.hidden-sp {
+  display: block !important;
 }
 
 @media (max-width: 768px) {
-  .allItemsButton-box p {
+  .hidden-sp {
+    display: none !important;
+  }
+  .hidden-pc {
+    display: block !important;
+  }
+  .sp {
+    background: #000;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    z-index: 9999999;
+  }
+  .sp li {
+    float: left;
+  }
+  .searchForm {
+    width: 90%;
+    margin-bottom: 2em;
+    margin-top: 1em;
+  }
+  .searchForm button img {
+    width: 18px;
+  }
+  .fa-times {
+    display: none;
+  }
+  .sp__menu {
+    font-size: 1.75em;
+    color: #fff;
+    width: 10%;
+    margin-top: 0.4em;
+    text-indent: 0.5em;
+  }
+  .sp__logo {
     width: 80%;
+    text-align: center;
+  }
+  .sp__logo img {
+    height: 3.5em;
+    margin-top: 0.25em;
+    width: auto;
+  }
+  .sp__cart {
+    font-size: 1.75em;
+    color: #fff;
+    width: 10%;
+    margin-top: 0.4em;
+    text-indent: -0.5em;
+  }
+  .menu {
+    z-index: 99999999;
+    padding-left: 2em;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    left: -100%;
+    top: 4em;
+    padding-top: 1em;
+    background: #fff;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+  }
+  .menu a {
+    display: block;
+    height: 3em;
+    color: #000;
+  }
+  .menu__top {
+    display: block;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #ddd;
+  }
+  .menu__sns {
+    display: block;
+  }
+  .menu__sns .fa {
+    margin-right: 0.5em;
+  }
+}
+
+#wrapper {
+  margin-top: 2em;
+}
+
+.campain-text {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+.hanger img {
+  margin: 4em;
+}
+
+.red {
+  color: red;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+  .sub-title {
+    font-size: 1em;
   }
 }

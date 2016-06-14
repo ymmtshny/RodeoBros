@@ -2,9 +2,10 @@
 <script>
   var lastWidth = $(window).width();
   var mainImage = $('#js__carousel__image');
-  var src__pc__sun = mainImage.attr("src__pc__sun");
-  var src__sp__sun = mainImage.attr("src__sp__sun");
+  var src__pc = mainImage.attr("src__pc");
+  var src__sp = mainImage.attr("src__sp");
   
+  setMainImage(lastWidth);
   
   $(window).resize(function() {
   
@@ -18,6 +19,11 @@
   });
   
   function setMainImage(lastWidth) {
-  	mainImage.attr("src", s)
+  
+  	if(lastWidth > 768) {
+  		mainImage.attr("src", src__pc);
+  	} else {
+  		mainImage.attr("src", src__sp);
+  	}
   }
 </script>

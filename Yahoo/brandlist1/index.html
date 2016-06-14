@@ -36,7 +36,7 @@
         <meta http-equiv="content-language" content="ja">
         <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
         <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
-        <title>RODEO BROS | 楽天店</title>
+        <title>RODEO BROS | Yahoo店</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
         <link rel="shortcut icon" href="http://www.rakuten.ne.jp/gold/auc-rodeo/images/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="initial-scale=1">
@@ -68,7 +68,7 @@
             </div>
             <div class="headerTop__nav col-sm-8">
               <ul class="list-inline text-right">
-                <li><a target="_top" href="http://store.shopping.yahoo.co.jp/rodeobros/company/">COMPANY</a></li>
+                <li><a target="_top" href="http://shopping.geocities.jp/rodeobros/company/">COMPANY</a></li>
                 <li><a target="_top" href="http://shopping.geocities.jp/rodeobros/faq/">GUIDE</a></li>
                 <li><a target="_top" href="http://review.store.shopping.yahoo.co.jp/rodeobros/store/review/">REVIEW</a></li>
               </ul>
@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>
@@ -287,7 +287,7 @@
               </div></a></div>
         </div>
         <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
+        
         <div style="position: fixed; top: 50px; left: 19.6094px;" class="brandList__nav">
           <ul>
             <li><a href="#a">MAIN BRAND</a></li>
@@ -370,12 +370,12 @@
       // 250ミリ秒かけて指定の位置まで移動
       $('html, body').animate({scrollTop: offsetTop}, 250);
       });
-
+      
     </script>
     <script>
       new Vue({
       	el: '#Vue',
-
+      
       	data: {
       		MAIN: [],
       		A:[],
@@ -389,9 +389,9 @@
       		RA:[],
       		WA:[]
       	},
-
+      
       	created: function() {
-
+      
       		var _this = this;
       		//get json file
       		$.ajax({
@@ -409,7 +409,7 @@
       			var ya = [];
       			var ra = [];
       			var wa = [];
-
+      
       			data.forEach(function (el) {
       				if(el.row === "メインブランド") {
       					main.push(el);
@@ -434,9 +434,9 @@
       				} else if (el.row === "わ") {
       					wa.push(el);
       				}
-
+      
       			});
-
+      
       			_this.MAIN = main;
       			_this.A = a;
       			_this.KA = ka;
@@ -448,13 +448,13 @@
       			_this.YA = ya;
       			_this.RA = ra;
       			_this.WA = wa;
-
-
+      
+      
       		});
-
+      
       	}
       });
-
+      
     </script>
     <script>
       $(function() {
@@ -470,11 +470,11 @@
       		}
       	}
       });
-
+      
       $('#goToTop').click(function(){
       		window.scrollTo(0, 0);
       });
-
+      
       });
     </script>
   </body>

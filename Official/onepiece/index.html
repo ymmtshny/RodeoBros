@@ -152,29 +152,29 @@
           var menu = $( '.menu' );
           var navIcon = $( '.fa-search' );
           var closeIcon = $( '.fa-times' );
-
+          
           closeIcon.css("display","none")
-
+          
           $('#js-sp-menu').click(function() {
-
+          
           	if(spMenuHidden) {
-
+          
           		body.animate({'left' : "100%" }, 300);
           		menu.animate({'left' : 0 }, 300);
           		navIcon.css("display", "none");
           		closeIcon.css("display", "inline-block");
           		spMenuHidden = false;
-
+          
           	} else {
-
+          
           		body.animate({'left' : 0 }, 300);
           		menu.animate({'left' : "-100%" }, 300);
           		navIcon.css("display", "inline-block");
           		closeIcon.css("display", "none");
           		spMenuHidden = true;
           	}
-
-
+          
+          
           });
         </script>
       </body>
@@ -210,13 +210,13 @@
       new Vue({
       	el: '#Vue',
       	//template: '#VueTopsTemplate',
-
+      
       	data: {
       		Tedmantee: []
       	},
-
+      
       	created: function() {
-
+      
       		var _this = this;
       		//get json file
       		$.ajax({
@@ -225,20 +225,20 @@
       			dataType: 'json'
       		}).done(function(data) {
       			var temp = [];
-
+      
       			data.forEach(function (el) {
-
+      
       				el.number = "http://www.aun-wa.com/SHOP/" + el.number + ".html"
       				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
       				temp.push(el);
       			});
       			_this.Tedmantee = temp;
-
+      
       		});
-
+      
       	}
       });
-
+      
     </script>
     <script>
       $(function() {
@@ -254,13 +254,13 @@
       		}
       	}
       });
-
+      
       $('#goToTop').click(function(){
       		window.scrollTo(0, 0);
       });
-
+      
       });
-
+      
       $(function(){
       	$("img.lazy").lazyload({
       		"threshold":250,
@@ -274,22 +274,22 @@
       var mainImage = $('#js__carousel__image');
       var src__pc = mainImage.attr("src__pc");
       var src__sp = mainImage.attr("src__sp");
-
+      
       setMainImage(lastWidth);
-
+      
       $(window).resize(function() {
-
+      
       	if($(window).width()!=lastWidth){
       			lastWidth = $(window).width();
       			console.log(lastWidth);
       	}
-
+      
       	setMainImage(lastWidth);
-
+      
       });
-
+      
       function setMainImage(lastWidth) {
-
+      
       	if(lastWidth > 768) {
       		mainImage.attr("src", src__pc);
       	} else {
