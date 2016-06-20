@@ -1,3 +1,18 @@
+/* カテゴリー */
+#risFil {
+	width:800px;
+}
+#risFil a {
+    color: #7b7b7b;
+}
+span.category_itemprice {
+    color: #E8000;
+    font-size: 16px;
+    color: #bf0000 !important;
+    font-weight: bold;
+}
+/* カテゴリー ここまで*/
+
 .leftnav {
 	width:185px;
 

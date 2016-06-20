@@ -870,6 +870,7 @@ main {
   margin: 0 auto;
   clear: both;
   position: relative;
+  margin-bottom: 5em;
 }
 
 .newArrival .newArrival__item {

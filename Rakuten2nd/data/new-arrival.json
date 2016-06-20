@@ -1,24 +1,202 @@
 ﻿[
 
+
 {
-  "number" : "oni-612idid",
-  "image"  : "oni/oni-612idid",
-  "brand"  : "鬼デニム",
-  "name"   : "リラックステーパード"
+  "number" : "tdfm-040",
+  "image"  : "ted1/tdfm-040",
+  "brand"  : "TEDMAN",
+  "name"   : "覆面コラボ Tee"
 },
 
 {
-  "number" : "nvps-614",
-  "image"  : "vanson/nvps-614",
-  "brand"  : "VANSON",
-  "name"   : "スカル ウィング ポロ"
+  "number" : "tdskp-02",
+  "image"  : "ted1/tdskp-02",
+  "brand"  : "TEDMAN",
+  "name"   : "バイク スキッパー ポロ"
 },
 
- {
-  "number" : "iht-1512",
-  "image"  : "ironheart/iht-1512",
-  "brand"  : "IRON HEART",
-  "name"   : "Original Logo Printed T-Shirt"
-}
+{
+  "number" : "tsps-133",
+  "image"  : "ted1/tsps-133",
+  "brand"  : "TEDMAN",
+  "name"   : "バイク ポロシャツ"
+},
 
-]
+{
+  "number" : "tsps-132",
+  "image"  : "ted1/tsps-132",
+  "brand"  : "TEDMAN",
+  "name"   : "アメフト ポロシャツ"
+},
+
+{
+  "number" : "tsps-131",
+  "image"  : "ted1/tsps-131",
+  "brand"  : "TEDMAN",
+  "name"   : "消防士 ポロシャツ"
+},
+
+{
+  "number" : "tdss-451",
+  "image"  : "ted1/tdss-451",
+  "brand"  : "TEDMAN",
+  "name"   : "トライバル Tee"
+},
+
+
+{
+  "number" : "tdss-449",
+  "image"  : "ted1/tdss-449",
+  "brand"  : "TEDMAN",
+  "name"   : "バイク Tee"
+},
+
+
+{
+  "number" : "tdss-452",
+  "image"  : "ted1/tdss-452",
+  "brand"  : "TEDMAN",
+  "name"   : "【再入荷】ラッキーレッドデビルTee"
+},
+
+
+{
+  "number" : "tdss-450",
+  "image"  : "ted1/tdss-450",
+  "brand"  : "TEDMAN",
+  "name"   : "【再入荷】デビル エア フォースTee"
+},
+
+
+
+{
+  "number" : "tshb-1400ws",
+  "image"  : "ted1/tshb-1400ws",
+  "brand"  : "TEDMAN",
+  "name"   : "テッドマン ウエスタンシャツ"
+},
+
+
+{
+  "number" : "tshb-1300ws",
+  "image"  : "ted1/tshb-1300ws",
+  "brand"  : "TEDMAN",
+  "name"   : "ファーマー ウエスタンシャツ"
+},
+
+{
+  "number" : "wedstee-05",
+  "image"  : "ted1/wedstee-05",
+  "brand"  : "WedsSport",
+  "name"   : "トリプルコラボ Tee"
+},
+
+
+{
+  "number" : "tdss-454",
+  "image"  : "ted1/tdss-454",
+  "brand"  : "TEDMAN",
+  "name"   : "レスキュー シグナル社 Tee"
+},
+
+{
+  "number" : "tdss-444",
+  "image"  : "ted1/tdss-444",
+  "brand"  : "TEDMAN",
+  "name"   : "ギター Tee"
+},
+
+
+{
+  "number" : "tmh-12",
+  "image"  : "ted1/tmh-12",
+  "brand"  : "TEDMAN",
+  "name"   : "ジェットヘルメット"
+},
+
+{
+  "number" : "tmh-11",
+  "image"  : "ted1/tmh-11",
+  "brand"  : "TEDMAN",
+  "name"   : "ジェットヘルメット"
+},
+
+{
+  "number" : "tmh-10",
+  "image"  : "ted1/tmh-10",
+  "brand"  : "TEDMAN",
+  "name"   : "ジェットヘルメット"
+},
+
+{
+  "number" : "tdss-447",
+  "image"  : "ted1/tdss-447",
+  "brand"  : "TEDMAN",
+  "name"   : "バイク Tee"
+},
+
+{
+  "number" : "tdss-442",
+  "image"  : "ted1/tdss-442",
+  "brand"  : "TEDMAN",
+  "name"   : "デビルコップス Tee"
+},
+
+{
+    "number" : "tdw-250",
+    "image"  : "ted1/tdw-250",
+    "brand"  : "TEDMAN",
+    "name"   : "【再入荷】牛革長財布"
+  },
+
+{
+  "number" : "tdss-440",
+  "image"  : "ted1/tdss-440",
+  "brand"  : "TEDMAN",
+  "name"   : "ファイティングデビル Tee"
+},
+
+
+{
+  "number" : "tdyb-02-b",
+  "image"  : "ted1/tdyb-02-be",
+  "brand"  : "TEDMAN",
+  "name"   : "YABAI Tee"
+},
+
+{
+  "number" : "tdyb-02-w",
+  "image"  : "ted1/tdyb-02-n",
+  "brand"  : "TEDMAN",
+  "name"   : "YABAI Tee"
+},
+
+
+{
+  "number" : "tdss-448",
+  "image"  : "ted1/tdss-448",
+  "brand"  : "TEDMAN",
+  "name"   : "レーシング Tee"
+},
+
+{
+  "number" : "tdss-446",
+  "image"  : "amazon2/tdss-446",
+  "brand"  : "TEDMAN",
+  "name"   : "【新色入荷】ドラゴン Tee"
+},
+
+
+{
+  "number" : "tdss-435-b",
+  "image"  : "amazon2/tdss-435-b",
+  "brand"  : "TEDMAN",
+  "name"   : "【再入荷】スパイダー Tee"
+},
+
+{
+  "number" : "tdss-435-w",
+  "image"  : "amazon2/tdss-435-w",
+  "brand"  : "TEDMAN",
+  "name"   : "【再入荷】スパイダー Tee"
+}]

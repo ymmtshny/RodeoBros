@@ -1,64 +1,115 @@
 [
 
 {
-"number":"tdyb-02-b",
-"image": "amazon2/tdyb-02-be",
-"brand": "TEDMAN",
-"name": "テッドマン×ヤバイ コラボ 半袖 Tシャツ"
-},
-
-{
-"number":"tdyb-02-w",
-"image": "ted1/tdyb-02-n",
-"brand": "TEDMAN",
-"name": "テッドマン×ヤバイ コラボ 半袖 Tシャツ"
-},
-
-
-{
 "number":"tdss-440",
-"image": "amazon2/tdss-440-n",
-"brand": "TEDMAN",
-"name": "ファイティングデビル 半袖Tシャツ"
-},
-
-
-
-
-{
-"number":"tdss-443",
-"image": "amazon2/tdss-443-b",
-"brand": "TEDMAN",
-"name": "ピンストライプ 半袖 Tシャツ"
+"image": "ted1/tdss-440",
+"brand": "TDSS-440",
+"name": "「ファイティング・デビル」"
 },
 
 {
 "number":"tdss-441",
 "image": "amazon2/tdss-441",
-"brand": "TEDMAN",
-"name": "ミリタリー デビルファイター 半袖Tシャツ"
+"brand": "TDSS-441",
+"name": "「デビルファイター」"
 },
 
+{
+"number":"tdss-442",
+"image": "ted1/tdss-442",
+"brand": "TEDMAN",
+"name": "TDSS-442 「デビル・コップス」"
+},
 
 {
-"number":"tdss-446",
-"image": "amazon2/tdss-446",
+"number":"tdss-443",
+"image": "ted1/tdss-443",
 "brand": "TEDMAN",
-"name": "ラッキーデビル ドラゴン 半袖Tシャツ"
+"name": "TDSS-443 「ピンストライプ」"
+},
+
+{
+"number":"tdss-444",
+"image": "ted1/tdss-444",
+"brand": "TEDMAN",
+"name": "TDSS-444 「ギター」"
 },
 
 {
 "number":"tdss-445",
 "image": "ted1/tdss-445",
 "brand": "TEDMAN",
-"name": "バスフィッシング 半袖Tシャツ"
+"name": "TDSS-445 「バスフィッシング」"
+},
+
+{
+"number":"tdss-446",
+"image": "amazon2/tdss-446",
+"brand": "TEDMAN",
+"name": "TDSS-446 「テッド＆ドラゴン」"
+},
+
+{
+"number":"tdss-447",
+"image": "ted1/tdss-447",
+"brand": "TEDMAN",
+"name": "TDSS-447 「ファンキーM.C.」"
 },
 
 {
 "number":"tdss-448",
 "image": "ted1/tdss-448",
 "brand": "TEDMAN",
-"name": "レーシング 半袖Tシャツ"
+"name": "TDSS-448 「レーシング」"
+},
+
+{
+"number":"tdss-449",
+"image": "ted1/tdss-449",
+"brand": "TEDMAN",
+"name": "TDSS-449 「モーターサイクル」"
+},
+
+{
+"number":"tdss-450",
+"image": "ted1/tdss-450",
+"brand": "TEDMAN",
+"name": "TDSS-450 「エアフォース」"
+},
+
+{
+"number":"tdss-451",
+"image": "ted1/tdss-451",
+"brand": "TEDMAN",
+"name": "TDSS-451 「トライバル」"
+},
+
+{
+"number":"tdss-452",
+"image": "ted1/tdss-452",
+"brand": "TEDMAN",
+"name": "TDSS-452 「ベーシック」"
+},
+
+{
+"number":"tdss-454",
+"image": "ted1/tdss-454",
+"brand": "TEDMAN",
+"name": "TDSS-454 「ファイヤーファイター」"
+},
+
+{
+"number":"wedstee-05",
+"image": "ted1/wedstee-05",
+"brand": "TEDMAN",
+"name": "テッドマン カミナリ ウェッズスポーツ 板東 コラボレーション 半袖Tシャツ"
+},
+
+{
+"number":"tdfm-040",
+"image": "ted1/tdfm-040",
+"brand": "TEDMAN",
+"name": "テッドマン 覆面コラボ 半袖Tシャツ"
 }
 
 ]

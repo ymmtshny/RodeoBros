@@ -1,82 +1,115 @@
 [
 
 {
-  "number" : "sc36970-b",
-  "image"  : "sugarcane/sc36970-b",
-  "brand"  : "シュガーケーン",
-  "name"   : "ロックンロール アロハ シャツ"
+"number":"tdss-440",
+"image": "ted1/tdss-440",
+"brand": "TDSS-440",
+"name": "「ファイティング・デビル」"
 },
 
 {
-  "number" : "ss36988-b",
-  "image"  : "sunsurf/ss36988-b",
-  "brand"  : "SUN SURF",
-  "name"   : "ケオニ・オブ・ハワイ アロハ シャツ"
-},
-
-
-
-
-
-{
-  "number" : "sh37278",
-  "image"  : "sunsurf/sh37278",
-  "brand"  : "SUN SURF",
-  "name"   : "BEAT INSTRUMENTAL アロハ シャツ"
+"number":"tdss-441",
+"image": "amazon2/tdss-441",
+"brand": "TDSS-441",
+"name": "「デビルファイター」"
 },
 
 {
-  "number" : "ss37142",
-  "image"  : "sunsurf/ss37142",
-  "brand"  : "SUN SURF",
-  "name"   : "パイナップル柄 アロハ シャツ"
-},
-
-
-
-
-{
-  "number" : "sh37280",
-  "image"  : "sunsurf/sh37280",
-  "brand"  : "SUN SURF",
-  "name"   : "ELVIS DOTS アロハ シャツ"
-},
-
-
-{
-  "number" : "dk36201",
-  "image"  : "sunsurf/dk36201",
-  "brand"  : "DUKE KAHANAMOKU",
-  "name"   : "パイナップル柄 アロハ"
+"number":"tdss-442",
+"image": "ted1/tdss-442",
+"brand": "TEDMAN",
+"name": "TDSS-442 「デビル・コップス」"
 },
 
 {
-  "number" : "crv-607",
-  "image"  : "crows/crv-607",
-  "brand"  : "クローズ×VANSON",
-  "name"   : "デスラビット アロハシャツ"
+"number":"tdss-443",
+"image": "ted1/tdss-443",
+"brand": "TEDMAN",
+"name": "TDSS-443 「ピンストライプ」"
 },
 
 {
-  "number" : "nvss-608",
-  "image"  : "vanson/nvss-608",
-  "brand"  : "VANSON",
-  "name"   : "パイナップルスカル アロハシャツ"
+"number":"tdss-444",
+"image": "ted1/tdss-444",
+"brand": "TEDMAN",
+"name": "TDSS-444 「ギター」"
 },
 
 {
-  "number" : "nvss-607",
-  "image"  : "vanson/nvss-607",
-  "brand"  : "VANSON",
-  "name"   : "スカルサーフ アロハシャツ"
+"number":"tdss-445",
+"image": "ted1/tdss-445",
+"brand": "TEDMAN",
+"name": "TDSS-445 「バスフィッシング」"
 },
 
 {
-  "number" : "ss-601",
-  "image"  : "script/ss-601",
-  "brand"  : "花旅楽団",
-  "name"   : "梟柄 アロハ シャツ"
+"number":"tdss-446",
+"image": "amazon2/tdss-446",
+"brand": "TEDMAN",
+"name": "TDSS-446 「テッド＆ドラゴン」"
+},
+
+{
+"number":"tdss-447",
+"image": "ted1/tdss-447",
+"brand": "TEDMAN",
+"name": "TDSS-447 「ファンキーM.C.」"
+},
+
+{
+"number":"tdss-448",
+"image": "ted1/tdss-448",
+"brand": "TEDMAN",
+"name": "TDSS-448 「レーシング」"
+},
+
+{
+"number":"tdss-449",
+"image": "ted1/tdss-449",
+"brand": "TEDMAN",
+"name": "TDSS-449 「モーターサイクル」"
+},
+
+{
+"number":"tdss-450",
+"image": "ted1/tdss-450",
+"brand": "TEDMAN",
+"name": "TDSS-450 「エアフォース」"
+},
+
+{
+"number":"tdss-451",
+"image": "ted1/tdss-451",
+"brand": "TEDMAN",
+"name": "TDSS-451 「トライバル」"
+},
+
+{
+"number":"tdss-452",
+"image": "ted1/tdss-452",
+"brand": "TEDMAN",
+"name": "TDSS-452 「ベーシック」"
+},
+
+{
+"number":"tdss-454",
+"image": "ted1/tdss-454",
+"brand": "TEDMAN",
+"name": "TDSS-454 「ファイヤーファイター」"
+},
+
+{
+"number":"wedstee-05",
+"image": "ted1/wedstee-05",
+"brand": "TEDMAN",
+"name": "テッドマン カミナリ ウェッズスポーツ 板東 コラボレーション 半袖Tシャツ"
+},
+
+{
+"number":"tdfm-040",
+"image": "ted1/tdfm-040",
+"brand": "TEDMAN",
+"name": "テッドマン 覆面コラボ 半袖Tシャツ"
 }
-
 
 ]
