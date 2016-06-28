@@ -8,7 +8,7 @@ line-height:1.5!important;
 font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
 }
 
-img:hover {
+a img:hover {
 opacity:0.7;
 }
 
@@ -141,8 +141,8 @@ float:right;
 }
 
 .size_person img {
-		    width: 80px!important;
-    height: 80px!important;
+			width: 80px!important;
+	height: 80px!important;
 		float: left;
 		margin: 0px 5px 0px 0px;
 }
@@ -204,42 +204,31 @@ width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;
 width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;margin-bottom:10px;
 }
 
-#more {
-    clear: both;
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-#more a {
-    text-decoration: none;
-}
-
+#more {clear:both;text-align:center;margin-top:25px;margin-bottom:25px;}
 #more div {
-    width: 816px;
+	width: 816px;
     font-size: 13px;
     padding: 9px;
     color: #fff;
     background-color: #000;
+    /* margin: 0 auto; */
     border: 1px solid #ddd;
-}　
+}
+#more div:hover {background:#fff; color:#000;transition:all 1s;}
+#more a { text-decoration:none;}
 
-#more div:hover {
-	background:#fff;
-	color:#000;
-	transition:all 1s;
-	}
 
 #brand-concept {
-    border: 1px solid #E6E6E6;
-    margin-bottom: 1em;
-    padding: 0;
-    font-size:12px!important;
+	border: 1px solid #E6E6E6;
+	margin-bottom: 1em;
+	padding: 0;
+	font-size:12px!important;
 }
 
 /*買い物カゴ付近ここから*/
 span.catch_copy {
-    color: #000000;
-    font-size: 14px;
+	color: #000000;
+	font-size: 14px;
 }
 
 span.item_name {
@@ -248,44 +237,72 @@ span.item_name {
 }
 
 #rakutenLimitedId_aroundCart table {
-    width: 100%;
+	width: 100%;
 }
 
 div#rakutenLimitedId_aroundCart input.rCartBtn, div#rakutenLimitedId_aroundCart input.rCartBtn[type="submit"] {
-    margin-top: 10px!important;
-    margin-bottom: 10px!important;
-    background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/btn-cartn-0203.jpg")!important;
-    width: 260px!important;
-    height: 70px!important;
-    text-indent: -9999px!important;
-    border: none!important;
-    cursor: pointer!important;
-    background-size: contain!important;
+	margin-top: 10px!important;
+	margin-bottom: 10px!important;
+	background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/btn-cartn-0203.jpg")!important;
+	width: 260px!important;
+	height: 70px!important;
+	text-indent: -9999px!important;
+	border: none!important;
+	cursor: pointer!important;
+	background-size: contain!important;
 }
 div.bookmarkArea div.bkm {
 	  width: 100%;
-    height: 50px!important;
+	height: 50px!important;
 }
 
 div.bookmarkArea div.bkm a.addBkm span.bkmStar {
-    display: inline-block !important;
-    width: 308px !important;
-    height: 50px !important;
-    margin-right: 4px !important;
-    background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-1.png) no-repeat 0 0 !important;
-    cursor: pointer !important;
+	display: inline-block !important;
+	width: 308px !important;
+	height: 50px !important;
+	margin-right: 4px !important;
+	background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-1.png) no-repeat 0 0 !important;
+	cursor: pointer !important;
 }
+
 div.shopBookmarkArea div.shopBkm {
 	width: 100%;
-    height: 50px!important;
+	height: 50px!important;
 }
 div.shopBookmarkArea div.shopBkm a.addShopBkm span.shopBkmStar {
-    display: inline-block !important;
-    width: 308px !important;
-    height: 50px!important;
-    margin-right: 4px !important;
-    background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-2.png) no-repeat 0 0 !important;
-    cursor: pointer !important;
+	display: inline-block !important;
+	width: 308px !important;
+	height: 50px!important;
+	margin-right: 4px !important;
+	background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-2.png) no-repeat 0 0 !important;
+	cursor: pointer !important;
+}
+
+#rakutenLimitedId_aroundCart button.rAskBtn {
+	background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
+	background-position: center center !important;
+	font-size: 0!important;
+	height: 50px;
+	width: 308px;
+	border: none!important;
+	margin-bottom: 10px!important;
+	margin-top: 5px!important;
+}
+
+span.inventory_choice_name {
+	color: #ffffff;
+	font-size: 100%;
+}
+
+input[value="商品についての問合わせ"] {
+	background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
+    background-position: center center !important;
+    font-size: 0!important;
+    height: 50px;
+    width: 308px;
+    border: none!important;
+    margin-bottom: 10px!important;
+    margin-top: 5px!important;
 }
 
 #rakutenLimitedId_aroundCart button.rAskBtn {
@@ -298,77 +315,120 @@ div.shopBookmarkArea div.shopBkm a.addShopBkm span.shopBkmStar {
     margin-bottom: 10px!important;
     margin-top: 5px!important;
 }
+#rakutenLimitedId_aroundCart div.bkm {
+	width:310px!important;
+}
 
-span.inventory_choice_name {
-    color: #ffffff;
-    font-size: 100%;
+#rakutenLimitedId_aroundCart div.shopBkm {
+    width: 310px!important;
+    padding: 0!important;
+    padding-top: 0.6em!important;
+}
+
+
+
+/* 再入荷 */
+span.unit {
+    background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/default_cart_1223.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin-bottom: 1px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    height: 140px;
+    width: 428px;
+    line-height: 24.5!important;
+    display: block;
+}
+/* 再入荷バツボタン */
+.inventory_soldout > font {
+	    color: gray!important;
+}
+/* 再入荷ボタン */
+.button {
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #999;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 2px #E7E7E7;
+	-moz-box-shadow: 1px 1px 2px #E7E7E7;
+	box-shadow: 1px 1px 2px #E7E7E7;
+	padding: 2px 3px 0px;
+	margin: 2px;
+	margin-bottom: 8px;
+}
+
+/* 納期情報 */
+table[id*=normal_basket_] > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font {
+    color: #999;
+    font-size: 10px!important;
 }
 
 /* 画像３枚だけ表示ここから */
 .rakutenLimitedId_ImageMain1-3:nth-of-type(4) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(5) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(6) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(7) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(8) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(9) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(10) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(11) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(12) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(13) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(14) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(15) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(16) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(17) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(18) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(19) {
-    display: none!important;
+	display: none!important;
 }
 .rakutenLimitedId_ImageMain1-3:nth-of-type(20) {
-    display: none!important;
+	display: none!important;
 }
 /* 画像３枚だけ表示ここまで */
 
 /* パンくず */
 td.sdtext a {
-    padding: 0px 3px;
-    font-size: 11px;
-    line-height: 24px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-    color: #555  !important;
-    margin-bottom: 6px;
-    display: inline-block;
-    text-decoration: none;
+	padding: 0px 3px;
+	font-size: 11px;
+	line-height: 24px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	color: #555  !important;
+	margin-bottom: 6px;
+	display: inline-block;
+	text-decoration: none;
 }
 td.sdtext a:hover {
 	background:#06C;

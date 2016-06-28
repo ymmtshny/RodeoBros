@@ -1,0 +1,168 @@
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js")
+script.
+	$(function () {
+	$brandNav = $('.brandList__nav'),
+	$anchor = $('.wrap'),
+	barHeight = 50,
+	timer = null,
+	offsetTop = $brandNav.offset().top;
+	$(window).on('scroll', function () {
+	// もし「ページ最上部からスクロールした位置」までの距離がナビゲーションのある位置を越えたら
+	if ($(window).scrollTop() + barHeight > offsetTop) {
+	fixNav();
+	} else {
+	clearNavStyle();
+	}
+	});
+	$(window).on('resize', function () {
+	// リサイズが終わった時だけ処理する
+	if (timer) clearTimeout(timer);
+	timer = setTimeout(function () {
+	clearNavStyle();
+	fixNav();
+	}, 200);
+	});
+	// ページの途中を読み込んでもスクロールイベントを強制的に発火させる
+	$('body').trigger('scroll');
+	function fixNav () {
+	var navOffsetleft = $brandNav.offset().left;
+	$brandNav.css({
+	position: 'fixed',
+	top: barHeight,
+	left: navOffsetleft
+	});
+	}
+	function clearNavStyle() {
+	$brandNav.css({
+	position: 'absolute',
+	top: '100',
+	left: '0'
+	});
+	}
+	});
+	$('.brandList__nav a').on('click', function (ev) {
+	// aリンクの標準動作をキャンセル
+	ev.preventDefault();
+	var $target = null;
+	var offsetTop = null;
+	var barHeight = 50;
+	// 対象要素それぞれに対して処理を行う
+	$('.brandList__index').each(function (idx, el) {
+		// ev.currentTargetはクリックされた要素
+		// elは現在処理中の要素
+		// $().text()はエレメントが内包するテキスト(例: <a>ここ<\\/a>)
+		if ($(ev.currentTarget).text() === $(el).text())
+			$target = $(el);
+			//- console.log($target);
+		});
+		// 「ページ最上部から要素までの距離」からバーの高さを引く
+		offsetTop = $target.offset().top;
+		// 250ミリ秒かけて指定の位置まで移動
+		$('html, body').animate({scrollTop: offsetTop}, 250);
+	});
+
+script.
+	new Vue({
+		el: '#Vue',
+
+		data: {
+			MAIN: [],
+			A:[],
+			KA:[],
+			SA:[],
+			TA:[],
+			NA:[],
+			HA:[],
+			MA:[],
+			YA:[],
+			RA:[],
+			WA:[]
+		},
+
+		created: function() {
+
+			var _this = this;
+			//get json file
+			$.ajax({
+				url: './json/data.json', //index.jadeに対してのURL
+				dataType: 'json'
+			}).done(function(data) {
+				var main = [];
+				var a = [];
+				var ka = [];
+				var sa = [];
+				var ta = [];
+				var na = [];
+				var ha = [];
+				var ma = [];
+				var ya = [];
+				var ra = [];
+				var wa = [];
+
+				data.forEach(function (el) {
+					if(el.row === "メインブランド") {
+						main.push(el);
+					} else if (el.row === "あ") {
+						a.push(el);
+					} else if (el.row === "か") {
+						ka.push(el);
+					} else if (el.row === "さ") {
+						sa.push(el);
+					} else if (el.row === "た") {
+						ta.push(el);
+					} else if (el.row === "な") {
+						na.push(el);
+					} else if (el.row === "は") {
+						ha.push(el);
+					} else if (el.row === "ま") {
+						ma.push(el);
+					} else if (el.row === "や") {
+						ya.push(el);
+					} else if (el.row === "ら") {
+						ra.push(el);
+					} else if (el.row === "わ") {
+						wa.push(el);
+					}
+
+				});
+
+				_this.MAIN = main;
+				_this.A = a;
+				_this.KA = ka;
+				_this.SA = sa;
+				_this.TA = ta;
+				_this.NA = na;
+				_this.HA = ha;
+				_this.MA = ma;
+				_this.YA = ya;
+				_this.RA = ra;
+				_this.WA = wa;
+
+
+			});
+
+		}
+	});
+
+script.
+	$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 800);
+				return false;
+			}
+		}
+	});
+
+	$('#goToTop').click(function(){
+			window.scrollTo(0, 0);
+	});
+
+	});
+

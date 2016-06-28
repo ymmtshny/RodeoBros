@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-language" content="ja">
+    <link rel="apple-touch-icon" href="http://a.ichiba.jp.rakuten-static.com/com/img/home/iphone/share/rakuten.png">
+    <link rel="shortcut icon" href="http://www.rakuten.ne.jp/gold/auc-rodeo/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="創業から40年の老舗セレクトショップRODEO BROS 2nd">
+    <meta name="keywords" content="アメカジ,IRON HEART,アイアンハート, TEDMAN, テッドマン">
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" href="../top/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./brand-list.css">
+    <title>取り扱いブランド一覧　RODEO BROS 2nd</title>
+  </head>
+  <body>
+    <!--Google Tag Manager-->
+    <div>
+      <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZJ4JV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZJ4JV');
+      </script>
+    </div>
+    <div class="wrapper">
+      <header>
+        <div class="header__top">
+          <div class="header__left"><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/"><img src="http://www.rakuten.ne.jp/gold/rodeo-2nd/top/img/logo2nd.png"></a></div>
+          <div class="header__center">
+            <div class="header__center__top"><a href="http://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=330657&amp;__event=ES01_003_001"> カートを見る</a><span> |</span><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/"> ヘルプ＆ガイド</a><span> |</span><a href="http://review.rakuten.co.jp/shop/4/330657_330657/1.1/"> レビューを見る</a><span> |</span><a href="http://www.rakuten.co.jp/rodeo-2nd/news.html"> メルマガ登録</a><span> |</span><a href="http://www.rakuten.co.jp/index.html"> 楽天TOP</a><br><b>創業から40年の老舗セレクトショップRODEO BROS 2nd</b></div>
+          </div>
+          <div class="header__right"><b><span class="glyphicon glyphicon-earphone"></span>03-5856-5858</b><br>
+            <p>営業時間 : 10:00~14:00/15:00~18:00</p>
+          </div>
+        </div>
+        <div class="header__bar">
+          <table>
+            <tbody>
+              <tr align="center">
+                <td><a href="http://item.rakuten.co.jp/rodeo-2nd/c/">CATEGORY</a></td>
+                <td><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/brandlist1/">BRAND</a></td>
+                <td><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/topics-list/">NEW TOPICS</a></td>
+                <td>
+                  <!-- 検索ここから-->
+                  <form method="get" accept-charset="euc-jp" action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc">
+                    <input type="hidden" name="sv" value="6">
+                    <input type="hidden" name="sid" value="330657">
+                    <input type="hidden" name="su" value="rodeo-2nd">
+                    <input type="hidden" name="sn" value="RODEO BROS 2nd">
+                    <input type="text" name="sitem">
+                    <input type="hidden" name="f" value="A">
+                    <!--input(type='submit', value='商品検索')-->
+                    <button type="submit" value="商品検索" class="submitButton"><span class="glyphicon glyphicon-search"></span></button>
+                  </form>
+                  <!-- 検索ここまで-->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </header>
+      <aside>
+        <!--include ../jade/_navigation.jade-->
+      </aside>
+      <main>
+        <div id="Vue" class="brandWrapper">
+          <h2 class="brandList__index">MAIN BRAND</h2>
+          <div v-for="element in MAIN" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ア行</h2>
+          <div v-for="element in A" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">カ行</h2>
+          <div v-for="element in KA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">サ行</h2>
+          <div v-for="element in SA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">タ行</h2>
+          <div v-for="element in TA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ナ行</h2>
+          <div v-for="element in NA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ハ行</h2>
+          <div v-for="element in HA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">マ行</h2>
+          <div v-for="element in MA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ヤ行</h2>
+          <div v-for="element in YA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ラ行</h2>
+          <div v-for="element in RA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+          <h2 class="brandList__index">ワ行</h2>
+          <div v-for="element in WA" class="items text-center"><a href="{{ element.pageURLR2 }}" class="brand brandList__item">
+              <div class="brand__inner">
+                <div class="brand__header"><img src="{{ element.imageURL }}"></div>
+                <div class="brand__body">
+                  <p class="brand__nameEng">{{ element.eng }}</p>
+                  <p class="brand__nameJa">{{ element.jp }}</p>
+                </div>
+              </div></a></div>
+        </div>
+        <!--/////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        
+        <div style="position: fixed; top: 50px; left: 19.6094px;" class="brandList__nav">
+          <ul>
+            <li><a href="#a">MAIN BRAND</a></li>
+            <li><a href="#b">ア行</a></li>
+            <li><a href="#c">カ行</a></li>
+            <li><a href="#d">サ行</a></li>
+            <li><a href="#e">タ行</a></li>
+            <li><a href="">ナ行</a></li>
+            <li><a href="#g">ハ行</a></li>
+            <li><a href="#h">マ行</a></li>
+            <li><a href="#i">ヤ行</a></li>
+            <li><a href="#j">ラ行</a></li>
+            <li><a href="#k">ワ行</a></li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <div class="shop-infomation">
+          <h2>SHOP INFORMATION</h2>
+          <ul class="sns">
+            <li><a href="http://www.rakuten.co.jp/auc-rodeo/news.html"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://twitter.com/rodeobros"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/Rodeobros"><i class="fa fa-facebook-official"></i></a></li>
+            <li><a href="https://instagram.com/rodeo_bros/"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          <div class="shop-infomation__textbox row">
+            <div class="col-sm-4">
+              <h3 class="headline headline--left">返品交換について</h3>
+              <p>商品の品質については万全を期しておりますが、万一商品が破損・汚損していた場合、またはご注文と異なる場合は、お届け後5日間以内にご連絡下さい。すぐに返品・交換をさせていただきます。商品の返品・交換につきましてのご連絡は商品到着日より5日以内にご連絡下さい。また、返品・交換の発送はご連絡いただきました2日以内にご発送下さい。</p>
+              <div class="text-right"><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/#return">詳細</a></div>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="headline headline--left">送料について</h3>
+              <p>送料は全国一律無料です。但しセール品は送料無料対象外となり、送料600円(税込648円)を頂戴しております。沖縄県へのお届けは別途地域料600円(税込648円)を頂戴いたします。セール品の沖縄県へのお届けは送料900円(税込972円)を頂戴いたします。ご注意ください。沖縄県のお客様は、合計税込10,000円以上お買い上げの場合、送料無料となります。</p>
+              <div class="text-right"><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/#shippingfee">詳細</a></div>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="headline headline--left">お問い合わせ</h3>
+              <ul class="list-unstyled">
+                <li>株式会社　ロデオブロス</li>
+                <li>〒121-0075 東京都足立区一ツ家2-3-3</li>
+                <li>tel / fax：03-5856-5858 / 03-5856-5858</li>
+                <li>営業時間：10:00 ～14:00 / 15:00 ～18:00</li>
+                <li>定休日：年始1～3日</li>
+                <li>店舗連絡先： rodeo-2nd_4@shop.rakuten.co.jp</li>
+                <!--rodeo@aun-wa.com-->
+                <li>返品・交換連絡先：henpin-koukan@aun-wa.com</li>
+              </ul>
+            </div>
+            <div class="col-sm-4 clear">
+              <h3 class="headline headline--left">商品の在庫について</h3>
+              <p>当店ではシステムによって在庫管理を行っておりますが、稀に実際の在庫とシステム上の在庫にずれが生じることがございます。万が一ご注文済みの商品が欠品となりました場合は、個別にご連絡の上対応させていただきますので、予めご了承ください。</p>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="headline headline--left">お支払いについて</h3>
+              <p>当店でご利用いただけるクレジットカードは、楽天カード・JCB・VISA・MASTER・Diners・AMEXすべてのカード会社で、一括払いが可能となっております。※カードブランドによって、ご利用可能お支払い回数が異なりますのでご注意ください。</p>
+              <div class="text-right"><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/#payment">詳細</a></div>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="headline headline--left">配送について</h3>
+              <p>ヤマト運輸または佐川急便からお選び頂けます。配送日時を指定することもできます。万が一ご注文いただいた商品の在庫がない場合は、その旨をメールにてご連絡後、ご注文をキャンセルさせていただき、在庫があるもののみでお届けさせていただきます。</p>
+              <div class="text-right"><a href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/#shippingmethod">詳細</a></div>
+            </div>
+          </div>
+        </div>
+        <!--コピーライト-->
+        <div class="copy-right">
+          <p class="text-center">Copyright © RODEO BROS. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script src="../top/js/jquery.lazyload.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script>
+      $(function () {
+      $brandNav = $('.brandList__nav'),
+      $anchor = $('.wrap'),
+      barHeight = 50,
+      timer = null,
+      offsetTop = $brandNav.offset().top;
+      $(window).on('scroll', function () {
+      // もし「ページ最上部からスクロールした位置」までの距離がナビゲーションのある位置を越えたら
+      if ($(window).scrollTop() + barHeight > offsetTop) {
+      fixNav();
+      } else {
+      clearNavStyle();
+      }
+      });
+      $(window).on('resize', function () {
+      // リサイズが終わった時だけ処理する
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(function () {
+      clearNavStyle();
+      fixNav();
+      }, 200);
+      });
+      // ページの途中を読み込んでもスクロールイベントを強制的に発火させる
+      $('body').trigger('scroll');
+      function fixNav () {
+      var navOffsetleft = $brandNav.offset().left;
+      $brandNav.css({
+      position: 'fixed',
+      top: barHeight,
+      left: navOffsetleft
+      });
+      }
+      function clearNavStyle() {
+      $brandNav.css({
+      position: 'absolute',
+      top: '100',
+      left: '0'
+      });
+      }
+      });
+      $('.brandList__nav a').on('click', function (ev) {
+      // aリンクの標準動作をキャンセル
+      ev.preventDefault();
+      var $target = null;
+      var offsetTop = null;
+      var barHeight = 50;
+      // 対象要素それぞれに対して処理を行う
+      $('.brandList__index').each(function (idx, el) {
+      	// ev.currentTargetはクリックされた要素
+      	// elは現在処理中の要素
+      	// $().text()はエレメントが内包するテキスト(例: <a>ここ<\\/a>)
+      	if ($(ev.currentTarget).text() === $(el).text())
+      		$target = $(el);
+      		//- console.log($target);
+      	});
+      	// 「ページ最上部から要素までの距離」からバーの高さを引く
+      	offsetTop = $target.offset().top;
+      	// 250ミリ秒かけて指定の位置まで移動
+      	$('html, body').animate({scrollTop: offsetTop}, 250);
+      });
+      
+    </script>
+    <script>
+      new Vue({
+      	el: '#Vue',
+      
+      	data: {
+      		MAIN: [],
+      		A:[],
+      		KA:[],
+      		SA:[],
+      		TA:[],
+      		NA:[],
+      		HA:[],
+      		MA:[],
+      		YA:[],
+      		RA:[],
+      		WA:[]
+      	},
+      
+      	created: function() {
+      
+      		var _this = this;
+      		//get json file
+      		$.ajax({
+      			url: './json/data.json', //index.jadeに対してのURL
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var main = [];
+      			var a = [];
+      			var ka = [];
+      			var sa = [];
+      			var ta = [];
+      			var na = [];
+      			var ha = [];
+      			var ma = [];
+      			var ya = [];
+      			var ra = [];
+      			var wa = [];
+      
+      			data.forEach(function (el) {
+      				if(el.row === "メインブランド") {
+      					main.push(el);
+      				} else if (el.row === "あ") {
+      					a.push(el);
+      				} else if (el.row === "か") {
+      					ka.push(el);
+      				} else if (el.row === "さ") {
+      					sa.push(el);
+      				} else if (el.row === "た") {
+      					ta.push(el);
+      				} else if (el.row === "な") {
+      					na.push(el);
+      				} else if (el.row === "は") {
+      					ha.push(el);
+      				} else if (el.row === "ま") {
+      					ma.push(el);
+      				} else if (el.row === "や") {
+      					ya.push(el);
+      				} else if (el.row === "ら") {
+      					ra.push(el);
+      				} else if (el.row === "わ") {
+      					wa.push(el);
+      				}
+      
+      			});
+      
+      			_this.MAIN = main;
+      			_this.A = a;
+      			_this.KA = ka;
+      			_this.SA = sa;
+      			_this.TA = ta;
+      			_this.NA = na;
+      			_this.HA = ha;
+      			_this.MA = ma;
+      			_this.YA = ya;
+      			_this.RA = ra;
+      			_this.WA = wa;
+      
+      
+      		});
+      
+      	}
+      });
+      
+    </script>
+    <script>
+      $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+      	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      		var target = $(this.hash);
+      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      		if (target.length) {
+      			$('html, body').animate({
+      				scrollTop: target.offset().top
+      			}, 800);
+      			return false;
+      		}
+      	}
+      });
+      
+      $('#goToTop').click(function(){
+      		window.scrollTo(0, 0);
+      });
+      
+      });
+    </script>
+    <script>
+      $("img.lazy").lazyload({
+      			"threshold":50,
+      			"effect":"fadeIn",
+      			"effect_speed":0,
+      			"failure_limit":1} );
+      console.log("Lazy Loadを起動する");
+    </script>
+    <div class="google_translate_element_outerbox">
+      <div id="google_translate_element">
+        <script type="text/javascript">function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'ja', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element'); }</script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </div>
+    </div>
+  </body>
+</html>

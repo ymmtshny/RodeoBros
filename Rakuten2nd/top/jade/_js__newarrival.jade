@@ -1,4 +1,7 @@
 script.
+
+	let theNumerOfNewArrivals = 16; //新着商品の数！！
+
 	new Vue({
 		el: '#Vue__NewArrival',
 		data: {
@@ -18,7 +21,7 @@ script.
 			el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
 			temp.push(el);
 		});
-			_this.Data = temp.slice(0,12);;
+			_this.Data = temp.slice(0,theNumerOfNewArrivals);
 		});
 		}
 	});

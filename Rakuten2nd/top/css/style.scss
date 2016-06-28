@@ -5,6 +5,9 @@
 @import './leftnav.scss';//レフトナビ
 @import './footer.scss';//フッター
 
+body {
+	padding-bottom: 20px;
+}
 
 .wrapper {
 	width:1240px;
@@ -175,3 +178,55 @@ $mb_item: 3em !default;
 	}
 }
 //ブランドここまで
+
+//ぐーぐる翻訳ここから
+.google_translate_element_outerbox {
+	img {
+		width:inherit;
+	}
+	background: white;
+		border-top: 1px solid #ddd;
+		text-align: right;
+		/* height: 57px; */
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+}
+#google_translate_element {
+		width: 1240px;
+		text-align: right;
+		margin: 0 auto;
+
+}
+
+//スマフォ用
+@media(max-width:768px) {
+
+	header {
+		display:none;
+	}
+	aside {
+		display:none;
+	}
+
+	.newArrival .newArrival__item {
+		width:90%;
+		margin: 5%;
+		margin-bottom: 0;
+	}
+
+	.wrapper {
+		width:100%;
+	}
+
+	main {
+		width:100%;
+		float:none;
+	}
+
+	.google_translate_element_outerbox {
+		display:none;
+	}
+
+}

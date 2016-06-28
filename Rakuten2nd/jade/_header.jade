@@ -2,8 +2,8 @@ div.header__top
 	div.header__left
 		a(href="http://www.rakuten.ne.jp/gold/rodeo-2nd/")
 			img(src="http://www.rakuten.ne.jp/gold/rodeo-2nd/top/img/logo2nd.png")
-	div.header__right
-		div.header__right__left
+	div.header__center
+		div.header__center__top
 			a(href="http://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=330657&__event=ES01_003_001")  カートを見る
 			span  |
 			a(href="http://www.rakuten.ne.jp/gold/rodeo-2nd/guide/")  ヘルプ＆ガイド
@@ -15,12 +15,12 @@ div.header__top
 			a(href="http://www.rakuten.co.jp/index.html")  楽天TOP
 			br
 			b 創業から40年の老舗セレクトショップRODEO BROS 2nd
-		div.header__right__right
-			b
-				span.glyphicon.glyphicon-earphone
-				| 03-5856-5858
-			br
-			p 営業時間 : 10:00~14:00/15:00~18:00
+	div.header__right
+		b
+			span.glyphicon.glyphicon-earphone
+			| 03-5856-5858
+		br
+		p 営業時間 : 10:00~14:00/15:00~18:00
 
 div.header__bar
 			table
@@ -29,18 +29,19 @@ div.header__bar
 						td
 							a(href='http://item.rakuten.co.jp/rodeo-2nd/c/') CATEGORY
 						td
-							a(href='http://item.rakuten.co.jp/rodeo-2nd/c/0000000101/') BRAND
+							a(href='http://www.rakuten.ne.jp/gold/rodeo-2nd/brandlist1/') BRAND
 						td
 							a(href='http://www.rakuten.ne.jp/gold/rodeo-2nd/topics-list/') NEW TOPICS
 						td
 							// 検索ここから
-							center
-								form(method='get', action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc')
-									input(type='hidden', name='sv', value='6')
-									input(type='hidden', name='sid', value='330657')
-									input(type='hidden', name='su', value='rodeo-2nd')
-									input(type='hidden', name='sn', value='RODEO BROS 2nd')
-									input(type='text', name='sitem')
-									input(type='hidden', name='f', value='A')
-									input(type='submit', value='商品検索')
+							form(method='get',  accept-charset="euc-jp",action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc')
+								input(type='hidden', name='sv', value='6')
+								input(type='hidden', name='sid', value='330657')
+								input(type='hidden', name='su', value='rodeo-2nd')
+								input(type='hidden', name='sn', value='RODEO BROS 2nd')
+								input(type='text', name='sitem')
+								input(type='hidden', name='f', value='A')
+								//input(type='submit', value='商品検索')
+								button.submitButton(type='submit', value='商品検索')
+									span.glyphicon.glyphicon-search
 							// 検索ここまで

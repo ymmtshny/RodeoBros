@@ -1,0 +1,127 @@
+// @import '../../../common/scss/normalize.scss';
+// @import '../../../common/scss/utility.scss';
+// @import '../../../common/scss/base.scss';
+@import '../../itemheader3/css/style.scss';
+@import '../brand-list.css';
+
+#wrapper {
+	padding-bottom:40em;
+}
+
+p {
+	margin:0;
+}
+
+.main-box {
+	width:100%;
+	max-width:1240px;
+	position:relative;
+}
+
+.brandWrapper {
+	width:80%;
+	margin-left:20%;
+}
+
+.brandList__index {
+		text-align:left;
+		font-weight: normal;
+		border-bottom: solid 1px #CBCBCB;
+		margin: 3.5% 0 1%;
+		line-height: 1.8em;
+		font-size:1.6em;
+		clear:both;
+		padding-top:3em;
+		margin-bottom: 2.3%;
+}
+
+.items {
+	width:31%;
+	border:1px solid #ddd;
+	float:left;
+	overflow:hidden;
+	margin-right:2%;
+	margin-bottom:1.5em;
+
+	&:hover {
+		background:#ddd;
+	}
+}
+.brand__inner {
+	display:block;
+	height:6em;
+	margin:0.7em 0;
+}
+
+.brand__header {
+	width:35%;
+	float:left;
+
+	img {
+		width:80%;
+	}
+}
+
+.brand__body {
+	width:65%;
+	padding-top:1.5em;
+	float:left;
+}
+
+.brand__nameEng {
+	color:#000;
+	text-align:left;
+	height:1.3em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+.brand__nameJa {
+	color:#888;
+	text-align:left;
+	height:1.3em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.brandList__nav {
+	width: 20%;
+	max-width: 162px;
+	//float: left;
+	padding-top: 1.1em;
+	padding-left: 1rem;
+	box-sizing: border-box;
+	padding-right: 1rem;
+
+	li {
+		//margin-top:1em;
+		border-bottom:1px solid #ddd;
+		text-align:left;
+
+		a {
+			color:#000;
+			display:block;
+			height:3em;
+			padding-top:1em;
+			font-size:1.2em;
+		}
+	}
+}
+
+@media (max-width:769px){
+	.brandList__nav {
+		display:none;
+	}
+
+	.brandWrapper {
+		width:90%;
+		margin-left:5%;
+	}
+
+	.items {
+		width:100%!important;
+	}
+}

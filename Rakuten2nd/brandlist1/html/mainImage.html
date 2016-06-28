@@ -1,0 +1,29 @@
+
+<script>
+  var lastWidth = $(window).width();
+  var mainImage = $('#js__carousel__image');
+  var src__pc = mainImage.attr("src__pc");
+  var src__sp = mainImage.attr("src__sp");
+  
+  setMainImage(lastWidth);
+  
+  $(window).resize(function() {
+  
+  	if($(window).width()!=lastWidth){
+  			lastWidth = $(window).width();
+  			console.log(lastWidth);
+  	}
+  
+  	setMainImage(lastWidth);
+  
+  });
+  
+  function setMainImage(lastWidth) {
+  
+  	if(lastWidth > 768) {
+  		mainImage.attr("src", src__pc);
+  	} else {
+  		mainImage.attr("src", src__sp);
+  	}
+  }
+</script>

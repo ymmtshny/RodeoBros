@@ -1,0 +1,6 @@
+.topics-list a {
+  display: block;
+  width: 20%;
+  margin-left: 2.5%;
+  float: left;
+}

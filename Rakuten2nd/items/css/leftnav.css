@@ -4,6 +4,8 @@
 }
 #risFil a {
     color: #7b7b7b;
+    line-height: 1.4;
+    font-size: 11px;
 }
 span.category_itemprice {
     color: #E8000;
@@ -26,6 +28,17 @@ span.category_itemprice {
 
 .leftnav__imageBox img{
 	margin-bottom:1em;
+}
+
+.leftnav__imageBox .withText img {
+	margin-bottom:0em;
+}
+.leftnav__imageBox .withText p {
+	margin:0;
+	padding:0;
+	margin-bottom: 2em;
+  font-size: 12px;
+  text-align: center;
 }
 
 .leftnav h2 {
@@ -68,4 +81,28 @@ span.category_itemprice {
 	background: url(http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/arrow.png) no-repeat right;
 	background-size: 7px 7px;
     background-position-x: 0.4em;
+}
+
+.leftnav .gray {
+	color:#888;
+}
+
+.relationLink {
+  	margin-bottom: 5em;
+    display: block;
+    color: gray!important;
+    font-size: 12px;
+     text-decoration: none!important;
+    background: #fff;
+    width: 76%;
+    margin-left: 6%;
+    padding: 6%;
+    margin-bottom: 10px;
+     line-height: 1.4;
+} .relationLink h2 {
+	background:#F6F6F6;
+	color:#000;
+	margin-top: 0;
+    padding-top: 0;
+    font-size: 14px;
 }
