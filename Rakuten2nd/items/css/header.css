@@ -11,7 +11,7 @@
 }
 
 .header__left img {
-	width: 260px;
+	width: 235px;
 	margin-top: 1.4em;
 }
 
@@ -35,10 +35,11 @@
 	width: 25%;
 	float: left;
 	margin-bottom: 1em;
-	text-align: center;
+	text-align: right;
 	line-height: 1.2;
 	margin-top: 0.6em;
 	margin-bottom: 1em;
+	letter-spacing: 2.5px;
 }
 
 .header__right b {
@@ -54,6 +55,7 @@
 	margin: 0;
 	padding: 0;
 	font-size: 0.3em;
+	letter-spacing: 1.6;
 }
 
 .header {
@@ -177,7 +179,7 @@
 }
 
 .header__info table {
-	width: 700px;
+	width: 100%;
 }
 
 .header__info table td {

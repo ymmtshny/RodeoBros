@@ -3,9 +3,9 @@ h2.sectionTitle NEW ARRIVAL
 	//- a.rightArrow(v-on:click="onClickNext") Next
 	//- a.leftArrow(v-on:click="onClickBack") Back
 	ul.row
-		li(v-for = "element in Data").newArrival__item
+		li(v-for = "element in NEWARRIVAL").newArrival__item
 			a(href="{{ element.number }}" title="{{ element.name }}")
-				img.lazy(data-original="{{ element.image }}" src="./top/img/load1000x1000.gif" alt="{{ element.name }}")
+				img.lazy( data-original="{{ element.image }}" src="./top/img/load1000x1000.gif" alt="{{ element.name }}")
 				.newArrival__texts
 					h3 {{ element.brand }}
 					p {{ element.name }}

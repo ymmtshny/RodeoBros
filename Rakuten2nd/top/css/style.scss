@@ -6,7 +6,6 @@
 @import './footer.scss';//フッター
 
 body {
-	padding-bottom: 20px;
 }
 
 .wrapper {
@@ -200,20 +199,109 @@ $mb_item: 3em !default;
 
 }
 
+.sp-header {display:none;}
+.sp-searchForm {display:none;}
 //スマフォ用
 @media(max-width:768px) {
 
-	header {
-		display:none;
+	//非表示にする。
+	aside { display:none; }
+	.header__top { display:none; }
+	.header__bar { display:none; }
+	.flexslider{ display:none; }
+	//表示する
+	footer { display:block; }
+	.sp-header {display:block;}
+	.sp-searchForm {display:block;}
+
+	//ヘッダーこっから
+	.sp-header {
+		background:#000;
+		overflow:hidden;
+		height: 50px;
+
+		.sp-header__left {
+			width:15%;
+			float:left;
+			display: list-item;
+		}
+
+		.sp-header__center {
+			width:70%;
+			float:left;
+			text-align:center;
+
+			img {
+				width:211px;
+				// height:25px;
+				margin-top:15px;
+			}
+		}
+
+		.sp-header__right {
+			width: 15%;
+			float:left;
+			font-size: 25px;
+			text-align: center;
+			line-height: 2.1;
+			a span {
+				color: #fff;
+			}
+		}
+
 	}
-	aside {
-		display:none;
+
+	//スマフォ検索まどここから
+	.sp-searchForm {
+		margin-top:3em;
+	}
+
+	.sp-searchForm {
+		padding:10px;
+		margin-bottom:10px;
+		height:50px;
+
+		.sp__text {
+			width:252px;
+			height:40px;
+			border:1px solid #CCC;
+			text-indent:10px;
+			}
+		.sp__btn {
+			background-color:rgba(0,0,0,0);
+			height:38px;
+			width:40px;
+			border:none;
+			margin-left:-40px;
+			background:url('http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/search.png');
+			background-size: 30px;
+			background-repeat:no-repeat;
+			font-size:0;
+		}
+	}
+
+
+	//スマフォ新着
+	.sectionTitle {
+		text-align:center;
 	}
 
 	.newArrival .newArrival__item {
 		width:90%;
 		margin: 5%;
 		margin-bottom: 0;
+		border:none;
+		border-bottom:1px solid #ddd;
+
+		img {
+			width: 35%;
+			float: left;
+			border:none;
+		}
+
+		&:last-child {
+			border:none;
+		}
 	}
 
 	.wrapper {
@@ -223,8 +311,23 @@ $mb_item: 3em !default;
 	main {
 		width:100%;
 		float:none;
+		margin-top:5em;
 	}
 
+	.row {
+		margin-left:0;
+		margin-right:0;
+	}
+	//すまふぉのブランド
+	.selectedBrands {
+		ul {
+			margin:0 auto;
+			width: 95%;
+		}
+	}
+
+
+	//ぐーぐる翻訳
 	.google_translate_element_outerbox {
 		display:none;
 	}

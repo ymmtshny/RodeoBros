@@ -6,6 +6,7 @@ block meta
 	meta(http-equiv="imagetoolbar",content="no")
 	link(rel='stylesheet', href='./top/css/style.css')
 	link(rel='stylesheet', href='./top/css/flexslider.css')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
 block title
 	title RODEO BROS 2nd | 創業から40年の老舗セレクトショップ
 block content
@@ -13,6 +14,7 @@ block content
 	div.wrapper
 		header
 			include ./jade/_header.jade
+			include ./jade/_sp-header.jade
 			include ./jade/_slider.jade
 		aside
 			include ./jade/_navigation.jade
@@ -27,22 +29,26 @@ block content
 	script(src="./top/js/jquery.lazyload.min.js")
 	script(src="./top/js/jquery.flexslider-min.js")
 		//- include ./jade/_js__header.jade
+
 	include ./top/jade/_js__newarrival.jade
 		//- include ./jade/_js__carousel.jade
 	script.
-		$("img.lazy").lazyload({
-					"threshold":50,
-					"effect":"fadeIn",
-					"effect_speed":0,
-					"failure_limit":1} );
-		console.log("Lazy Loadを起動する");
 
 		$(window).load(function() {
+
+			console.log("$(window).load(function...");
+
 			$('.flexslider').flexslider({
 				animation: "slide",
 				randomize: "true",
-				slideshowSpeed: "3000"
-			});
+				slideshowSpeed: "3000" });
+
+			$("img.lazy").lazyload({
+					"threshold":50,
+					"effect":"fadeIn",
+					"effect_speed":0,
+					"failure_limit":1 });
+					console.log("LazyLoad");
 		});
 
 

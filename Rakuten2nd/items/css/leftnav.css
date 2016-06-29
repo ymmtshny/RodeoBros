@@ -13,11 +13,32 @@ span.category_itemprice {
     color: #bf0000 !important;
     font-weight: bold;
 }
+
+span.subcategory_list {
+    display: none;
+}
+.subcategory_list {
+    height: 3em;
+    display: block;
+    width: 95%;
+    margin-bottom: 1.5em;
+    background: #f7f8f7;
+    line-height: 3;
+    overflow: hidden;
+    text-indent: 1em;
+    color: #000!important;
+    text-decoration: none;
+    border: 1px solid #ddd;
+} .subcategory_list:hover {
+	color: #fff!important;
+	background: #333333;
+}
+
 /* カテゴリー ここまで*/
 
 .leftnav {
 	width:185px;
-
+	margin-right: 15px;
 }
 
 .leftnav__box {
@@ -62,6 +83,7 @@ span.category_itemprice {
 		height: 2.5em;
 		border-bottom: 1px solid #ddd;
 		line-height: 2.5;
+		overflow:hidden;
 }
 .leftnav li:last-child  {
 	border:none;
@@ -80,7 +102,7 @@ span.category_itemprice {
 	text-indent:1.5em;
 	background: url(http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/arrow.png) no-repeat right;
 	background-size: 7px 7px;
-    background-position-x: 0.4em;
+  background-position-x: 0.4em;
 }
 
 .leftnav .gray {
@@ -105,4 +127,30 @@ span.category_itemprice {
 	margin-top: 0;
     padding-top: 0;
     font-size: 14px;
+}
+
+.leftnav .all {
+  background: #F6F6F6;
+  height:3.2em;
+}
+
+.leftnav .all a {
+  background: transparent;
+  width: 80%;
+  margin-left: 10%;
+  height: 2em;
+  line-height: 2;
+  margin-bottom: 1em;
+  text-indent: 0;
+  text-align: center;
+  background: #000;
+  color: #fff;
+  position: relative;
+  top: 1em;
+}
+
+.leftnav .all a:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
 }

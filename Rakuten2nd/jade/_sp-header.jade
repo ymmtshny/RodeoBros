@@ -1,0 +1,19 @@
+div.sp-header
+	div.sp-header__left
+	div.sp-header__center
+		img(src="http://www.rakuten.ne.jp/gold/rodeo-2nd/top/img/logo2nd-w.png")
+	div.sp-header__right
+		a(href="https://sp.basket.step.rakuten.co.jp/rms/mall/bss/cartall/?l-id=item_SP_AllCartHeader")
+			span(class="glyphicon glyphicon-shopping-cart")
+div.sp-searchForm
+	center
+		form(method='get',  accept-charset="euc-jp",action='http://esearch.rakuten.co.jp/rms/sd/esearch/vc')
+			input(type='hidden', name='sv', value='6')
+			input(type='hidden', name='sid', value='330657')
+			input(type='hidden', name='su', value='rodeo-2nd')
+			input(type='hidden', name='sn', value='RODEO BROS 2nd')
+			input.sp__text(type='text', name='sitem'  placeholder="検索キーワード")
+			input(type='hidden', name='f', value='A')
+			input.sp__btn(type='submit', value='商品検索')
+			//- button.btn(type='submit', value='商品検索')
+			//- 	span.glyphicon.glyphicon-search

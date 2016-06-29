@@ -207,12 +207,12 @@ width:60px;background-color:#333333;color:#FFFFFF;text-align:center;padding:1px;
 #more {clear:both;text-align:center;margin-top:25px;margin-bottom:25px;}
 #more div {
 	width: 816px;
-    font-size: 13px;
-    padding: 9px;
-    color: #fff;
-    background-color: #000;
-    /* margin: 0 auto; */
-    border: 1px solid #ddd;
+		font-size: 13px;
+		padding: 9px;
+		color: #fff;
+		background-color: #000;
+		/* margin: 0 auto; */
+		border: 1px solid #ddd;
 }
 #more div:hover {background:#fff; color:#000;transition:all 1s;}
 #more a { text-decoration:none;}
@@ -252,7 +252,7 @@ div#rakutenLimitedId_aroundCart input.rCartBtn, div#rakutenLimitedId_aroundCart 
 	background-size: contain!important;
 }
 div.bookmarkArea div.bkm {
-	  width: 100%;
+		width: 100%;
 	height: 50px!important;
 }
 
@@ -296,51 +296,51 @@ span.inventory_choice_name {
 
 input[value="商品についての問合わせ"] {
 	background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
-    background-position: center center !important;
-    font-size: 0!important;
-    height: 50px;
-    width: 308px;
-    border: none!important;
-    margin-bottom: 10px!important;
-    margin-top: 5px!important;
+		background-position: center center !important;
+		font-size: 0!important;
+		height: 50px;
+		width: 308px;
+		border: none!important;
+		margin-bottom: 10px!important;
+		margin-top: 5px!important;
 }
 
 #rakutenLimitedId_aroundCart button.rAskBtn {
-    background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
-    background-position: center center !important;
-    font-size: 0!important;
-    height: 50px;
-    width: 308px;
-    border: none!important;
-    margin-bottom: 10px!important;
-    margin-top: 5px!important;
+		background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
+		background-position: center center !important;
+		font-size: 0!important;
+		height: 50px;
+		width: 308px;
+		border: none!important;
+		margin-bottom: 10px!important;
+		margin-top: 5px!important;
 }
 #rakutenLimitedId_aroundCart div.bkm {
 	width:310px!important;
 }
 
 #rakutenLimitedId_aroundCart div.shopBkm {
-    width: 310px!important;
-    padding: 0!important;
-    padding-top: 0.6em!important;
+		width: 310px!important;
+		padding: 0!important;
+		padding-top: 0.6em!important;
 }
 
 
 
 /* 再入荷 */
 span.unit {
-    background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/default_cart_1223.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    margin-bottom: 1px;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    height: 140px;
-    width: 428px;
-    line-height: 24.5!important;
-    display: block;
+		background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/default_cart_1223.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+		margin-bottom: 1px;
+		background-repeat: no-repeat;
+		margin-top: 20px;
+		height: 148px!important;
+		width: 428px;
+		line-height: 24.5!important;
+		display: block;
 }
 /* 再入荷バツボタン */
 .inventory_soldout > font {
-	    color: gray!important;
+			color: gray!important;
 }
 /* 再入荷ボタン */
 .button {
@@ -360,9 +360,193 @@ span.unit {
 
 /* 納期情報 */
 table[id*=normal_basket_] > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font {
-    color: #999;
-    font-size: 10px!important;
+		color: #999;
+		font-size: 10px!important;
 }
+
+
+/* かいものかご付近追加スタイル */
+
+
+/* 買い物カゴ関連 */
+#rakutenLimitedId_aroundCart * {
+	 font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+}
+
+
+
+/*　納期情報ここから*/
+table[id*=normal_basket_] > tbody > tr > td > table > tbody > tr > td > table > tbody > tr > td > font {
+	color: #999;
+	 font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+
+}
+
+#rakutenLimitedId_aroundCart .inventory {
+
+	font-family: "YuGothic"!important;
+	 font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+}
+
+span.inventory_rest {
+	color: #ff0000!important;
+	font-size: 100%!important;
+}
+
+span.choice {
+	color: #fd0000!important;
+}
+
+/*再入荷ボタンここ*/
+.button {
+	border: 1px solid #CCC;
+	border-bottom: 1px solid #999;
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 2px #E7E7E7;
+	-moz-box-shadow: 1px 1px 2px #E7E7E7;
+	box-shadow: 1px 1px 2px #E7E7E7;
+	padding: 2px 3px 0px;
+	margin: 2px;
+}
+
+table { border:#dddddd; border-collapse: collapse; line-height:120%; }
+
+td.inventory_choice_name { border:solid 1px #dddddd; width:55px; }
+td.inventory { border:solid 1px #dddddd; }
+
+span.price2 {
+	line-height: 130%;
+	/* color: black; */
+	font-size: 150%!important;
+	font-weight: bold;
+}
+
+span.price2 {
+	color: #D00003;
+	font-size: 150%;
+}
+
+span.price1 {
+	/* line-height: 130%; */
+	/* color: black; */
+	font-size: 80%!important;
+	line-height: 4!important;
+	margin-right: 5px;
+}
+
+span.price1 {
+	color: #D00003;
+	font-size: 200%;
+}
+
+.tax_postage {
+	 color: #D00003!important;
+	 font-size: 80%!important;
+}
+
+/*span.item_name{height:12px; overflow:hidden; display: block;}*/
+span.catch_copy{font-size:16px; color:#2E2E2E;}
+span.item_number {font-size:11px;}
+span.item_number_title{ line-height:140%; font-size:16px;}
+span.inventory_title{ line-height:140%; }
+span.inventory_desc{ display:block; margin-top:5px; margin-bottom:5px; }
+span.choice{ line-height:130%; }
+
+/* 送料無料　●円以上で代引き手数料無料 */
+
+
+span.unit {
+	background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/default_cart_1223.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	margin-bottom: 1px;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	height: 140px;
+	width: 428px;
+	line-height: 25.6!important;
+
+	display: block;
+}
+
+input[value="買い物かごに入れる"]{
+	margin-top:10px!important;
+	margin-bottom:10px!important;
+	background:url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/btn-cartn-0203.jpg")!important;
+	width:180px!important;
+	height:40px!important;
+	text-indent:-9999px!important;
+	border:none!important;
+	cursor:pointer!important;
+}
+
+input[value="買い物かごに入れる"]:hover{
+	opacity:0.8;
+}
+
+div#rakutenLimitedId_aroundCart input.rCartBtn, div#rakutenLimitedId_aroundCart input.rCartBtn[type="submit"]  {
+		margin-top:10px!important;
+	margin-bottom:10px!important;
+	background:url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/btn-cartn-0203.jpg")!important;
+	width:260px!important;
+		height:70px!important;
+	text-indent:-9999px!important;
+	border:none!important;
+	cursor:pointer!important;
+		background-size:contain!important;
+
+}
+
+input[value="商品についてのお問い合わせ"]{
+	background: #ffffff url(http://www.rakuten.ne.jp/gold/auc-rodeo/items/img/160113/btn-fav-3.png) no-repeat !important;
+	background-position: center center !important;
+	font-size: 0!important;
+	height: 50px;
+	width: 308px;
+	border: none!important;
+	margin-top: 5px!important;
+}
+
+input[value="予約する"]{
+width: 259px;
+	height: 71px;
+	/* font-size: 17px!important; */
+	font-family: "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif!important;
+	background: #bf0000;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+	/* box-shadow: 0px 2px #8A0000; */
+	margin-bottom: 6px;
+	font-weight: bold;
+	background: url("http://image.rakuten.co.jp/auc-rodeo/cabinet/top/itempage/btn-cartn-yoyaku.jpg");
+	font-size: 0!important;
+}
+
+input[value="予約する"]:hover {
+
+	opacity:0.7;
+	box-shadow: 0px 0px #8A0000;
+}
+
+div.pointGet riMb25{ line-height:130%; }
+
+/* ラジオボタン大きさ */
+
+input[type=radio] {
+	width: 18px;
+	height: 18px;
+	margin:5px 0 5px 0;
+	vertical-align: middle;
+}
+
+#pagebody .rakutenLimitedId_ImageMain1-3 {
+
+		margin-right: 15px;
+		display: block;
+}
+
 
 /* 画像３枚だけ表示ここから */
 .rakutenLimitedId_ImageMain1-3:nth-of-type(4) {

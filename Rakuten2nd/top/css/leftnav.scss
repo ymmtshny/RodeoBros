@@ -53,6 +53,37 @@
 	background-position-y: 1.3em;
 }
 
+.arrow:last-child {
+	border:none;
+}
+
+.leftnav .all {
+	background:#F6F6F6;
+
+	a {
+		background:transparent;
+		width:80%;
+		margin-left:10%;
+		height:2em;
+		line-height:2;
+		margin-bottom:1em;
+		text-indent:0;
+		text-align:center;
+		background:#000;
+		color:#fff;
+		position:relative;
+		top:1em;
+
+				&:hover {
+				background:#fff;
+				color:#000;
+				border:1px solid #000;
+			}
+	}
+
+
+}
+
 .sns .mb-ss {
 	margin-bottom:2em;
 }

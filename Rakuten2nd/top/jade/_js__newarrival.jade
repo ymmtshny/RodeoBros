@@ -1,33 +1,29 @@
 script.
 
-	let theNumerOfNewArrivals = 16; //新着商品の数！！
+	var theNumerOfNewArrivals = 16; //新着商品の数！！
 
 	new Vue({
 		el: '#Vue__NewArrival',
 		data: {
-		Data: []
+		NEWARRIVAL: []
 	},
 	created: function() {
 		var _this = this;
 		//get json file
 		$.ajax({
-			async:false,//同期処理にする。
+			//async:false,//同期処理にする。
 			url: './data/new-arrival.json', //index.jadeに対してのURL
 			dataType: 'json'
 		}).done(function(data) {
 			var temp = [];
 			data.forEach(function (el) {
 			el.number = "http://item.rakuten.co.jp/rodeo-2nd/" + el.number + "/"
-			el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+			el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=260x260";
 			temp.push(el);
 		});
-			_this.Data = temp.slice(0,theNumerOfNewArrivals);
+
+			_this.NEWARRIVAL = temp.slice(0,theNumerOfNewArrivals);
+
 		});
 		}
 	});
-
-	$("img.lazy").lazyload({
-		"threshold":50,
-		"effect":"fadeIn",
-		"effect_speed":0,
-		"failure_limit":1});

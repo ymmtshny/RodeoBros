@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-language" content="ja">
+    <meta name="keywords" content="IRON HEART,アイアンハート,BUZZ RICKSON'S,バズリクソンズ,SUGAR CANE,シュガーケーン,MISTER FREEDOM,ミスターフリーダム,TEDMAN,テッドマン,KAMINARI,カミナリ,鬼デニム,ONI DENIM,VANSON,バンソン,アメカジ,セレクトショップ,メンズ,ファッション">
+    <meta name="description" content="【全品送料無料】創業から40年の老舗セレクトショップ、ロデオブロス（RODEO BROS）">
+    <title>RODEO BROS | 楽天店</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="shortcut icon" href="http://www.rakuten.ne.jp/gold/auc-rodeo/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="initial-scale=1">
+  </head>
+  <body>
+    <!--include jade/javascript/_javascript.jade-->
+    <!--必要があればvendor内のスクリプトも追加-->
+    <!--script(src="./js/some-function.js")-->
+    <!--Goolge Tag から-->
+    <!--Google Tag Manager-->
+    <div>
+      <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WZJ4JV" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WZJ4JV');
+      </script>
+    </div>
+    <!--ヘッダーここから-->
+    <header>
+      <div class="l-header header-box mb-ss hidden-xs">
+        <!--メインへっだー-->
+        <iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/itemheader.html" width="100%" height="180" scrolling="no" frameborder="1" style="border:none; display:block;position:relative; z-index:9999; background:#fff;"></iframe>
+      </div>
+    </header>
+    <!--外枠ここから-->
+    <div id="wrapper">
+      <!--レフトナビここから-->
+      <!--include ../../common/jade/leftnav/_leftnav-r.jade-->
+      <!--メインコンテンツここから-->
+      <div id="main-without-leftnav" class="main-box text-center">
+        <div id="Vue" class="fixed-width">
+          <div class="page-title text-center"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/">NEW ARRIVAL</a></div>
+          <div v-for="element in NewArrival" class="items col-sm-4">
+            <div class="items-inner-box mb-mm-overload"><a target="_top" href="{{ element.number }}">
+                <div class="items__header"><img data-original="{{ element.image }}" src="./load.gif" class="lazy mb-ss-overload"></div>
+                <div class="items__body">
+                  <p class="brand">{{ element.brand }}</p>
+                  <p class="name">{{ element.name }}</p>
+                </div></a></div>
+          </div>
+          <div class="allItemsButton-box mb-ll"><a target="_top" href="http://item.rakuten.co.jp/auc-rodeo/c/0000000630/"> 
+              <p class="myButtonWhiteBlack">新着商品一覧へ</p></a></div>
+        </div>
+      </div>
+    </div>
+    <!--フッターここから-->
+    <footer>
+      <iframe src="http://www.rakuten.ne.jp/gold/auc-rodeo/TopPageAssets/footer.html" width="100%" height="400" scrolling="no" frameborder="1" style="border:none; display:block;"></iframe>
+    </footer>
+    <!--スクリプトここから-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.11/vue.min.js"></script>
+    <script src="./js/jquery.lazyload.min.js"></script>
+    <script>
+      
+      $('a[href*="#"]:not([href="#"])').click(function() {
+      	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      		var target = $(this.hash);
+      		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      		if (target.length) {
+      			$('html, body').animate({
+      				scrollTop: target.offset().top - 33
+      			}, 1000);
+      			return false;
+      		}
+      	}
+      });
+      
+      $('#goToTop').click(function(){
+      		window.scrollTo(0, 0);
+      });
+      
+      
+      new Vue({
+      	el: '#Vue',
+      	//template: '#VueTopsTemplate',
+      
+      	data: {
+      		NewArrival: []
+      	},
+      	
+      	created: function() {
+      		var _this = this;
+      		//get json file
+      		$.ajax({
+      			async:false,//同期処理にする。
+      			url: '../data/new-arrival.json', //index.jadeに対してのURL
+      			dataType: 'json'
+      		}).done(function(data) {
+      			var temp = [];
+      			
+      			data.forEach(function (el) {
+      				el.number = "http://item.rakuten.co.jp/auc-rodeo/" + el.number + "/"
+      				el.image = "http://thumbnail.image.rakuten.co.jp/@0_mall/auc-rodeo/cabinet/" + el.image + "-0.jpg?_ex=700x700";
+      				temp.push(el);
+      			});
+      			_this.NewArrival = temp.slice(0,　99);
+      			 console.log(_this.items); 
+      		});
+      
+      	}
+      });
+      
+      
+      		//ajaxを同期処理しているので以下は、vue.jsの処理後に発動する。
+      			// Lazy Loadを起動する
+      			$(function(){
+      				$("img.lazy").lazyload({
+      					"threshold":250,
+      					"effect":"fadeIn",
+      					"effect_speed":800,
+      					"failure_limit":1} );
+      				console.log("Lazy Loadを起動する");
+      			});
+    </script>
+  </body>
+</html>

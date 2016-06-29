@@ -265,8 +265,7 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
+html input[type="button"], input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -529,647 +528,126 @@ a:hover {
   }
 }
 
-/* ヘッダー最上部*/
-.header__top {
-  margin-top: 12em;
+.col-sm-2 {
+  padding-right: 7px !important;
+  padding-left: 7px !important;
 }
 
-.header__left {
-  width: 25%;
-  float: left;
-  text-align: left;
+.fixed-width {
+  max-width: 1100px;
 }
 
-.header__left img {
-  width: 232px;
-  margin-top: 1.4em;
-}
-
-.header__center {
-  width: 50%;
-  float: left;
-  text-align: center;
-}
-
-.header__center a {
-  color: gray;
-  text-decoration: none;
-}
-
-.header__center__top {
-  margin-top: 0.8em;
-  line-height: 1.5;
-}
-
-.header__right {
-  width: 25%;
-  float: left;
-  margin-bottom: 1em;
-  text-align: right;
-  line-height: 1.2;
-  margin-top: 0.6em;
-  margin-bottom: 1em;
-  letter-spacing: 2px;
-}
-
-.header__right b {
-  font-size: 2.2em;
-}
-
-.header__right span {
-  font-size: 0.9em;
-  margin-right: 0.1em;
-}
-
-.header__right p {
-  margin: 0;
-  padding: 0;
-  font-size: 0.3em;
-}
-
-/* 以下商品ページとほぼ同じ */
-.header {
+.page-title {
   width: 100%;
+  height: 3em;
+  line-height: 2.7;
+  font-size: 1.3em;
+  letter-spacing: 1px;
 }
 
-.header table {
-  margin: 0 auto;
-  border: none;
-  width: 980px;
-}
-
-.header table td {
-  border: none;
-}
-
-.header table h2 {
-  font-size: 0.7em;
-}
-
-.header table a {
-  font-size: 0.7em;
+.page-title a {
   color: #000;
   text-decoration: none;
 }
 
-.header__bar {
-  margin-top: 1em;
-  width: 100%;
-  height: 3em;
-  overflow: hidden;
-  background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/images/header-nav-bg.jpg) repeat-x bottom/contain;
-  margin-bottom: 1.5em;
-  position: relative;
-  border-top: 1px solid #cdcdcd;
-  border-border: 1px solid #cdcdcd;
+.page-title a:hover {
+  color: #0044CC;
+  text-decoration: underline;
 }
 
-.header__bar table {
-  height: 3em;
-  line-height: 3;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.header__bar table td {
-  border-right: 1px solid #cdcdcd;
-  width: 25%;
-}
-
-.header__bar table td:last-child {
-  border: none;
-}
-
-.header__bar table td::hover {
-  background: #D5D5D5;
-}
-
-.header__bar table a {
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: #000;
-}
-
-.header__bar form {
-  width: 190px;
-  height: 2em;
-  display: block;
-  margin: 0 auto;
-}
-
-.header__bar table input[type="submit"] {
-  height: 2.0em;
-  background-color: #fff;
-  border: 1px solid #CECECE;
-  border-left: none;
-}
-
-.header__bar table input[type="text"] {
-  height: 2em !important;
-  width: 150px;
-  margin-bottom: 0;
-  border: 1px solid #CECECE;
-  float: left;
-}
-
-.submitButton {
-  height: 24px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-left: none;
-  float: left;
-}
-
-.submitButton span {
-  top: -7px;
-}
-
-.header__info {
-  width: 100%;
-  height: 8em;
-  overflow: hidden;
-  border: 1px solid #cdcdcd;
-}
-
-.header__info table {
-  width: 700px;
-}
-
-.header__info table td {
-  border-right: 1px solid #cdcdcd;
-}
-
-.header__info table td:last-child {
-  border: none;
-}
-
-.leftnav {
-  width: 180px;
-}
-
-.leftnav__box {
-  background: #F6F6F6;
-  padding-bottom: 0.2em;
-  margin-bottom: 2em;
-}
-
-.leftnav h2 {
-  font-size: 12px;
-  margin: 0;
-  padding: 1em;
-  font-weight: bold;
-  text-align: center;
-}
-
-.leftnav ul {
-  padding: 0;
-  margin: 0.8em;
+.items p {
   margin-top: 0;
-  list-style: none;
-  background: #fff;
 }
 
-.leftnav li {
-  font-size: 12px;
-  text-indent: 2.2em;
-  height: 3em;
+.items a:hover {
+  text-decoration: none;
+}
+
+.items-inner-box {
+  border: 1px solid #ddd;
+}
+
+.items__header img {
   border-bottom: 1px solid #ddd;
-  line-height: 3;
 }
 
-.leftnav li:last-child {
-  border: none;
+.items__header img:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
 }
 
-.leftnav li a {
+.mb-mm-overload {
+  margin-bottom: 2.5em;
+}
+
+.mb-ss-overload {
+  margin-bottom: 0.5em;
+}
+
+.brand {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  margin-left: 0.6em;
+  color: #878787;
+  letter-spacing: 1px;
+}
+
+.name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  margin-bottom: 0.3em;
+  margin-left: 0.6em;
+  color: #878787;
+  letter-spacing: 1px;
+}
+
+.price-menu-box {
+  clear: both;
+  display: block;
+}
+
+.allItemsButton-box {
+  clear: both;
+}
+
+.allItemsButton-box a:hover {
+  text-decoration: none;
+}
+
+.allItemsButton-box p {
+  width: 32%;
+  margin: 0 auto;
+  padding: 0.8em 0;
+}
+
+.big-banner-wrapper a {
   color: #000;
   text-decoration: none;
-  display: block;
 }
 
-.leftnav li a:hover {
-  background: #f7f8f7;
+.item-pages-banner-wrapper {
+  text-align: center;
 }
 
-.leftnav .arrow {
-  font-size: 12px;
-  text-indent: 1.5em;
-  background: url(http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/arrow.png) no-repeat right;
-  background-size: 7px 7px;
-  background-position-x: 0.4em;
-  background-position-y: 1.3em;
+.newarrivalInHeader {
+  margin: 0 auto;
+  margin-top: 1em;
 }
 
-.arrow:last-child {
+.items__body p {
   border: none;
-}
-
-.leftnav .all {
-  background: #F6F6F6;
-}
-
-.leftnav .all a {
-  background: transparent;
-  width: 80%;
-  margin-left: 10%;
-  height: 2em;
-  line-height: 2;
-  margin-bottom: 1em;
-  text-indent: 0;
-  text-align: center;
-  background: #000;
-  color: #fff;
-  position: relative;
-  top: 1em;
-}
-
-.leftnav .all a:hover {
-  background: #fff;
-  color: #000;
-  border: 1px solid #000;
-}
-
-.sns .mb-ss {
-  margin-bottom: 2em;
-}
-
-.relationLink {
-  margin-bottom: 5em;
-  display: block;
-  color: gray !important;
-  font-size: 12px;
-  /* text-decoration: none; */
-  background: #fff;
-  width: 87%;
-  margin-left: 6%;
-  padding: 6%;
-  margin-bottom: 10px;
-}
-
-.shop-infomation {
-  clear: both;
-  background: #eeeeee;
-  padding: 0 4em;
-  position: relative;
-  padding-bottom: 2em;
-}
-
-.shop-infomation h2 {
-  font-size: 1.3em;
-  padding: 0.8em 0;
-  padding-top: 1em;
-  border-bottom: 1px solid #888;
-}
-
-.shop-infomation .sns {
-  position: absolute;
-  top: 1.5em;
-  right: 4em;
-}
-
-.shop-infomation .sns li {
-  display: inline-block;
-}
-
-.shop-infomation .sns i {
-  font-size: 1.5em;
-  margin-left: 1em;
-  color: #000;
-}
-
-.shop-infomation .shop-infomation__textbox h3 {
-  font-size: 1.3em;
-}
-
-.copy-right {
-  background: #000;
-  color: #fff;
-}
-
-.copy-right a {
-  padding-top: 0.3em;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.copy-right p {
-  padding: 0.3em 0;
-}
-
-.copy-right__phone.text-center {
-  padding-top: 0.5em;
-}
-
-.wrapper {
-  width: 1240px;
-  margin: 0 auto;
-}
-
-aside {
-  width: 200px;
-  margin-right: 20px;
-  float: left;
-}
-
-main {
-  width: 1020px;
-  float: left;
-  margin-bottom: 8em;
-}
-
-.myButton, .newArrival button, .selectedBrands .morebtn {
-  border-radius: 0;
-  border: 1px solid #000;
-  padding: 0.4em 8em;
-  font-size: 1em;
-  text-align: center;
-}
-
-.myButton:hover, .newArrival button:hover, .selectedBrands .morebtn:hover {
-  background: #000;
-  color: #fff;
-  transition: all 0.5s;
-}
-
-.sectionTitle {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 0.5em;
-  margin-bottom: 0.8em;
-}
-
-.flexslider:hover .flex-prev {
-  opacity: 1;
-  left: 10px;
-  background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/img/arrow_left.png) no-repeat left;
-}
-
-.flexslider:hover .flex-next {
-  opacity: 1;
-  right: 10px;
-  background: url(http://www.rakuten.ne.jp/gold/auc-rodeo/img/arrow_right.png) no-repeat right;
-}
-
-.flex-direction-nav li a {
-  display: block !important;
-  opacity: 1 !important;
-}
-
-.flex-control-paging {
-  display: none;
-}
-
-.mySlider {
-  height: 415px;
-}
-
-.newArrival {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-  position: relative;
-  margin-bottom: 5em;
-}
-
-.newArrival .newArrival__item {
-  border: 1px solid #ddd;
-  width: 22%;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
-  margin-bottom: 3em;
-  padding: 0;
-  float: left;
-}
-
-.newArrival .newArrival__item:nth-of-type(5) {
-  clear: both;
-}
-
-.newArrival .newArrival__item:nth-of-type(9) {
-  clear: both;
-}
-
-.newArrival img {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 1em;
-}
-
-.newArrival h3 {
-  color: #000;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1.1em;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin: 0;
-  margin-bottom: 0.25em;
-}
-
-.newArrival p {
-  color: #888888;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-bottom: 1em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.selectedBrands {
-  width: 100%;
-  margin: 0 auto;
-  clear: both;
-}
-
-.selectedBrands li {
-  padding: 0;
-  margin-bottom: 0em;
-}
-
-.selectedBrands figure {
-  margin: 1em;
-  margin-bottom: 0;
-}
-
-.selectedBrands img {
-  margin-bottom: 0.5em;
-  border: 1px solid #ddd;
-}
-
-.selectedBrands h3 {
-  font-size: 1em;
-  margin: 0;
-  margin-bottom: 0.25em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.selectedBrands p {
-  margin: 0;
-  color: #777777;
-  margin-bottom: 1em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.selectedBrands button {
-  border-radius: 0;
-  border: 1px solid #000;
-  padding: 0.25em 2em;
-  font-size: 1em;
-}
-
-.selectedBrands button:hover {
-  background: #000;
-  color: #fff;
-  transition: all 0.5s;
-}
-
-.google_translate_element_outerbox {
-  background: white;
-  border-top: 1px solid #ddd;
-  text-align: right;
-  /* height: 57px; */
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-}
-
-.google_translate_element_outerbox img {
-  width: inherit;
-}
-
-#google_translate_element {
-  width: 1240px;
-  text-align: right;
-  margin: 0 auto;
-}
-
-.sp-header {
-  display: none;
-}
-
-.sp-searchForm {
-  display: none;
 }
 
 @media (max-width: 768px) {
-  aside {
-    display: none;
+  .allItemsButton-box p {
+    width: 80%;
   }
-  .header__top {
-    display: none;
-  }
-  .header__bar {
-    display: none;
-  }
-  .flexslider {
-    display: none;
-  }
-  footer {
-    display: block;
-  }
-  .sp-header {
-    display: block;
-  }
-  .sp-searchForm {
-    display: block;
-  }
-  .sp-header {
-    background: #000;
-    overflow: hidden;
-    height: 50px;
-  }
-  .sp-header .sp-header__left {
-    width: 15%;
+  .col-sm-2 {
+    width: 16.66%;
     float: left;
-    display: list-item;
-  }
-  .sp-header .sp-header__center {
-    width: 70%;
-    float: left;
-    text-align: center;
-  }
-  .sp-header .sp-header__center img {
-    width: 211px;
-    margin-top: 15px;
-  }
-  .sp-header .sp-header__right {
-    width: 15%;
-    float: left;
-    font-size: 25px;
-    text-align: center;
-    line-height: 2.1;
-  }
-  .sp-header .sp-header__right a span {
-    color: #fff;
-  }
-  .sp-searchForm {
-    margin-top: 3em;
-  }
-  .sp-searchForm {
-    padding: 10px;
-    margin-bottom: 10px;
-    height: 50px;
-  }
-  .sp-searchForm .sp__text {
-    width: 252px;
-    height: 40px;
-    border: 1px solid #CCC;
-    text-indent: 10px;
-  }
-  .sp-searchForm .sp__btn {
-    background-color: transparent;
-    height: 38px;
-    width: 40px;
-    border: none;
-    margin-left: -40px;
-    background: url("http://www.rakuten.ne.jp/gold/rodeo-2nd/items/img/search.png");
-    background-size: 30px;
-    background-repeat: no-repeat;
-    font-size: 0;
-  }
-  .sectionTitle {
-    text-align: center;
-  }
-  .newArrival .newArrival__item {
-    width: 90%;
-    margin: 5%;
-    margin-bottom: 0;
-    border: none;
-    border-bottom: 1px solid #ddd;
-  }
-  .newArrival .newArrival__item img {
-    width: 35%;
-    float: left;
-    border: none;
-  }
-  .newArrival .newArrival__item:last-child {
-    border: none;
-  }
-  .wrapper {
-    width: 100%;
-  }
-  main {
-    width: 100%;
-    float: none;
-    margin-top: 5em;
-  }
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .selectedBrands ul {
-    margin: 0 auto;
-    width: 95%;
-  }
-  .google_translate_element_outerbox {
-    display: none;
   }
 }
